@@ -6,6 +6,11 @@ description: "Consultant for Digitalization, XR Storytelling, and Spatial R&D"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://stevenvoon.github.io"
 
+# Branding for the Home Page Banner
+landing-title: "Technical Lead & XR Architect"
+landing-description: "Engineering high-performance VR/AR ecosystems, industrial simulations, and spatial storytelling."
+
+
 author: Steven Voon
 street_address: Selangor # Keep it general for privacy
 city: Petaling Jaya
@@ -66,3 +71,4 @@ navigation:
     url: "/the-lab"
   - title: "Experience & Resume"
     url: "/experience"
+
