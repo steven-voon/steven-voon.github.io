@@ -1,5 +1,6 @@
 # site settings
-title: "Steven Voon | XR Architect & Technical Lead"
+title: "Steven Voon"
+subtitle: "XR Architect & Technical Lead"
 email: voonyewsoon@gmail.com
 description: "Consultant for Digitalization, XR Storytelling, and Spatial R&D"
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -49,3 +50,19 @@ exclude:
 - CONTRIBUTING.md
 - README.md 
 - vendor
+
+
+# Navigation Settings
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Virtual Reality"
+    url: "/virtual-reality"
+  - title: "Augmented Reality"
+    url: "/augmented-reality"
+  - title: "Technical Leadership"
+    url: "/technical-leadership"
+  - title: "The R&D Lab"
+    url: "/the-lab"
+  - title: "Experience & Resume"
+    url: "/experience"

@@ -1,4 +1,20 @@
 <!-- Contact -->
+
+<section id="clients" style="background: #242943; padding: 3em 0 1em 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+    <div class="inner">
+        <header class="major" style="text-align: center;">
+            <h2 style="font-size: 0.9em; letter-spacing: 0.25em; opacity: 0.6; margin-bottom: 2em;">SELECTED CLIENTS & PARTNERS</h2>
+        </header>
+        <div class="row" style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; text-align: center;">
+            <div class="col-2 col-4-small"><h4 style="opacity: 0.5; margin-bottom: 1.5em;">PETRONAS</h4></div>
+            <div class="col-2 col-4-small"><h4 style="opacity: 0.5; margin-bottom: 1.5em;">IJM LAND</h4></div>
+            <div class="col-2 col-4-small"><h4 style="opacity: 0.5; margin-bottom: 1.5em;">DNB</h4></div>
+            <div class="col-2 col-4-small"><h4 style="opacity: 0.5; margin-bottom: 1.5em;">U. NOTTINGHAM</h4></div>
+            <div class="col-2 col-4-small"><h4 style="opacity: 0.5; margin-bottom: 1.5em;">ANGKASA</h4></div>
+        </div>
+    </div>
+</section>
+
 <section id="contact">
 	<div class="inner">
 		<section>
@@ -9,7 +25,7 @@
 				</div>
 				<div class="field half">
 					<label for="email">Email</label>
-					<input type="text" name="_replyto" id="email" />
+					<input type="email" name="_replyto" id="email" required />
 				</div>
 				<div class="field">
 					<label for="message">Message</label>
@@ -76,12 +92,6 @@
 						</li>
 					{% endif %}
 				{% endfor %}
-			</ul>
-			<ul class="copyright">
-				<li>&copy; {{ site.title }} {{ site.subtitle }}</li>
-				<li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
-				<li>Jekyll integration: <a href="https://github.com/andrewbanchich" target="_blank">Andrew Banchich</a></li>
-
 			</ul>
 		</div>
 	</footer>
