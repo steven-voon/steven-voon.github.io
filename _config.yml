@@ -1,6 +1,6 @@
 # site settings
-title: "Steven Voon | XR Engineer"
-subtitle: "Unity Technical Architect & XR Lead"
+title: "Steven Voon"
+subtitle: "XR Engineer"
 email: voonyewsoon@gmail.com
 description: "Senior Unity Developer & XR Architect specializing in high-performance C#, spatial computing architecture, and VR/AR optimization."
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -12,10 +12,10 @@ landing-description: "Architecting scalable XR frameworks and high-performance U
 
 
 author: Steven Voon
-street_address: Selangor # Keep it general for privacy
+street_address: # Keep it general for privacy
 city: Petaling Jaya
 state: Selangor
-zip_code: 47110
+zip_code: 
 country: Malaysia
 phone: +6012-5652372
 

@@ -66,25 +66,44 @@
         </section>
     </div>
 
-    <section id="all-projects-cta" class="wrapper style2 special">
-        <div class="inner">
-            <header class="major">
-                <h2>Ready to see the full scope?</h2>
-                <p>Explore the complete archive of technical architectures, lab experiments, and spatial solutions.</p>
+<section id="engineering-index-cta" class="no-major-line" style="width: 100%; position: relative; overflow: hidden; margin-top: 4rem;">
+    <div class="tiles" style="display: block;">
+        <article class="gateway-article" style="width: 100%; height: 400px; margin: 0; background-color: #0d1117; cursor: pointer;" onclick="window.location.href='/all-projects';">
+            
+            <span class="image" style="opacity: 0.35; transition: opacity 0.5s ease;">
+                <img src="assets/images/leadership-banner.jpg" alt="Technical Archive" style="object-fit: cover; width: 100%; height: 100%;" />
+            </span>
+            
+            <header style="padding: 0 10%; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; z-index: 10; position: relative;">
+                <div style="border-left: 4px solid #9bf1ff; padding-left: 2.5rem; padding-right: 2.5rem; max-width: 900px;">
+                    <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem; letter-spacing: 2px;">The Engineering Archive</h2>
+                    
+                    <p style="font-size: 1rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 1.5rem; font-weight: 600;">
+                        Strategic Architecture • R&D Experiments • Project Index
+                    </p>
+                    
+                    <p style="line-height: 1.8; margin-bottom: 2rem; opacity: 0.8; font-size: 1.05rem;">
+                        Explore a comprehensive index of cross-industry solutions, including low-level optimizations, 
+                        technical documentation, and legacy architectural pillars.
+                    </p>
+                    
+                    <ul class="actions">
+                        <li>
+                            <a href="/all-projects" class="button next large" style="background: transparent; box-shadow: inset 0 0 0 2px #9bf1ff; color: #9bf1ff !important; border: none;">
+                                View Full Archive
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </header>
-            <ul class="actions stacked">
-                <li>
-                    <a href="/all-projects" class="button primary large next">View All Projects</a>
-                </li>
-            </ul>
-        </div>
-    </section>
-
+        </article>
+    </div>
+</section>
     {% include footer.html %}
 
 </body>
-
 </html>
+
 
 
 

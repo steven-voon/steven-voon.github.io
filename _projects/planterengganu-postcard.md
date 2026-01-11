@@ -4,6 +4,7 @@ title: "PlanTerengganu Postcard"
 image: "/assets/images/pic04.jpg"
 pillar: "augmented-reality"
 genre: "event"
+company: "Creatinno Tech PLT"
 hardware: "Mobile AR"
 technologies: ["AR Portal", "Unity"]
 ---

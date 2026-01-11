@@ -4,6 +4,7 @@ title: "Sidewalks Asia"
 image: "/assets/images/pic04.jpg"
 pillar: "augmented-reality"
 genre: "heritage"
+company: "Maitree House"
 hardware: "Mobile AR"
 technologies: ["AR Portal", "Unity"]
 project_url: "https://www.ceritalah.com" # Referral link
@@ -13,7 +14,7 @@ carousel_images:
   - "/assets/images/pic07.jpg"
 ---
 
-<div class="project-specs" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-left: 4px solid #9bf1ff; margin-bottom: 2rem; border-radius: 0 8px 8px 0;">
+<div class="project-specs" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-left: 4px solid #9bf1ff; margin-top: -2.5rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;">
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">ROLE</strong><br><span style="color: #9bf1ff; font-weight: 600;">Technical Lead</span></div>
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">PLATFORM</strong><br>Unity 2022.3 (URP)</div>
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">CORE TECH</strong><br>VPS & Cloud Assets</div>
@@ -26,19 +27,39 @@ carousel_images:
         <p><strong>Ceritalah</strong> is a location-based AR platform designed to bridge Malaysian history with modern spatial computing.</p> 
         <p>As <strong>Technical Lead</strong>, my goal was to move beyond simple markers and create a "world-scale" AR experience.</p>     
     </div>
-    <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); position: relative; overflow: hidden;">       
-        <button onclick="document.getElementById('case-study-carousel').scrollBy({left: -300, behavior: 'smooth'})" style="position: absolute; left: 20px; top: 40%; z-index: 5; background: rgba(0,0,0,0.5); border: none; color: white; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; display: flex; align-items: center; justify-content: center;">&#10094;</button>
-        <button onclick="document.getElementById('case-study-carousel').scrollBy({left: 300, behavior: 'smooth'})" style="position: absolute; right: 20px; top: 40%; z-index: 5; background: rgba(0,0,0,0.5); border: none; color: white; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; display: flex; align-items: center; justify-content: center;">&#10095;</button>
-        <div id="case-study-carousel" class="carousel-container">
+    <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); position: relative; overflow: hidden;">         
+        <button onclick="document.getElementById('case-study-carousel').scrollBy({left: -document.getElementById('case-study-carousel').offsetWidth, behavior: 'smooth'})" 
+            style="position: absolute; left: 25px; top: 50%; transform: translateY(-50%); z-index: 5; background: transparent !important; border: none !important; outline: none !important; box-shadow: none !important; color: white; font-size: 2.2rem; cursor: pointer; text-shadow: 0px 0px 15px rgba(0,0,0,0.9); transition: all 0.3s ease; padding: 10px; min-width: 44px; display: flex; align-items: center; justify-content: center;"
+            onmouseover="this.style.opacity='0.6'; this.style.transform='translateY(-50%) scale(1.1)';" 
+            onmouseout="this.style.opacity='1'; this.style.transform='translateY(-50%) scale(1)';">
+            &#10094;
+        </button>
+        <button onclick="document.getElementById('case-study-carousel').scrollBy({left: document.getElementById('case-study-carousel').offsetWidth, behavior: 'smooth'})" 
+            style="position: absolute; right: 25px; top: 50%; transform: translateY(-50%); z-index: 5; background: transparent !important; border: none !important; outline: none !important; box-shadow: none !important; color: white; font-size: 2.2rem; cursor: pointer; text-shadow: 0px 0px 15px rgba(0,0,0,0.9); transition: all 0.3s ease; padding: 10px; min-width: 44px; display: flex; align-items: center; justify-content: center;"
+            onmouseover="this.style.opacity='0.6'; this.style.transform='translateY(-50%) scale(1.1)';" 
+            onmouseout="this.style.opacity='1'; this.style.transform='translateY(-50%) scale(1)';">
+            &#10095;
+        </button>
+        <div id="case-study-carousel" class="carousel-container" style="cursor: grab;">
             {% for img in page.carousel_images %}
             <div class="carousel-item">
-                <img src="{{ img }}" alt="Project slide">
+                <img src="{{ img }}" alt="Project slide" style="pointer-events: none; -webkit-user-drag: none;">
             </div>
             {% endfor %}
         </div>
+        <style>
+            .dot { 
+                width: 6px; height: 6px; border-radius: 50%; 
+                background: rgba(155, 241, 255, 0.3); transition: all 0.3s ease; 
+            }
+            .dot.active { 
+                background: #9bf1ff !important; 
+                box-shadow: 0 0 8px #9bf1ff; transform: scale(1.3); 
+            }
+        </style>
         <div class="carousel-dots" style="display: flex; justify-content: center; gap: 8px; margin-top: 10px;">
             {% for img in page.carousel_images %}
-            <div class="dot"></div>
+            <div class="dot {% if forloop.first %}active{% endif %}"></div>
             {% endfor %}
         </div>                 
         <p style="font-size: 0.7rem; text-align: center; margin: 0.5rem 0 0 0; color: #9bf1ff; letter-spacing: 1px; text-transform: uppercase; opacity: 0.6;">
@@ -46,6 +67,19 @@ carousel_images:
         </p>
     </div>
 </div>
+
+
+### 💻 Technical Stack & Expertise
+<div class="tech-tags" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; margin-bottom: 3rem;">
+    <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">Unity 2022.3 LTS</span>
+    <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">ARFoundation</span>
+    <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">Google Geospatial API</span>
+    <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">AWS S3</span>
+    <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">Addressables</span>
+</div>
+
+> **Leadership Note:** Coordinated a remote team of 3 developers and 1 software agency, conducting weekly code reviews and defining the CI/CD pipeline via GitHub Actions to ensure a 0% regression rate on new features.
+
 
 ### 🛠️ Core Engineering Challenges
 
@@ -107,7 +141,6 @@ To ensure the app remained maintainable for a remote team, I implemented a decou
 <div style="background: rgba(155, 241, 255, 0.03); border: 1px solid rgba(155, 241, 255, 0.2); padding: 2rem; border-radius: 8px; margin: 2rem 0;">
     <h4 style="color: #9bf1ff; margin-top: 0;">Post-Mortem & Lessons Learned</h4>
     <p style="font-size: 0.95rem;">Building for the "Wild" (outdoor AR) proved that <strong>Environmental UX</strong> is as critical as the code. High-noon sunlight in Malaysia causes aggressive thermal throttling; our next iteration will move tracking logic to background threads more aggressively.</p>
-    
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem;">
         <div>
             <h5 style="font-size: 0.7rem; letter-spacing: 1px; color: #ff9b9b; text-transform: uppercase;">Technical Debt</h5>
@@ -128,16 +161,6 @@ To ensure the app remained maintainable for a remote team, I implemented a decou
 
 ---
 
-### Technical Stack & Expertise
-<div class="tech-tags" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
-    <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">Unity 2022.3 LTS</span>
-    <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">ARFoundation</span>
-    <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">Google Geospatial API</span>
-    <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">AWS S3</span>
-    <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">Addressables</span>
-</div>
-
-> **Leadership Note:** Coordinated a remote team of 3 developers and 1 software agency, conducting weekly code reviews and defining the CI/CD pipeline via GitHub Actions to ensure a 0% regression rate on new features.
 
 <script>
     const carousel = document.getElementById('case-study-carousel');
