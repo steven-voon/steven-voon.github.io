@@ -1,35 +1,41 @@
 # site settings
-title: Forty
-subtitle: by HTML5 UP
-email: youremailaddress@gmail.com
-description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
-baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
-url: # the base hostname & protocol for your site
-author:
-street_address: 1234 Somewhere Road
-city: Nashville
-state: TN
-zip_code: 55555
-country: United States of America
-phone: (716) 555-5555
+title: "Steven Voon | XR Architect & Technical Lead"
+email: voonyewsoon@gmail.com
+description: "Consultant for Digitalization, XR Storytelling, and Spatial R&D"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://stevenvoon.github.io"
+
+author: Steven Voon
+street_address: Selangor # Keep it general for privacy
+city: Petaling Jaya
+state: Selangor
+zip_code: 47110
+country: Malaysia
+phone: 012-5652372
 
 # homepage tiles
-tiles-source: pages # accepts "posts" or "pages"
-tiles-count: 6
+tiles-source: pages 
+tiles-count: 4 # We only want our 4 Strategic Pillars showing on the home grid
 
 # social settings (key must match name of font awesome icon)
 # see https://fontawesome.com/icons?d=gallery&p=2&s=brands
 # Icons are not shown if value is empty
 # You need to restart jekyll for changes to have an effect
 socials:
-  GitHub: https://github.com/andrewbanchich
-  GitLab:
-  Google-Plus: https://plus.google.com/u/0/+AndrewBanchich
-  Instagram:
-  LinkedIn: https://www.linkedin.com/in/andrew-banchich-a4ba1195
-  Twitter: https://twitter.com/andrewbanchich
-  Facebook:
-  Slack:
+  GitHub: https://github.com/stevenvoon
+  LinkedIn: https://www.linkedin.com/in/steven-voon # Update this to your link
+  #Instagram:
+  #Facebook:
+
+# CUSTOM COLLECTIONS (The "Secret Sauce")
+# This tells Jekyll to look into your _projects and _lab folders
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  lab:
+    output: true
+    permalink: /lab/:path/
 
 # build settings
 markdown: kramdown
@@ -42,3 +48,4 @@ exclude:
 - LICENSE.md
 - CONTRIBUTING.md
 - README.md 
+- vendor
