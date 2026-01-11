@@ -1,25 +1,24 @@
 ---
-layout: generic
-title: "Professional Experience"
-description: "Technical Lead | XR Architect | Digitalization Consultant"
+layout: page
+title: Experience & Strategy
+description: "A timeline of technical execution and organizational leadership."
 ---
 
-<div id="main">
-    <div class="inner">
-        <h2>Career Roadmap</h2>
-        <p><strong>Digitalization Consultant | Creatinno Tech PLT (2024 - Present)</strong><br>
-        Leading technical strategy and university collaborations (UTHM, Xiamen).</p>
+## 🏛 Digitalization & Consulting
+**Creative Director | Creatinno Tech PLT** (2024 - Present)
+*Specializing in Heritage Digitalization and Academic MOUs (UTHM/Xiamen).*
 
-        <p><strong>Creative Technologist | Maitree House (2020 - Present)</strong><br>
-        Leading global VR storytelling and MOCAP workshop initiatives.</p>
+## 🎭 Creative Technology
+**Technical Lead | Maitree House** (2020 - Present)
+*Managing global VR storytelling projects and high-impact MOCAP workshops.*
 
-        <p><strong>XR Technical Lead | Creatinno Tech Solutions (2019 - 2024)</strong><br>
-        Launched MARGIC platform and DECORA AR startup.</p>
+## 🔬 Research & Development
+**Research Assistant | UMS** (2019 - 2020)
+*Developed iSignnet AR for sign-language education.*
 
-        <hr />
-        
-        <ul class="actions">
-            <li><a href="/assets/resume-steven-voon.pdf" class="button primary icon solid fa-download">Download Full CV (PDF)</a></li>
-        </ul>
-    </div>
-</div>
+---
+### 🌍 Field Engagement & Exhibitions
+*I am frequently invited to represent organizations and showcase tech solutions:*
+- **Digital Penang Exhibition:** Showcased *Ceritalah* location-based AR.
+- **Higher Education Fair:** Presented 360 Portfolios to academic leaders.
+- **Immersio Event:** Led SparkAR Face Filter workshops.

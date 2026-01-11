@@ -3,9 +3,9 @@ layout: landing
 title: "The R&D Lab"
 description: "Experimental prototypes, Motion Capture (MOCAP) workflows, and technical workshops."
 image: assets/images/lab-banner.jpg
-nav-menu: true
-show_tile: true
-weight: 4
+#nav-menu: true
+#show_tile: true
+#weight: 4
 ---
 
 <div id="main">
@@ -17,7 +17,6 @@ weight: 4
             <p>The Lab is where I test new SDKs, experiment with MOCAP data, and share knowledge through technical workshops for the next generation of XR creators.</p>
         </div>
     </section>
-
     <section id="two" class="spotlights">
         <section>
             <div class="content">

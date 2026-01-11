@@ -3,9 +3,9 @@ layout: landing
 title: "Augmented Reality"
 description: "Blending digital layers with the physical world through AR Portals, Retail, and Heritage."
 image: assets/images/ar-banner.jpg
-nav-menu: true
-show_tile: true
-weight: 2
+#nav-menu: true
+#show_tile: true
+#weight: 2
 ---
 
 <div id="main">
@@ -17,7 +17,6 @@ weight: 2
             <p>Developing AR solutions that solve real-world problems—from historical preservation in museums to innovative 'Virtual Try-On' retail platforms.</p>
         </div>
     </section>
-
     <section id="two" class="spotlights">
         <section>
             <div class="content">

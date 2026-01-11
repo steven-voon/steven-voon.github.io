@@ -3,12 +3,11 @@ layout: landing
 title: "Technical Leadership & Strategy"
 description: "Architecting XR ecosystems and driving digital transformation through industry-academic partnerships."
 image: assets/images/leadership-banner.jpg
-nav-menu: true
-show_tile: true
+#nav-menu: true
+#show_tile: true
 ---
 
 <div id="main">
-
     <section id="one">
         <div class="inner">
           <header class="major">
@@ -17,9 +16,7 @@ show_tile: true
           <p>With over 7 years in the XR space, my role has evolved from developer to strategist. I specialize in requirement analysis, technical feasibility studies, and leading cross-functional teams to deliver high-impact spatial solutions.</p>
         </div>
     </section>
-
-    <section id="two" class="spotlights">
-        
+    <section id="two" class="spotlights">   
         <section>
           <div class="content">
             <div class="inner">
@@ -30,7 +27,6 @@ show_tile: true
             </div>
           </div>
         </section>
-
         <section>
           <div class="content">
             <div class="inner">
@@ -41,7 +37,6 @@ show_tile: true
             </div>
           </div>
         </section>
-
         <section>
           <div class="content">
             <div class="inner">
@@ -52,6 +47,5 @@ show_tile: true
             </div>
           </div>
         </section>
-
     </section>
 </div>

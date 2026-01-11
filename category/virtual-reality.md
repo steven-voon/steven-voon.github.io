@@ -3,9 +3,9 @@ layout: landing
 title: "Virtual Reality"
 description: "Immersive storytelling and performance-optimized environments for Meta Quest 3 & SteamVR."
 image: assets/images/vr-banner.jpg
-nav-menu: true
-show_tile: true
-weight: 1
+#nav-menu: true
+#show_tile: true
+#eight: 1
 ---
 
 <div id="main">
@@ -17,7 +17,6 @@ weight: 1
             <p>From theatrical experiences to medical training labs, I develop VR solutions that prioritize user comfort and visual fidelity. Specialized in optimizing URP pipelines for standalone headsets.</p>
         </div>
     </section>
-
     <section id="two" class="spotlights">
         <section>
             <div class="content">
