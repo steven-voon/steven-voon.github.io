@@ -1,14 +1,14 @@
 # site settings
-title: "Steven Voon"
-subtitle: "XR Architect & Technical Lead"
+title: "Steven Voon | XR Engineer"
+subtitle: "Unity Technical Architect & XR Lead"
 email: voonyewsoon@gmail.com
-description: "Consultant for Digitalization, XR Storytelling, and Spatial R&D"
+description: "Senior Unity Developer & XR Architect specializing in high-performance C#, spatial computing architecture, and VR/AR optimization."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://stevenvoon.github.io"
 
 # Branding for the Home Page Banner
-landing-title: "Technical Lead & XR Architect"
-landing-description: "Engineering high-performance VR/AR ecosystems, industrial simulations, and spatial storytelling."
+landing-title: "Steven Voon"
+landing-description: "Architecting scalable XR frameworks and high-performance Unity systems for the next generation of spatial computing."
 
 
 author: Steven Voon
@@ -17,7 +17,7 @@ city: Petaling Jaya
 state: Selangor
 zip_code: 47110
 country: Malaysia
-phone: 012-5652372
+phone: +6012-5652372
 
 # homepage tiles
 tiles-source: pages 
@@ -30,6 +30,7 @@ tiles-count: 4 # We only want our 4 Strategic Pillars showing on the home grid
 socials:
   GitHub: https://github.com/stevenvoon
   LinkedIn: https://www.linkedin.com/in/steven-voon # Update this to your link
+  File-Pdf: "/assets/Steven_Voon_Resume.pdf"
   #Instagram:
   #Facebook:
 
@@ -45,6 +46,11 @@ collections:
 
 # build settings
 markdown: kramdown
+highlighter: rouge # Ensure Rouge is on for beautiful C# code snippets
+kramdown:
+  input: GFM # GitHub Flavored Markdown
+  syntax_highlighter: rouge
+
 
 sass:
   style: compressed

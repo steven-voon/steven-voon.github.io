@@ -78,3 +78,453 @@
 	@import 'layout/footer';
 	@import 'layout/wrapper';
 	@import 'layout/menu';
+
+
+.project-tags-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start; /* Keeps everything anchored to the left */
+    align-items: flex-start;
+    padding: 2rem 0;
+}
+
+
+.project-tag-item {
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+    will-change: transform, opacity;
+	transform-style: preserve-3d;
+
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	margin-bottom: 15px;
+    margin-right: 15px;
+    width: auto !important;
+
+    transition: 
+		top 0.8s cubic-bezier(0.2, 1, 0.3, 1), 
+        left 0.8s cubic-bezier(0.2, 1, 0.3, 1),
+        transform 0.8s cubic-bezier(0.2, 1, 0.3, 1), 
+        opacity 0.6s ease,
+        background 0.3s ease,
+        border-color 0.3s ease;
+
+		
+	-webkit-font-smoothing: antialiased;
+}
+
+
+.tag-content {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.tag-thumb {
+    width: 85px;  /* Larger thumbnail */
+    height: 85px;
+    min-width: 85px;
+    overflow: hidden;
+    background: #000;
+}
+
+
+.tag-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.tag-text {
+	padding: 0 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+}
+
+.project-title {
+	display: block; /* Ensures it takes up the full width of the stack */
+	margin-bottom: 4px; /* Space between title and hardware */
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.project-hardware {
+ 	display: block;
+    font-size: 0.65rem;       /* Smaller, technical look */
+    text-transform: uppercase; /* Professional labeling style */
+    letter-spacing: 1px;       /* Increased readability for small caps */
+    color: #9bf1ff;            /* A subtle accent color to separate it from the title */
+    opacity: 0.7;
+    margin-top: 2px;
+}
+
+.project-tag-item:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #9bf1ff;
+    z-index: 100;
+    transform: scale(1.03); 
+}
+
+.project-tag-item.fade-in {
+    animation: pillFadeIn 0.5s forwards;
+}
+
+@keyframes pillFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#project-grid {
+	width: 100%;
+    position: relative;
+    display: block; /* Important: Isotope handles display internally */
+}
+
+/* 2. The Floating Image Preview Styling */
+#project-preview-window {
+    position: fixed;
+    width: 320px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    pointer-events: none; /* Allows you to click the links 'through' the image */
+    z-index: 1000;
+    opacity: 0;
+    border-radius: 8px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: opacity 0.3s ease;
+    display: block;
+}
+
+/* 3. Mobile Adjustments */
+@include breakpoint(small) {
+    .project-tag-item {
+        min-width: calc(100% - 16px); // Makes pills full-width on mobile
+        max-width: 100%;
+        margin: 8px 0;
+    }
+    
+    #project-preview-window {
+        display: none !important; // Hide floating preview on touch devices
+    }
+}
+
+/* 4. Link fix (prevents Forty theme default underline) */
+.tag-link {
+    border-bottom: none !important;
+    &:hover {
+        border-bottom: none !important;
+    }
+}
+
+/*
+#header.reveal {
+    background-color: #242943 !important;
+    position: fixed !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+*/
+
+
+/* Base header state */
+#header {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    /* This makes the background color fade smoothly */
+    transition: background-color 0.3s ease, opacity 0.3s ease !important;
+}
+
+/* Transparent State */
+#header.alt {
+    background-color: transparent !important;
+    box-shadow: none;
+}
+
+/* Solid State */
+#header.reveal {
+    background-color: #242943 !important; /* Forty Theme Navy */
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* Container for the featured links */
+.featured-links {
+    margin: 1.5rem 0 2.5rem 0;
+    padding: 1.25rem 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid #9bf1ff;
+}
+
+.featured-links .label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #9bf1ff;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.featured-links .link-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Bigger, clearer buttons */
+.featured-links .button.small {
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+    color: #ffffff !important;
+    font-size: 0.95rem !important; /* Increased font size */
+    font-weight: 400;
+    text-transform: none !important;
+    height: 3.25rem !important; /* Slightly taller for the bigger text */
+    line-height: 3.25rem !important;
+    padding: 0 1.75rem !important;
+    transition: all 0.3s ease !important;
+}
+
+/* The Arrow Icon Styling */
+.featured-links .button.icon:before {
+    font-size: 0.85rem;
+    margin-right: 0.75rem;
+    color: #9bf1ff;
+    transition: transform 0.3s ease !important; /* Animation trigger */
+    display: inline-block;
+}
+
+/* Hover State: Nudge the arrow and glow the border */
+.featured-links .button.small:hover {
+    box-shadow: inset 0 0 0 2px #9bf1ff;
+    background-color: rgba(155, 241, 255, 0.1);
+    color: #9bf1ff !important;
+}
+
+.featured-links .button.small:hover:before {
+    transform: translateX(6px); /* The Nudge Effect */
+}
+
+
+
+/* Lock the height to prevent content jumping */
+.subtitle-typewriter {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #9bf1ff;
+    margin-bottom: 1rem !important;
+    font-weight: 600;
+    
+    /* Adjust this height if your text wraps on mobile */
+    min-height: 1.5em; 
+    display: block;
+}
+
+.typewriter-wrap {
+    display: inline-block;
+}
+
+/* Improve the mission statement readability */
+.mission-statement {
+    max-width: 650px;
+    line-height: 1.8 !important;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Blinking cursor */
+.cursor {
+    font-weight: bold;
+    color: #9bf1ff;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+
+#all-projects-cta {
+    background-color: #242943; /* Match theme background or use a slightly lighter shade */
+    background-image: linear-gradient(rgba(36, 41, 67, 0.8), rgba(36, 41, 67, 0.8)), url('assets/images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect for a techy feel */
+    padding: 4rem 0;
+    text-align: center;
+    border-top: 1px solid rgba(155, 241, 255, 0.2);
+}
+
+#all-projects-cta .inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#all-projects-cta h2 {
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+#all-projects-cta p {
+    color: #9bf1ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
+
+/* Make the button stand out */
+#all-projects-cta .button.primary {
+    background-color: #9bf1ff !important;
+    color: #242943 !important;
+    box-shadow: none;
+    font-weight: 700;
+}
+
+#all-projects-cta .button.primary:hover {
+    background-color: #ffffff !important;
+    transform: scale(1.05);
+}
+
+/* Archive Table Styling */
+.archive-table {
+    margin-top: 2rem;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Creates a "row" feel */
+}
+
+.archive-table tbody tr {
+    background: rgba(255, 255, 255, 0.02);
+    transition: background 0.3s ease;
+}
+
+.archive-table tbody tr:hover {
+    background: rgba(155, 241, 255, 0.05);
+}
+
+.archive-table td {
+    vertical-align: middle;
+    padding: 1rem !important;
+}
+
+.archive-table thead th {
+    color: #9bf1ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.7rem;
+    border-bottom: 2px solid rgba(155, 241, 255, 0.2);
+}
+
+
+.archive-filters {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-btn {
+    background: transparent !important;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+    color: #ffffff !important;
+    padding: 0 1.5rem !important;
+    height: 2.5rem !important;
+    line-height: 2.5rem !important;
+    font-size: 0.7rem !important;
+    letter-spacing: 1px;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    box-shadow: inset 0 0 0 2px #9bf1ff !important;
+    color: #9bf1ff !important;
+}
+
+.col-label {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+/* Row transition for smooth filtering */
+.archive-row {
+    transition: all 0.3s ease;
+}
+
+.archive-row.hidden {
+    display: none;
+}
+
+/* Container must have hidden scrollbar but allow scrolling */
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+    border-radius: 8px;
+    cursor: grab;
+    user-select: none; /* Prevents text/image selection while dragging */
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.carousel-container:active {
+    cursor: grabbing;
+}
+
+/* Items must explicitly tell the container where to snap */
+.carousel-item {
+    flex: 0 0 100%;
+    width: 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+    background: #1a1e35;
+    pointer-events: none;
+    -webkit-user-drag: none;
+}
+
+/* Dots Styling */
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(155, 241, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* JS will toggle this class */
+.dot.active {
+    background: #9bf1ff;
+    box-shadow: 0 0 8px #9bf1ff;
+    transform: scale(1.2);
+}

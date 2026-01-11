@@ -1,5 +1,5 @@
 <!-- Contact -->
-
+<!---
 <section id="clients" style="background: #242943; padding: 3em 0 1em 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
     <div class="inner">
         <header class="major" style="text-align: center;">
@@ -14,6 +14,7 @@
         </div>
     </div>
 </section>
+-->
 
 <section id="contact">
 	<div class="inner">
@@ -106,3 +107,76 @@
 	<script src="{{ "assets/js/util.js" | absolute_url }}"></script>
 	<!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
 	<script src="{{ "assets/js/main.js" | absolute_url }}"></script>
+
+
+	<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function() {
+	var grid = document.querySelector('#project-grid');
+    var filterMenu = document.querySelector('#filters');
+
+    if (grid) {
+        var iso = new Isotope(grid, {
+            itemSelector: '.project-tag-item',
+            layoutMode: 'masonry',
+			isTransitionsEnabled: false,
+			transitionDuration: 0,
+            masonry: {
+                // FIX: Setting columnWidth to a small number (1) 
+                // allows pills of all different widths to pack tightly.
+                columnWidth: 1, 
+                horizontalOrder: true
+            },
+            // FIX: Slow down the duration for a more "elegant" flight
+            hiddenStyle: {
+                opacity: 0,
+                transform: 'scale(0.5) translateY(30px)'
+            },
+            visibleStyle: {
+                opacity: 1,
+                transform: 'scale(1) translateY(0)'
+            }
+        });
+
+        imagesLoaded(grid, function() {
+            iso.layout();
+        });
+
+        if (filterMenu) {
+            filterMenu.addEventListener('click', function(event) {
+                if (!event.target.matches('a')) return;
+                event.preventDefault();
+                var filterValue = event.target.getAttribute('data-filter');
+                iso.arrange({ filter: filterValue });
+                
+                filterMenu.querySelectorAll('a').forEach(btn => btn.classList.remove('primary'));
+                event.target.classList.add('primary');
+            });
+        }
+    }
+
+	const spotlightButtons = document.querySelectorAll('[data-select]');
+	spotlightButtons.forEach(button => {
+		button.addEventListener('click', function(e) {
+			// e.preventDefault(); // Uncomment if you don't want the page to jump to #filters
+			
+			const selection = this.getAttribute('data-select');
+			const filterTarget = '.' + selection;
+
+			// 1. Tell Isotope to filter
+			iso.arrange({ filter: filterTarget });
+
+			// 2. Update the visual state of the filter bar buttons
+			const filterBar = document.querySelector('#filters');
+			if (filterBar) {
+				filterBar.querySelectorAll('a').forEach(btn => btn.classList.remove('primary'));
+				const activeBtn = filterBar.querySelector(`[data-filter="${filterTarget}"]`);
+				if (activeBtn) activeBtn.classList.add('primary');
+			}
+		});
+	});
+
+	});
+	</script>

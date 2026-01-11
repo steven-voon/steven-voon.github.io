@@ -12,41 +12,26 @@
 
     {% include header.html %}
 
-    <!-- Banner -->
     <section id="banner" class="major">
         <div class="inner">
             <header class="major">
                 <h1>{{ page.landing-title }}</h1>
             </header>
+                <p class="subtitle-typewriter">
+                    <span class="typewriter-wrap">
+                        <span class="typewriter" data-wait="2000" 
+                            data-words='["XR Architect", "Technical Lead", "Spatial Consultant"]'></span>
+                        <span class="cursor">|</span>
+                    </span>
+                </p>
             <div class="content">
-                <p style="text-transform: uppercase;">{{ site.description }}</p>
+                <p class="mission-statement">{{ site.landing-description }}</p>           
                 <ul class="actions">
-                    <li><a href="#one" class="button next scrolly">Get Started</a></li>
+                    <li><a href="#one" class="button next scrolly">View Portfolio</a></li>
                 </ul>
             </div>
         </div>
     </section>
-
-<!--
-    <div id="main">
-
-        #One
-        {% include tiles.html %}
-
-        #Two
-        <section id="two">
-            <div class="inner">
-                <header class="major">
-                    <h2>Massa libero</h2>
-                </header>
-                <p>{{ content }}</p>
-                <ul class="actions">
-                    <li><a href="landing.html" class="button next">Get Started</a></li>
-                </ul>
-            </div>
-        </section>
-    </div>
--->
 
     <div id="main">
         <section id="one" class="tiles">
@@ -60,29 +45,96 @@
             <article>
                 <span class="image"><img src="assets/images/ar-banner.jpg" alt="" /></span>
                 <header class="major">
-                    <h3><a href="/category/augmented-reality" class="link">Augmetend Reality</a></h3>
+                    <h3><a href="/category/augmented-reality" class="link">Augmented Reality</a></h3>
                     <p>Heritage Portals • Retail • Location-Based</p>
                 </header>
             </article>
             <article>
-                <span class="image"><img src="assets/images/leadership_banner.jpg" alt="" /></span>
+                <span class="image"><img src="assets/images/leadership-banner.jpg" alt="" /></span>
                 <header class="major">
                     <h3><a href="/category/technical-leadership" class="link">Technical Leadership</a></h3>
                     <p>Mentorships • Digitization Consultation • Project Management</p>
                 </header>
             </article>
             <article>
-                <span class="image"><img src="assets/images/lab_banner.jpg" alt="" /></span>
+                <span class="image"><img src="assets/images/lab-banner.jpg" alt="" /></span>
                 <header class="major">
                     <h3><a href="/category/the-lab" class="link">The R&D Lab</a></h3>
-                    <p>MOCAP • Prototype Experiments • Workshops</p>
+                    <p>MOCAP • Volumetric Capture • Prototype Experiments • Workshops</p>
                 </header>
             </article>
         </section>
     </div>
+
+    <section id="all-projects-cta" class="wrapper style2 special">
+        <div class="inner">
+            <header class="major">
+                <h2>Ready to see the full scope?</h2>
+                <p>Explore the complete archive of technical architectures, lab experiments, and spatial solutions.</p>
+            </header>
+            <ul class="actions stacked">
+                <li>
+                    <a href="/all-projects" class="button primary large next">View All Projects</a>
+                </li>
+            </ul>
+        </div>
+    </section>
 
     {% include footer.html %}
 
 </body>
 
 </html>
+
+
+
+<script>
+class TypeWriter {
+    constructor(txtElement, words, wait = 3000) {
+        this.txtElement = txtElement;
+        this.words = words;
+        this.txt = '';
+        this.wordIndex = 0;
+        this.wait = parseInt(wait, 10);
+        this.type();
+        this.isDeleting = false;
+    }
+
+    type() {
+        const current = this.wordIndex % this.words.length;
+        const fullTxt = this.words[current];
+
+        if(this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.txtElement.innerHTML = this.txt;
+
+        let typeSpeed = 100;
+
+        if(this.isDeleting) { typeSpeed /= 2; }
+
+        if(!this.isDeleting && this.txt === fullTxt) {
+            typeSpeed = this.wait;
+            this.isDeleting = true;
+        } else if(this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.wordIndex++;
+            typeSpeed = 500;
+        }
+
+        setTimeout(() => this.type(), typeSpeed);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', init);
+
+function init() {
+    const txtElement = document.querySelector('.typewriter');
+    const words = JSON.parse(txtElement.getAttribute('data-words'));
+    const wait = txtElement.getAttribute('data-wait');
+    new TypeWriter(txtElement, words, wait);
+}
+</script>

@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Muzium Koperasi AR Portal"
-pillar: "ar-solutions"
-role: "Technical Lead"
-client: "ANGKASA Malaysia"
-exhibition: "National Cooperative Event"
-technologies: ["Unity", "ARFoundation", "Portal Logic"]
+title: "MARGIC"
+image: "/assets/images/pic04.jpg"
+pillar: "augmented-reality"
+genre: "marketing"
+hardware: "Mobile AR"
+technologies: ["AR Portal", "Unity"]
 ---
 
 ### The Vision

@@ -128,11 +128,13 @@
 			});
 
 		// Scrolly.
-			$('.scrolly').scrolly({
-				offset: function() {
-					return $header.height() - 2;
-				}
-			});
+		$('.scrolly').scrolly({
+			offset: function() {
+				// Adding 40px extra cushion so the #filters aren't 
+				// touching the bottom of the sticky header.
+				return $header.height() + 40; 
+			}
+		});
 
 		// Tiles.
 			var $tiles = $('.tiles > article');
@@ -200,26 +202,25 @@
 			if (skel.vars.IEVersion < 9)
 				$header.removeClass('alt');
 
-			if ($banner.length > 0
-			&&	$header.hasClass('alt')) {
+			if ($header.hasClass('alt')) {
 
-				$window.on('resize', function() {
-					$window.trigger('scroll');
+				$window.on('scroll', function() {
+					// Change '50' to however many pixels you want to scroll 
+					// before the background becomes solid.
+					if ($window.scrollTop() > 50) {
+						if ($header.hasClass('alt')) {
+							$header.removeClass('alt').addClass('reveal');
+						}
+					} else {
+						if (!$header.hasClass('alt')) {
+							$header.addClass('alt').removeClass('reveal');
+						}
+					}
 				});
 
+				// Trigger once on load to set the correct state
 				$window.on('load', function() {
-
-					$banner.scrollex({
-						bottom:		$header.height() + 10,
-						terminate:	function() { $header.removeClass('alt'); },
-						enter:		function() { $header.addClass('alt'); },
-						leave:		function() { $header.removeClass('alt'); $header.addClass('reveal'); }
-					});
-
-					window.setTimeout(function() {
-						$window.triggerHandler('scroll');
-					}, 100);
-
+					$window.trigger('scroll');
 				});
 
 			}
