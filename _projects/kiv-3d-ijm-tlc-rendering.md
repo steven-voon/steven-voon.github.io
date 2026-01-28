@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Rising Tide"
+title: "IJM The Light City Video Rendering"
 image: "/assets/images/pic04.jpg"
-pillar: "augmented-reality"
-genre: "heritage"
-company: "Maitree House"
-hardware: "Mobile AR"
-technologies: ["AR Portal", "Unity"]
-project_url: "https://www.ceritalah.com" # Referral link
-video_id: "https://www.youtube.com/watch?v=GIYklSH7qoA&list=PLfLzhRAcLiXRHTuJPkCSowJI48C6dzXj0&index=1"
+pillar: "3d-rendering"
+genre: "marketing"
+company: "Creatinno Tech"
+hardware: "Screen"
+technologies: ["Twinmotion", "Premiere Pro"]
 ---
 
 <div class="project-specs" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-left: 4px solid #9bf1ff; margin-top: -2.5rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;">

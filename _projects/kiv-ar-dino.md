@@ -1,14 +1,11 @@
 ---
 layout: post
-title: "Coloring AR"
+title: "AR Dino T-Shirt"
 image: "/assets/images/pic04.jpg"
-pillar: "the-lab"
-genre: "edutainment"
-company: "Creatinno Tech"
+pillar: "augmented-reality"
+genre: "marketing"
 hardware: "Mobile"
 technologies: ["AR", "Unity"]
-project_url: "https://www.ceritalah.com"
-video_id: "https://www.youtube.com/watch?v=GIYklSH7qoA&list=PLfLzhRAcLiXRHTuJPkCSowJI48C6dzXj0&index=1"
 ---
 
 ### The Vision

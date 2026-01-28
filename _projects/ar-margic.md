@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "Interior Design Walkthrough"
+title: "MARGIC"
 image: "/assets/images/pic04.jpg"
 pillar: "augmented-reality"
-genre: "retail"
-hardware: "Mobile AR"
-technologies: ["AR Portal", "Unity"]
+genre: "marketing"
+company: "Creatinno Tech"
+hardware: "Mobile"
+technologies: ["AR", "Unity"]
 ---
 
 ### The Vision

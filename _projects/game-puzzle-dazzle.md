@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Coloring AR"
+title: "LearnAR"
 image: "/assets/images/pic04.jpg"
-pillar: "the-lab"
+pillar: "game"
 genre: "edutainment"
-company: "Creatinno Tech"
+company: "Puzzle Dazzle"
 hardware: "Mobile"
-technologies: ["AR", "Unity"]
-project_url: "https://www.ceritalah.com"
-video_id: "https://www.youtube.com/watch?v=GIYklSH7qoA&list=PLfLzhRAcLiXRHTuJPkCSowJI48C6dzXj0&index=1"
+technologies: ["Unity"]
 ---
 
 ### The Vision

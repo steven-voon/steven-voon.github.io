@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "MARGIC"
+title: "MOCAP Workshop - Three"
 image: "/assets/images/pic04.jpg"
-pillar: "augmented-reality"
-genre: "marketing"
-hardware: "Mobile AR"
-technologies: ["AR Portal", "Unity"]
+pillar: "technical-leadership"
+genre: "capacity-building"
+company: "Maitree House"
+hardware: "Rokoko Suit"
+technologies: ["Rokoko Studio", "Unity"]
 ---
 
 ### The Vision

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "PlanTerengganu Postcard"
+title: "LearnAR"
 image: "/assets/images/pic04.jpg"
-pillar: "augmented-reality"
-genre: "event"
-company: "Creatinno Tech PLT"
-hardware: "Mobile AR"
-technologies: ["AR Portal", "Unity"]
+pillar: "game"
+genre: "learning"
+company: "Impact Volution"
+hardware: "Web Browser"
+technologies: ["Unity"]
 ---
 
 ### The Vision

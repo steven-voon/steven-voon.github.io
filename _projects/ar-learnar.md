@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "DECORA"
+title: "LearnAR"
 image: "/assets/images/pic04.jpg"
-pillar: "augmented-reality"
-genre: "retail"
-hardware: "Mobile AR"
-technologies: ["AR Portal", "Unity"]
+pillar: "mobile-app"
+genre: "education"
+company: "Creatinno Tech"
+hardware: "Mobile"
+technologies: ["AR", "Unity"]
 ---
 
 ### The Vision

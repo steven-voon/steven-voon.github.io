@@ -1,17 +1,14 @@
 ---
 layout: post
-title: "Sidewalks Asia"
+title: "Lucky Roulette"
 image: "/assets/images/pic04.jpg"
-pillar: "augmented-reality"
-genre: "heritage"
-company: "Maitree House"
-hardware: "Mobile AR"
-technologies: ["AR Portal", "Unity"]
+pillar: "web-system"
+genre: "entertinament"
+company: "Creatinno Tech"
+hardware: "Web"
+technologies: ["ReactJS", Firebase]
 project_url: "https://www.ceritalah.com" # Referral link
-carousel_images: 
-  - "/assets/images/pic07.jpg"
-  - "/assets/images/pic07.jpg"
-  - "/assets/images/pic07.jpg"
+video_id: "https://www.youtube.com/watch?v=GIYklSH7qoA&list=PLfLzhRAcLiXRHTuJPkCSowJI48C6dzXj0&index=1"
 ---
 
 <div class="project-specs" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-left: 4px solid #9bf1ff; margin-top: -2.5rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;">
@@ -25,47 +22,20 @@ carousel_images:
     <div>
         <h2 style="margin-top: 0;">The Vision</h2>
         <p><strong>Ceritalah</strong> is a location-based AR platform designed to bridge Malaysian history with modern spatial computing.</p> 
-        <p>As <strong>Technical Lead</strong>, my goal was to move beyond simple markers and create a "world-scale" AR experience.</p>     
+        <p>As <strong>Technical Lead</strong>, my goal was to move beyond simple markers and create a "world-scale" AR experience that feels persistent and integrated into the physical environment.</p>     
     </div>
-    <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); position: relative; overflow: hidden;">         
-        <button onclick="document.getElementById('case-study-carousel').scrollBy({left: -document.getElementById('case-study-carousel').offsetWidth, behavior: 'smooth'})" 
-            style="position: absolute; left: 25px; top: 50%; transform: translateY(-50%); z-index: 5; background: transparent !important; border: none !important; outline: none !important; box-shadow: none !important; color: white; font-size: 2.2rem; cursor: pointer; text-shadow: 0px 0px 15px rgba(0,0,0,0.9); transition: all 0.3s ease; padding: 10px; min-width: 44px; display: flex; align-items: center; justify-content: center;"
-            onmouseover="this.style.opacity='0.6'; this.style.transform='translateY(-50%) scale(1.1)';" 
-            onmouseout="this.style.opacity='1'; this.style.transform='translateY(-50%) scale(1)';">
-            &#10094;
-        </button>
-        <button onclick="document.getElementById('case-study-carousel').scrollBy({left: document.getElementById('case-study-carousel').offsetWidth, behavior: 'smooth'})" 
-            style="position: absolute; right: 25px; top: 50%; transform: translateY(-50%); z-index: 5; background: transparent !important; border: none !important; outline: none !important; box-shadow: none !important; color: white; font-size: 2.2rem; cursor: pointer; text-shadow: 0px 0px 15px rgba(0,0,0,0.9); transition: all 0.3s ease; padding: 10px; min-width: 44px; display: flex; align-items: center; justify-content: center;"
-            onmouseover="this.style.opacity='0.6'; this.style.transform='translateY(-50%) scale(1.1)';" 
-            onmouseout="this.style.opacity='1'; this.style.transform='translateY(-50%) scale(1)';">
-            &#10095;
-        </button>
-        <div id="case-study-carousel" class="carousel-container" style="cursor: grab;">
-            {% for img in page.carousel_images %}
-            <div class="carousel-item">
-                <img src="{{ img }}" alt="Project slide" style="pointer-events: none; -webkit-user-drag: none;">
-            </div>
-            {% endfor %}
+    {% if page.video_id %}
+    <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+        <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+            <iframe src="https://www.youtube.com/embed/{{ page.video_id }}" 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                    frameborder="0" allowfullscreen></iframe>
         </div>
-        <style>
-            .dot { 
-                width: 6px; height: 6px; border-radius: 50%; 
-                background: rgba(155, 241, 255, 0.3); transition: all 0.3s ease; 
-            }
-            .dot.active { 
-                background: #9bf1ff !important; 
-                box-shadow: 0 0 8px #9bf1ff; transform: scale(1.3); 
-            }
-        </style>
-        <div class="carousel-dots" style="display: flex; justify-content: center; gap: 8px; margin-top: 10px;">
-            {% for img in page.carousel_images %}
-            <div class="dot {% if forloop.first %}active{% endif %}"></div>
-            {% endfor %}
-        </div>                 
-        <p style="font-size: 0.7rem; text-align: center; margin: 0.5rem 0 0 0; color: #9bf1ff; letter-spacing: 1px; text-transform: uppercase; opacity: 0.6;">
-            Swipe or use arrows to view
+        <p style="font-size: 0.7rem; text-align: center; margin: 0.5rem 0 0 0; color: #9bf1ff; letter-spacing: 1px; text-transform: uppercase;">
+            Technical Demo: VPS Localization
         </p>
     </div>
+    {% endif %}
 </div>
 
 
@@ -79,7 +49,6 @@ carousel_images:
 </div>
 
 > **Leadership Note:** Coordinated a remote team of 3 developers and 1 software agency, conducting weekly code reviews and defining the CI/CD pipeline via GitHub Actions to ensure a 0% regression rate on new features.
-
 
 ### 🛠️ Core Engineering Challenges
 
@@ -141,6 +110,7 @@ To ensure the app remained maintainable for a remote team, I implemented a decou
 <div style="background: rgba(155, 241, 255, 0.03); border: 1px solid rgba(155, 241, 255, 0.2); padding: 2rem; border-radius: 8px; margin: 2rem 0;">
     <h4 style="color: #9bf1ff; margin-top: 0;">Post-Mortem & Lessons Learned</h4>
     <p style="font-size: 0.95rem;">Building for the "Wild" (outdoor AR) proved that <strong>Environmental UX</strong> is as critical as the code. High-noon sunlight in Malaysia causes aggressive thermal throttling; our next iteration will move tracking logic to background threads more aggressively.</p>
+    
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem;">
         <div>
             <h5 style="font-size: 0.7rem; letter-spacing: 1px; color: #ff9b9b; text-transform: uppercase;">Technical Debt</h5>
@@ -160,50 +130,3 @@ To ensure the app remained maintainable for a remote team, I implemented a decou
 </div>
 
 ---
-
-
-<script>
-    const carousel = document.getElementById('case-study-carousel');
-    const dots = document.querySelectorAll('.dot');
-    
-    // --- Dot Logic ---
-    const updateDots = () => {
-        const index = Math.round(carousel.scrollLeft / carousel.offsetWidth);
-        dots.forEach((dot, i) => {
-            dot.classList.toggle('active', i === index);
-        });
-    };
-    carousel.addEventListener('scroll', updateDots);
-
-    // --- Mouse Drag-to-Scroll Logic ---
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-
-    carousel.addEventListener('mousedown', (e) => {
-        isDown = true;
-        carousel.style.cursor = 'grabbing';
-        carousel.style.scrollSnapType = 'none'; // Temporarily disable snap to allow free drag
-        startX = e.pageX - carousel.offsetLeft;
-        scrollLeft = carousel.scrollLeft;
-    });
-
-    carousel.addEventListener('mouseleave', () => {
-        isDown = false;
-        carousel.style.cursor = 'grab';
-    });
-
-    carousel.addEventListener('mouseup', () => {
-        isDown = false;
-        carousel.style.cursor = 'grab';
-        carousel.style.scrollSnapType = 'x mandatory'; // Re-enable snap
-    });
-
-    carousel.addEventListener('mousemove', (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - carousel.offsetLeft;
-        const walk = (x - startX) * 2; // Scroll speed multiplier
-        carousel.scrollLeft = scrollLeft - walk;
-    });
-</script>

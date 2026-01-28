@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "Into the Metaverse"
+title: "BioticX"
 image: "/assets/images/pic04.jpg"
-pillar: "technical-leadership"
-genre: "learning"
-hardware: "Mobile AR"
-technologies: ["AR Portal", "Unity"]
+pillar: "virtual-reality"
+genre: "storytelling"
+company: "Maitree House"
+hardware: "Meta Quest 2"
+technologies: ["Meta SDK", "Unity"]
 ---
 
 ### The Vision

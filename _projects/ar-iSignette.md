@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "Deepavali Postcard"
+title: "iSignette"
 image: "/assets/images/pic04.jpg"
 pillar: "augmented-reality"
-genre: "event"
-hardware: "Mobile AR"
-technologies: ["AR Portal", "Unity"]
+genre: "education"
+company: "University Malaysia Sabah"
+hardware: "Mobile"
+technologies: ["AR", "Unity"]
 ---
 
 ### The Vision

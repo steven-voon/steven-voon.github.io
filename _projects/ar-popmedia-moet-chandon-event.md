@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Petronas Primax 95 Event"
+title: "Moet and Chandon Event"
 image: "/assets/images/pic04.jpg"
 pillar: "augmented-reality"
 genre: "event"
 company: "Virtual Logic"
-hardware: "Mobile AR"
-technologies: ["AR Portal", "Unity"]
+hardware: "Mobile"
+technologies: ["AR", "Unity"]
 ---
 
 ### The Vision

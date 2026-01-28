@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "AR Drop"
+title: "Over the Rainbow"
 image: "/assets/images/pic04.jpg"
-pillar: "the-lab"
-genre: "event"
-hardware: "Mobile AR"
-technologies: ["Location Based", "Unity"]
+pillar: "virtual-reality"
+genre: "mental-health"
+company: "Avventura"
+hardware: "Meta Quest 2"
+technologies: ["Meta SDk", "Unity"]
 ---
 
 ### The Vision

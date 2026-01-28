@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Coloring AR"
+title: "Guardian of the Sea"
 image: "/assets/images/pic04.jpg"
-pillar: "the-lab"
+pillar: "virtual-reality"
 genre: "edutainment"
-company: "Creatinno Tech"
-hardware: "Mobile"
-technologies: ["AR", "Unity"]
-project_url: "https://www.ceritalah.com"
-video_id: "https://www.youtube.com/watch?v=GIYklSH7qoA&list=PLfLzhRAcLiXRHTuJPkCSowJI48C6dzXj0&index=1"
+company: ""
+hardware: "Meta Quest 2"
+technologies: ["Meta SDk", "Unity"]
 ---
 
 ### The Vision

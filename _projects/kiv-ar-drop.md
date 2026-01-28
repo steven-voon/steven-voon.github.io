@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Moet and Chandon Event"
+title: "AR Drop"
 image: "/assets/images/pic04.jpg"
-pillar: "augmented-reality"
-genre: "event"
-company: "Virtual Logic"
-hardware: "Mobile AR"
-technologies: ["AR Portal", "Unity"]
+pillar: "the-lab"
+genre: "entertainment"
+hardware: "Mobile"
+technologies: ["Geospatial", "ARcore", "ARKit", "Unity"]
 ---
 
 ### The Vision

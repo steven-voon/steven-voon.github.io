@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "AR CNY Angpau"
+title: "DanceXR Workshop"
 image: "/assets/images/pic04.jpg"
 pillar: "augmented-reality"
-genre: "marketing"
-hardware: "Mobile AR"
-technologies: ["AR Portal", "Unity"]
+genre: "heritage"
+company: "Maitree House"
+hardware: "Rokoko"
+technologies: ["MOCAP", "Unity"]
 ---
 
 ### The Vision

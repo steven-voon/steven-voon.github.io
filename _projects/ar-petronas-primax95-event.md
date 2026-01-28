@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "Welcome to Brown's Mart"
+title: "Petronas Primax 95 Event"
 image: "/assets/images/pic04.jpg"
 pillar: "augmented-reality"
-genre: "heritage"
-hardware: "Mobile AR"
-technologies: ["AR Portal", "Unity"]
+genre: "event"
+company: "Virtual Logic"
+hardware: "Mobile"
+technologies: ["AR", "Unity"]
 ---
 
 ### The Vision

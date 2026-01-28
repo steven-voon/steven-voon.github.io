@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "LearnAR"
+title: "Sharing Session - XR Worldbuilding"
 image: "/assets/images/pic04.jpg"
-pillar: "augmented-reality"
-genre: "learning"
-hardware: "Mobile AR"
-technologies: ["AR Portal", "Unity"]
+pillar: "the-lab"
+genre: "capacity-building"
+company: "Maitree House"
+hardware: ""
+technologies: ["Unity"]
 ---
 
 ### The Vision

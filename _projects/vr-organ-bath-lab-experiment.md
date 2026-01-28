@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "iSignette"
+title: "VR Organ Bath Lab Experiement"
 image: "/assets/images/pic04.jpg"
-pillar: "augmented-reality"
-genre: "learning"
-hardware: "Mobile AR"
-technologies: ["AR Portal", "Unity"]
+pillar: "virtual-reality"
+genre: "education"
+company: "Creatinno Tech"
+hardware: "Web Browser"
+technologies: ["WebGL", "Unity"]
 ---
 
 ### The Vision

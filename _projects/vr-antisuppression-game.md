@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Coloring AR"
+title: "VR Antisuppression Game"
 image: "/assets/images/pic04.jpg"
-pillar: "the-lab"
-genre: "edutainment"
+pillar: "virtual-reality"
+genre: "healthcare"
 company: "Creatinno Tech"
-hardware: "Mobile"
-technologies: ["AR", "Unity"]
-project_url: "https://www.ceritalah.com"
-video_id: "https://www.youtube.com/watch?v=GIYklSH7qoA&list=PLfLzhRAcLiXRHTuJPkCSowJI48C6dzXj0&index=1"
+hardware: "Meta Quest 3"
+technologies: ["Meta SDK", "Unity"]
 ---
 
 ### The Vision

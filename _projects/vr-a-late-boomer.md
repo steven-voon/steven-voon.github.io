@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Coloring AR"
+title: "A Late Boomer"
 image: "/assets/images/pic04.jpg"
-pillar: "the-lab"
-genre: "edutainment"
-company: "Creatinno Tech"
-hardware: "Mobile"
-technologies: ["AR", "Unity"]
-project_url: "https://www.ceritalah.com"
-video_id: "https://www.youtube.com/watch?v=GIYklSH7qoA&list=PLfLzhRAcLiXRHTuJPkCSowJI48C6dzXj0&index=1"
+pillar: "virtual-reality"
+genre: "storytelling"
+company: "Maitree House"
+hardware: "Meta Quest 2"
+technologies: ["Meta SDK", "Rokoko Suit", "Unity"]
 ---
 
 ### The Vision

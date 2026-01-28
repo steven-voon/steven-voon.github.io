@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "AR Dino T-Shirt"
+title: "Cloudlines"
 image: "/assets/images/pic04.jpg"
-pillar: "augmented-reality"
-genre: "marketing"
-hardware: "Mobile AR"
-technologies: ["Marketing", "Unity"]
+pillar: "virtual-reality"
+genre: "storytelling"
+company: "Maitree House"
+hardware: "Meta Quest 2"
+technologies: ["Meta SDK", "Unity"]
 ---
 
 ### The Vision
