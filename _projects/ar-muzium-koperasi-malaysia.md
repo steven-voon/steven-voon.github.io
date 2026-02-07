@@ -46,7 +46,7 @@ technologies: ["Unity", "ARCore", "ARKit", "C#", "Blender"]
     <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">Blender</span>
 </div>
 
-> **Leadership Note:** Coordinated a remote team of 3 developers and 1 software agency, conducting weekly code reviews and defining the CI/CD pipeline via GitHub Actions to ensure a 0% regression rate on new features.
+> **Leadership Note:** Perform technical feasibility study on requirement and advise appropriate tech stack. Identify technical limitation and advise workaround.
 
 ### 🛠️ Core Engineering Challenges
 
