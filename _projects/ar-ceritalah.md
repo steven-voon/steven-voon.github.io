@@ -68,8 +68,7 @@ technologies: ["AR", "Unity"]
 
 <div style="background: rgba(155, 241, 255, 0.03); border: 1px solid rgba(155, 241, 255, 0.2); padding: 2rem; border-radius: 8px; margin: 2rem 0;">
     <h4 style="color: #9bf1ff; margin-top: 0;">Post-Mortem & Lessons Learned</h4>
-    <p style="font-size: 0.95rem;">Building for the "Wild" (outdoor AR) proved that <strong>Environmental UX</strong> is as critical as the code. High-noon sunlight in Malaysia causes aggressive thermal throttling; our next iteration will move tracking logic to background threads more aggressively.</p>
-    
+    <p style="font-size: 0.95rem;">Building for the "Wild" (outdoor AR) proved that <strong>Environmental UX</strong> is as critical as the code. High-noon sunlight in Malaysia causes aggressive thermal throttling; our next iteration will move tracking logic to background threads more aggressively.</p>  
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem;">
         <div>
             <h5 style="font-size: 0.7rem; letter-spacing: 1px; color: #ff9b9b; text-transform: uppercase;">Technical Debt</h5>

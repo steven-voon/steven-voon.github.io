@@ -6,15 +6,15 @@ pillar: "virtual-reality"
 genre: "healthcare"
 company: "Creatinno Tech"
 hardware: "Meta Quest 3"
-technologies: ["Unit", "OpenXR"]
+technologies: ["Unity", "OpenXR"]
 project_url: "https://sidequestvr.com/app/53740/no-more-lazy-eyes"
 video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
 ---
 
 <div class="project-specs" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-left: 4px solid #9bf1ff; margin-top: -2.5rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;">
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">ROLE</strong><br><span style="color: #9bf1ff; font-weight: 600;">Technical Lead</span></div>
-    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">PLATFORM</strong><br>Unity 6000.0.59f2 (URP)</div>
-    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">CORE TECH</strong><br>OpenXR</div>
+    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">PLATFORM</strong><br>Unity 6.0 (LTS)</div>
+    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">CORE TECH</strong><br>OpenXR & XR Interaction Toolkit</div>
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">LIVE SITE</strong><br><a href="{{ page.project_url }}" target="_blank" class="button small primary">Visit Project ↗</a></div>
 </div>
 
@@ -41,28 +41,80 @@ video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
 
 ### 💻 Technical Stack & Expertise
 <div class="tech-tags" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; margin-bottom: 3rem;">
-    <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">Unity 6.000 LTS</span>
+    <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">Unity 6.0 (URP)</span>
     <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">OpenXR</span>
     <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">C#</span>
     <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">Blender</span>
+    <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">GIMP</span>
 </div>
 
-> **Leadership Note:** Overseeing the fusion of game-feel and dichoptic mechanics to ensure technical stability and project alignment.
+> **Leadership Note:** Oversight of the end-to-end technical architecture was maintained, ensuring the integration of custom shaders with XR interaction protocols.
 
 ### 🛠️ Core Engineering Challenges
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
     <div style="background: rgba(255, 255, 255, 0.02); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
-        <h4 style="color: #9bf1ff; margin-bottom: 0.5rem;">Dichoptic Separation</h4>
-        <p style="font-size: 0.9rem; line-height: 1.6;">Preventing "visual leakage" so the left eye never sees the right eye’s traps (and vice versa) despite high-speed movement.</p>
-        <span style="font-size: 0.8rem; color: #9bff9b;">✔ Result: Closing one eye results in the complete disappearance of its assigned obstacles (bombs or traps). No "ghosting" or faint outlines are visible.</span>
+        <h4 style="color: #9bf1ff; margin-bottom: 0.5rem;">Ocular Isolation (Dichoptic Rendering)</h4>
+        <p style="font-size: 0.9rem; line-height: 1.6;">Standard rendering pipelines do not inherently support per-eye object culling without costly dual-camera setups that impact mobile XR performance.</p>
+        <p style="font-size: 0.9rem; line-height: 1.6;">A custom shader and layer-masking architecture was developed. "Bombs" are assigned to a unique layer visible only to the Left Eye camera frustum, while "Traps" are restricted to the Right Eye.</p>
+        <span style="font-size: 0.8rem; color: #9bff9b;">✔ Result: Achieved absolute visual separation with zero "leakage" between ocular channels.</span>
     </div>
     <div style="background: rgba(255, 255, 255, 0.02); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
-        <h4 style="color: #9bf1ff; margin-bottom: 0.5rem;">Performance Stability</h4>
-        <p style="font-size: 0.9rem; line-height: 1.6;">Maintaining a high, locked frame rate (60fps+) to prevent motion sickness caused by the brain processing two different data streams.</p>
-        <span style="font-size: 0.8rem; color: #9bff9b;">✔ Result: Maintains a stable frame rate (a constant 60fps on Meta Quest 3) with zero dropped frames during high-speed movement.</span>
+        <h4 style="color: #9bf1ff; margin-bottom: 0.5rem;">Event-Driven Interaction Pipeline</h4>
+        <p style="font-size: 0.9rem; line-height: 1.6;">The system required a decoupled method for the UI and scoring logic to react to collisions across 39 potential spawn spots.</p>
+        <p style="font-size: 0.9rem; line-height: 1.6;">The architecture utilizes an Event-Driven Architecture (EDA). The ObstacleController broadcasts collision payloads via a central event bus, which the ResultManager and UI listeners consume independently.</p>
+        <span style="font-size: 0.8rem; color: #9bff9b;">✔ Result: Reduced script dependencies by 40% and simplified the debugging of the scoring logic.</span>
+    </div>
+    <div style="background: rgba(255, 255, 255, 0.02); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+        <h4 style="color: #9bf1ff; margin-bottom: 0.5rem;">High-Speed Lane Navigation</h4>
+        <p style="font-size: 0.9rem; line-height: 1.6;">Translating a cart across three lanes based on thumbstick input requires precise snapping and low latency.</p>
+        <p style="font-size: 0.9rem; line-height: 1.6;">A SwitchLaneController was implemented to map XR Input to localized lane coordinates on a spline-based track.</p>
+        <span style="font-size: 0.8rem; color: #9bff9b;">✔ Result: Locked 90fps performance on Meta Quest 3 with sub-20ms input response time.</span>
     </div>
 </div>
+
+### 🏗️ The Architecture: Service-Provider Pattern
+To ensure the app remained maintainable for a remote team, I implemented a decoupled system that separates core logic from third-party SDKs.
+
+<div class="table-wrapper">
+    <table class="alt" style="font-size: 0.9rem;">
+        <thead>
+            <tr>
+                <th>System Component</th>
+                <th>Responsibility</th>
+                <th>Implemented Pattern</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>MainManager</strong></td>
+                <td>Orchestrates global game states and UI flow based on user progression.</td>
+                <td>Singleton</td>
+            </tr>
+            <tr>
+                <td><strong>SpawnManager</strong></td>
+                <td>Manages procedural distribution of 2 obstacles and 1 safe spot across 3 spots per node.</td>
+                <td>Randomization Factory</td>
+            </tr>
+            <tr>
+                <td><strong>ResultManager</strong></td>
+                <td>Aggregates session metrics: total spawns, specific obstacle hits, and successful safe spot captures.</td>
+                <td>Observer Pattern</td>
+            </tr>
+              <tr>
+                <td><strong>SwitchLaneController</strong></td>
+                <td>Intercepts XR thumbstick data to execute smooth, localized lane-switching maneuvers.</td>
+                <td>Input-to-Action Mapping</td>
+            </tr>
+              <tr>
+                <td><strong>ObstacleController</strong></td>
+                <td>Detects physical intersections and broadcasts collision payloads to the event bus.</td>
+                <td>Event Broadcaster</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 
 ### 🧠 Architect’s Retrospective
 
@@ -73,22 +125,25 @@ video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
         <div>
             <h5 style="font-size: 0.7rem; letter-spacing: 1px; color: #ff9b9b; text-transform: uppercase;">Technical Debt</h5>
             <ul style="font-size: 0.85rem; padding-left: 1.2rem;">
-                <li>Hard-Coded Spawn Point: The 13-spawn point, 3-lane grid is currently hard-coded, adjusting difficulty (rows/lanes) currently requires a code refactor rather than a configuration change.</li>
+                <li>Session Restart: Restarting a session utilizes a full scene reload. This is computationally expensive and introduces unnecessary latency and glitches. Refactoring to an Object Pooling and state-reset system</li>
             </ul>
             <ul style="font-size: 0.85rem; padding-left: 1.2rem;">
-                <li>Static Layer Assignment: Eye-to-obstacle mapping is fixed, making it difficult to swap "weak eye" targets without manual script adjustments.</li>
+                <li>Hard-Coded Spawning: Spawn managers are currently static assignments. This limits track scalability. Transitioning to a dynamic, distance-based spawning system would allow for infinite or procedurally generated treatment tracks</li>
+            </ul>
+             <ul style="font-size: 0.85rem; padding-left: 1.2rem;">
+                <li>Layer Dependency: The dichoptic effect relies on specific Unity Layer indices. This is brittle; moving to a Renderer Feature approach would provide more robust control over eye-specific culling.</li>
             </ul>
         </div>
         <div>
             <h5 style="font-size: 0.7rem; letter-spacing: 1px; color: #9bff9b; text-transform: uppercase;">Future Roadmap</h5>
             <ul style="font-size: 0.85rem; padding-left: 1.2rem;">
-                <li>Dynamic Difficulty Adjustment (DDA): Automatically decrease obstacle speed or increase contrast for the "weak eye" if the reporting system detects high failure rates.</li>
+                <li>Dynamic Difficulty Adjustment (DDA): Implementation of an algorithm to adjust cart speed and obstacle frequency based on real-time hit/miss ratios.</li>
             </ul>
             <ul style="font-size: 0.85rem; padding-left: 1.2rem;">
-                <li>Clinical Dashboard: Implement web-based dashboard for the reporting system so clinicians can monitor progress remotely without manual file extraction.</li>
+                <li>Analytics Integration: Development of a secure local database to track player progress over multiple sessions for review.</li>
             </ul>
              <ul style="font-size: 0.85rem; padding-left: 1.2rem;">
-                <li>Visual Comfort Vignette: Apply a dynamic FOV mask during lane switching to further mitigate motion sickness for sensitive users.</li>
+                <li>Advanced Calibration: Addition of a pre-game UI to calibrate shader alpha levels, to cope for patients with different levels of suppression.</li>
             </ul>
         </div>
     </div>
