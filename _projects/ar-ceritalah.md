@@ -64,44 +64,6 @@ technologies: ["AR", "Unity"]
 </div>
 
 
-
----
-
-### 🏗️ The Architecture: Service-Provider Pattern
-To ensure the app remained maintainable for a remote team, I implemented a decoupled system that separates core logic from third-party SDKs.
-
-<div class="table-wrapper">
-    <table class="alt" style="font-size: 0.9rem;">
-        <thead>
-            <tr>
-                <th>Layer</th>
-                <th>Responsibility</th>
-                <th>Implementation</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>Abstraction</strong></td>
-                <td>Location Service</td>
-                <td>Interfaces for GPS, Heading, and VPS state.</td>
-            </tr>
-            <tr>
-                <td><strong>Implementation</strong></td>
-                <td>Provider Layer</td>
-                <td>Swappable modules (Google Geospatial vs. Mapbox).</td>
-            </tr>
-            <tr>
-                <td><strong>Lifecycle</strong></td>
-                <td>State Machine</td>
-                <td>Managed <em>Explore → Localize → Interact</em> flow.</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
-
----
-
 ### 🧠 Architect’s Retrospective
 
 <div style="background: rgba(155, 241, 255, 0.03); border: 1px solid rgba(155, 241, 255, 0.2); padding: 2rem; border-radius: 8px; margin: 2rem 0;">
