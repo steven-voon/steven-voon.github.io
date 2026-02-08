@@ -54,7 +54,7 @@ video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
     <div style="background: rgba(255, 255, 255, 0.02); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
-        <h4 style="color: #9bf1ff; margin-bottom: 0.5rem;">Ocular Isolation (Dichoptic Rendering)</h4>
+        <h4 style="color: #9bf1ff; margin-bottom: 0.5rem;">Dichoptic Rendering</h4>
         <p style="font-size: 0.9rem; line-height: 1.6;">Standard rendering pipelines do not inherently support per-eye object culling without costly dual-camera setups that impact mobile XR performance.</p>
         <p style="font-size: 0.9rem; line-height: 1.6;">A custom shader and layer-masking architecture was developed. "Bombs" are assigned to a unique layer visible only to the Left Eye camera frustum, while "Traps" are restricted to the Right Eye.</p>
         <span style="font-size: 0.8rem; color: #9bff9b;">✔ Result: Achieved absolute visual separation with zero "leakage" between ocular channels.</span>
@@ -71,9 +71,19 @@ video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
         <p style="font-size: 0.9rem; line-height: 1.6;">A SwitchLaneController was implemented to map XR Input to localized lane coordinates on a spline-based track.</p>
         <span style="font-size: 0.8rem; color: #9bff9b;">✔ Result: Locked 90fps performance on Meta Quest 3 with sub-20ms input response time.</span>
     </div>
+    <div style="background: rgba(255, 255, 255, 0.03); padding: 1.75rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; gap: 0.75rem;">
+        <h4 style="color: #9bf1ff; margin: 0; font-size: 1.2rem; font-weight: 600;">Dichoptic Rendering</h4>
+        <div style="font-size: 1rem; line-height: 1.5; color: rgba(255,255,255,0.9);">
+            <p style="margin: 0 0 0.75rem 0;">Standard rendering pipelines do not inherently support per-eye object culling without costly dual-camera setups that impact mobile XR performance.</p>
+            <p style="margin: 0;">A custom shader and layer-masking architecture was developed. "Bombs" are assigned to a unique layer visible only to the Left Eye, while "Traps" are restricted to the Right Eye.</p>
+        </div>
+        <div style="margin-top: 0.5rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.05); font-size: 0.95rem; color: #9bff9b; line-height: 1.2;">
+            <strong>✔ Result:</strong> Achieved absolute visual separation with zero "leakage" between ocular channels.
+        </div>
+    </div>
 </div>
 
-### 🏗️ The Architecture: Service-Provider Pattern
+### 🏗️ The Architecture: Event-Driven Architecture
 To ensure the app remained maintainable for a remote team, I implemented a decoupled system that separates core logic from third-party SDKs.
 
 <div class="table-wrapper">
