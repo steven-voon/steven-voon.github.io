@@ -13,16 +13,16 @@ video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
 
 <div class="project-specs" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-left: 4px solid #9bf1ff; margin-top: -2.5rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;">
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">ROLE</strong><br><span style="color: #9bf1ff; font-weight: 600;">Technical Lead</span></div>
-    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">PLATFORM</strong><br>Unity 2022.3 (URP)</div>
-    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">CORE TECH</strong><br>VPS & Cloud Assets</div>
+    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">PLATFORM</strong><br>Unity 6000.0.59f2 (URP)</div>
+    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">CORE TECH</strong><br>OpenXR</div>
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">LIVE SITE</strong><br><a href="{{ page.project_url }}" target="_blank" class="button small primary">Visit Project ↗</a></div>
 </div>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: start; margin-bottom: 3rem;">   
     <div>
         <h2 style="margin-top: 0;">The Vision</h2>
-        <p><strong>No More Lazy Eyes</strong> is a non-medical proof-of-concept designed to explore how gaming elements can be applied to eye coordination exercises. By using dichoptic visuals—where each eye sees different parts of the game—this demo creates an interactive environment for testing focus and engagement.</p> 
-        <p>As <strong>Unity XR Engineer</strong>, my goal was to architect a dichoptic rendering system (using shaders or layer-based cameras) that delivers distinct visual stimuli to each eye while building the game logic, calibration tools, and data-logging systems to track user engagement and coordination metrics.</p>     
+        <p><strong>No More Lazy Eyes</strong> is a gamified XR proof-of-concept that uses a custom dichoptic rendering system to facilitate binocular vision therapy through interactive gameplay.</p> 
+        <p>As <strong>Techincal Lead cum XR Engineer</strong>, my goal was to architected the dual-track rendering pipeline, engineered the core game logic, and developed calibration and data-logging systems to track coordination metrics.</p>     
     </div>
     {% if page.video_id %}
     <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
