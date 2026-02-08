@@ -79,7 +79,7 @@ video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
         </div>
         <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.95rem; color: #9bff9b; line-height: 1.5; display: flex; align-items: flex-start; gap: 0.6rem;">
             <span>✔</span> 
-            <span><strong>Result:</strong> Achieved absolute visual separation with zero "leakage" between ocular channels.</span>
+            <span><strong style="color: #9bff9b;">Result:</strong> Achieved absolute visual separation with zero "leakage" between ocular channels.</span>
         </div>
     </div>
 </div>
