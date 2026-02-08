@@ -42,8 +42,7 @@ video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
     <span style="width: 30px; height: 2px; background: #9bf1ff; display: inline-block;"></span>
     <span style="letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; color: #9bf1ff;">Engineering Deep-Dive</span>
 </h3>
-<h2 style="font-size: 2rem; margin-top: 0.5rem; color: #ffffff;">Core Engineering Challenges</h2>
-### 💻 Technical Stack & Expertise
+<h2 style="font-size: 2rem; margin-top: 0.5rem; color: #ffffff;">Technical Stack & Expertise</h2>
 <div class="tech-tags" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; margin-bottom: 3rem;">
     <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">Unity 6.0 (URP)</span>
     <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">OpenXR</span>
@@ -59,7 +58,6 @@ video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
     <span style="letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; color: #9bf1ff;">Engineering Deep-Dive</span>
 </h3>
 <h2 style="font-size: 2rem; margin-top: 0.5rem; color: #ffffff;">Core Engineering Challenges</h2>
-### 🛠️ Core Engineering Challenges
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
     <div style="background: rgba(255, 255, 255, 0.03); padding: 1.75rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; gap: 1rem;">
         <h4 style="color: #9bf1ff; margin: 0; font-size: 1.5rem; font-weight: 600; letter-spacing: -0.01em;">Dichoptic Rendering</h4>
@@ -97,8 +95,7 @@ video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
     <span style="width: 30px; height: 2px; background: #9bf1ff; display: inline-block;"></span>
     <span style="letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; color: #9bf1ff;">Engineering Deep-Dive</span>
 </h3>
-<h2 style="font-size: 2rem; margin-top: 0.5rem; color: #ffffff;">Core Engineering Challenges</h2>
-### 🏗️ The Architecture: Event-Driven Architecture
+<h2 style="font-size: 2rem; margin-top: 0.5rem; color: #ffffff;">The Architecture: Event-Driven Architecture</h2>
 <div class="table-wrapper">
     <table class="alt" style="font-size: 0.9rem;">
         <thead>
@@ -138,9 +135,11 @@ video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
     </table>
 </div>
 
-
-### 🧠 Architect’s Retrospective
-
+<h3 style="display: flex; align-items: center; gap: 12px; color: #ffffff; margin-top: 3rem;">
+    <span style="width: 30px; height: 2px; background: #9bf1ff; display: inline-block;"></span>
+    <span style="letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; color: #9bf1ff;">Engineering Deep-Dive</span>
+</h3>
+<h2 style="font-size: 2rem; margin-top: 0.5rem; color: #ffffff;">Architect’s Retrospective</h2>
 <div style="background: rgba(155, 241, 255, 0.03); border: 1px solid rgba(155, 241, 255, 0.2); padding: 2rem; border-radius: 8px; margin: 2rem 0;">
     <h4 style="color: #9bf1ff; margin-top: 0;">Post-Mortem & Lessons Learned</h4>
     <p style="font-size: 0.95rem;">The system employs a Dichoptic Event-Driven Architecture to treat amblyopia by isolating visual stimuli. A procedural spawner generates 13 rows of obstacles, utilizing a 3-lane snap-movement system to minimize cognitive load and maximize focus on binocular integration. By decoupling the Spawner, Vision Manager, and Analytics via an event bus, the system ensures data integrity. Scene reloading is utilized as the primary lifecycle anchor to guarantee a stable, clean state for every  session.</p>
