@@ -38,16 +38,11 @@ video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
     {% endif %}
 </div>
 
-<h3 style="
-    color: #ffffff; 
-    font-size: 1.5rem; 
-    border-left: 4px solid #9bf1ff; 
-    padding-left: 12px; 
-    margin-bottom: 1.5rem;
-    letter-spacing: -0.02em;
-">
-    Engineering Breakthroughs
+<h3 style="display: flex; align-items: center; gap: 12px; color: #ffffff; margin-top: 3rem;">
+    <span style="width: 30px; height: 2px; background: #9bf1ff; display: inline-block;"></span>
+    <span style="letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; color: #9bf1ff;">Engineering Deep-Dive</span>
 </h3>
+<h2 style="font-size: 2rem; margin-top: 0.5rem; color: #ffffff;">Core Engineering Challenges</h2>
 ### 💻 Technical Stack & Expertise
 <div class="tech-tags" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; margin-bottom: 3rem;">
     <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">Unity 6.0 (URP)</span>
@@ -59,16 +54,11 @@ video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
 
 > **Leadership Note:** Oversight of the end-to-end technical architecture was maintained, ensuring the integration of custom shaders with XR interaction protocols.
 
-<h3 style="
-    color: #ffffff; 
-    font-size: 1.5rem; 
-    border-left: 4px solid #9bf1ff; 
-    padding-left: 12px; 
-    margin-bottom: 1.5rem;
-    letter-spacing: -0.02em;
-">
-    Engineering Breakthroughs
+<h3 style="display: flex; align-items: center; gap: 12px; color: #ffffff; margin-top: 3rem;">
+    <span style="width: 30px; height: 2px; background: #9bf1ff; display: inline-block;"></span>
+    <span style="letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; color: #9bf1ff;">Engineering Deep-Dive</span>
 </h3>
+<h2 style="font-size: 2rem; margin-top: 0.5rem; color: #ffffff;">Core Engineering Challenges</h2>
 ### 🛠️ Core Engineering Challenges
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
     <div style="background: rgba(255, 255, 255, 0.03); padding: 1.75rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; gap: 1rem;">
@@ -103,16 +93,11 @@ video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
     </div>
 </div>
 
-<h3 style="
-    color: #ffffff; 
-    font-size: 1.5rem; 
-    border-left: 4px solid #9bf1ff; 
-    padding-left: 12px; 
-    margin-bottom: 1.5rem;
-    letter-spacing: -0.02em;
-">
-    Engineering Breakthroughs
+<h3 style="display: flex; align-items: center; gap: 12px; color: #ffffff; margin-top: 3rem;">
+    <span style="width: 30px; height: 2px; background: #9bf1ff; display: inline-block;"></span>
+    <span style="letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; color: #9bf1ff;">Engineering Deep-Dive</span>
 </h3>
+<h2 style="font-size: 2rem; margin-top: 0.5rem; color: #ffffff;">Core Engineering Challenges</h2>
 ### 🏗️ The Architecture: Event-Driven Architecture
 <div class="table-wrapper">
     <table class="alt" style="font-size: 0.9rem;">
