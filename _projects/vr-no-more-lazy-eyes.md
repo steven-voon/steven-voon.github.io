@@ -51,26 +51,7 @@ video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
 > **Leadership Note:** Oversight of the end-to-end technical architecture was maintained, ensuring the integration of custom shaders with XR interaction protocols.
 
 ### 🛠️ Core Engineering Challenges
-
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
-    <div style="background: rgba(255, 255, 255, 0.02); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
-        <h4 style="color: #9bf1ff; margin-bottom: 0.5rem;">Dichoptic Rendering</h4>
-        <p style="font-size: 0.9rem; line-height: 1.6;">Standard rendering pipelines do not inherently support per-eye object culling without costly dual-camera setups that impact mobile XR performance.</p>
-        <p style="font-size: 0.9rem; line-height: 1.6;">A custom shader and layer-masking architecture was developed. "Bombs" are assigned to a unique layer visible only to the Left Eye camera frustum, while "Traps" are restricted to the Right Eye.</p>
-        <span style="font-size: 0.8rem; color: #9bff9b;">✔ Result: Achieved absolute visual separation with zero "leakage" between ocular channels.</span>
-    </div>
-    <div style="background: rgba(255, 255, 255, 0.02); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
-        <h4 style="color: #9bf1ff; margin-bottom: 0.5rem;">Event-Driven Interaction Pipeline</h4>
-        <p style="font-size: 0.9rem; line-height: 1.6;">The system required a decoupled method for the UI and scoring logic to react to collisions across 39 potential spawn spots.</p>
-        <p style="font-size: 0.9rem; line-height: 1.6;">The architecture utilizes an Event-Driven Architecture (EDA). The ObstacleController broadcasts collision payloads via a central event bus, which the ResultManager and UI listeners consume independently.</p>
-        <span style="font-size: 0.8rem; color: #9bff9b;">✔ Result: Reduced script dependencies by 40% and simplified the debugging of the scoring logic.</span>
-    </div>
-    <div style="background: rgba(255, 255, 255, 0.02); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
-        <h4 style="color: #9bf1ff; margin-bottom: 0.5rem;">High-Speed Lane Navigation</h4>
-        <p style="font-size: 0.9rem; line-height: 1.6;">Translating a cart across three lanes based on thumbstick input requires precise snapping and low latency.</p>
-        <p style="font-size: 0.9rem; line-height: 1.6;">A SwitchLaneController was implemented to map XR Input to localized lane coordinates on a spline-based track.</p>
-        <span style="font-size: 0.8rem; color: #9bff9b;">✔ Result: Locked 90fps performance on Meta Quest 3 with sub-20ms input response time.</span>
-    </div>
     <div style="background: rgba(255, 255, 255, 0.03); padding: 1.75rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; gap: 1rem;">
         <h4 style="color: #9bf1ff; margin: 0; font-size: 1.5rem; font-weight: 600; letter-spacing: -0.01em;">Dichoptic Rendering</h4>
         <div style="font-size: 1rem; line-height: 1.6; color: rgba(255,255,255,0.85);">
@@ -78,15 +59,32 @@ video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
             <p style="margin: 0;">A custom shader and layer-masking architecture was developed. "Bombs" are assigned to a unique layer visible only to the Left Eye, while "Traps" are restricted to the Right Eye.</p>
         </div>
         <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.95rem; color: #9bff9b; line-height: 1.5; display: flex; align-items: flex-start; gap: 0.6rem;">
-            <span>✔</span> 
-            <span><strong style="color: #9bff9b;">Result:</strong> Achieved absolute visual separation with zero "leakage" between ocular channels.</span>
+            <span>✔ Result:Achieved absolute visual separation with zero "leakage" between ocular channels.</span>
+        </div>
+    </div>
+        <div style="background: rgba(255, 255, 255, 0.03); padding: 1.75rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; gap: 1rem;">
+        <h4 style="color: #9bf1ff; margin: 0; font-size: 1.5rem; font-weight: 600; letter-spacing: -0.01em;">Event-Driven Interaction Pipeline</h4>
+        <div style="font-size: 1rem; line-height: 1.6; color: rgba(255,255,255,0.85);">
+            <p style="margin: 0 0 0.75rem 0;">The system required a decoupled method for the UI and scoring logic to react to collisions across 39 potential spawn spots.</p>
+            <p style="margin: 0;">The architecture utilizes an Event-Driven Architecture (EDA). The ObstacleController broadcasts collision payloads via a central event bus, which the ResultManager and UI listeners consume independently.</p>
+        </div>
+        <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.95rem; color: #9bff9b; line-height: 1.5; display: flex; align-items: flex-start; gap: 0.6rem;">
+            <span>✔ Result: Reduced script dependencies by 40% and simplified the debugging of the scoring logic.</span>
+        </div>
+    </div>
+        <div style="background: rgba(255, 255, 255, 0.03); padding: 1.75rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; gap: 1rem;">
+        <h4 style="color: #9bf1ff; margin: 0; font-size: 1.5rem; font-weight: 600; letter-spacing: -0.01em;">High-Speed Lane Navigation</h4>
+        <div style="font-size: 1rem; line-height: 1.6; color: rgba(255,255,255,0.85);">
+            <p style="margin: 0 0 0.75rem 0;">Translating a cart across three lanes based on thumbstick input requires precise snapping and low latency.</p>
+            <p style="margin: 0;">A SwitchLaneController was implemented to map XR Input to localized lane coordinates on a spline-based track.</p>
+        </div>
+        <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.95rem; color: #9bff9b; line-height: 1.5; display: flex; align-items: flex-start; gap: 0.6rem;">
+            <span>✔ Result: Locked 90fps performance on Meta Quest 3 with sub-20ms input response time.</span>
         </div>
     </div>
 </div>
 
 ### 🏗️ The Architecture: Event-Driven Architecture
-To ensure the app remained maintainable for a remote team, I implemented a decoupled system that separates core logic from third-party SDKs.
-
 <div class="table-wrapper">
     <table class="alt" style="font-size: 0.9rem;">
         <thead>
