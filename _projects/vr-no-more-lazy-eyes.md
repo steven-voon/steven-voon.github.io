@@ -68,7 +68,7 @@ video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
 
 <div style="background: rgba(155, 241, 255, 0.03); border: 1px solid rgba(155, 241, 255, 0.2); padding: 2rem; border-radius: 8px; margin: 2rem 0;">
     <h4 style="color: #9bf1ff; margin-top: 0;">Post-Mortem & Lessons Learned</h4>
-    <p style="font-size: 0.95rem;">The system employs a Dichoptic Event-Driven Architecture to treat amblyopia by isolating visual stimuli. A procedural spawner generates 13 rows of obstacles, utilizing a 3-lane snap-movement system to minimize cognitive load and maximize focus on binocular integration. By decoupling the Spawner, Vision Manager, and Analytics via an event bus, the system ensures medical data integrity. Scene reloading is utilized as the primary lifecycle anchor to guarantee a stable, clean state for every therapeutic session.</p>
+    <p style="font-size: 0.95rem;">The system employs a Dichoptic Event-Driven Architecture to treat amblyopia by isolating visual stimuli. A procedural spawner generates 13 rows of obstacles, utilizing a 3-lane snap-movement system to minimize cognitive load and maximize focus on binocular integration. By decoupling the Spawner, Vision Manager, and Analytics via an event bus, the system ensures data integrity. Scene reloading is utilized as the primary lifecycle anchor to guarantee a stable, clean state for every  session.</p>
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem;">
         <div>
             <h5 style="font-size: 0.7rem; letter-spacing: 1px; color: #ff9b9b; text-transform: uppercase;">Technical Debt</h5>
