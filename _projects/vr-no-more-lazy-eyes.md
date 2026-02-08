@@ -72,7 +72,7 @@ video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
         <span style="font-size: 0.8rem; color: #9bff9b;">✔ Result: Locked 90fps performance on Meta Quest 3 with sub-20ms input response time.</span>
     </div>
     <div style="background: rgba(255, 255, 255, 0.03); padding: 1.75rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; gap: 1rem;">
-        <h4 style="color: #9bf1ff; margin: 0; font-size: 1.25rem; font-weight: 600; letter-spacing: -0.01em;">Dichoptic Rendering</h4>
+        <h4 style="color: #9bf1ff; margin: 0; font-size: 1.5rem; font-weight: 600; letter-spacing: -0.01em;">Dichoptic Rendering</h4>
         <div style="font-size: 1rem; line-height: 1.6; color: rgba(255,255,255,0.85);">
             <p style="margin: 0 0 0.75rem 0;">Standard rendering pipelines do not inherently support per-eye object culling without costly dual-camera setups that impact mobile XR performance.</p>
             <p style="margin: 0;">A custom shader and layer-masking architecture was developed. "Bombs" are assigned to a unique layer visible only to the Left Eye, while "Traps" are restricted to the Right Eye.</p>
