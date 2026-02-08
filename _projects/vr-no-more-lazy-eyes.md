@@ -38,7 +38,16 @@ video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
     {% endif %}
 </div>
 
-
+<h3 style="
+    color: #ffffff; 
+    font-size: 1.5rem; 
+    border-left: 4px solid #9bf1ff; 
+    padding-left: 12px; 
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+">
+    Engineering Breakthroughs
+</h3>
 ### 💻 Technical Stack & Expertise
 <div class="tech-tags" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; margin-bottom: 3rem;">
     <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">Unity 6.0 (URP)</span>
@@ -50,6 +59,16 @@ video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
 
 > **Leadership Note:** Oversight of the end-to-end technical architecture was maintained, ensuring the integration of custom shaders with XR interaction protocols.
 
+<h3 style="
+    color: #ffffff; 
+    font-size: 1.5rem; 
+    border-left: 4px solid #9bf1ff; 
+    padding-left: 12px; 
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+">
+    Engineering Breakthroughs
+</h3>
 ### 🛠️ Core Engineering Challenges
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
     <div style="background: rgba(255, 255, 255, 0.03); padding: 1.75rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; gap: 1rem;">
@@ -59,7 +78,7 @@ video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
             <p style="margin: 0;">A custom shader and layer-masking architecture was developed. "Bombs" are assigned to a unique layer visible only to the Left Eye, while "Traps" are restricted to the Right Eye.</p>
         </div>
         <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.95rem; color: #9bff9b; line-height: 1.5; display: flex; align-items: flex-start; gap: 0.6rem;">
-            <span>✔ Result:Achieved absolute visual separation with zero "leakage" between ocular channels.</span>
+            <span>✔ Result: Achieved absolute visual separation with zero "leakage" between ocular channels.</span>
         </div>
     </div>
         <div style="background: rgba(255, 255, 255, 0.03); padding: 1.75rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; gap: 1rem;">
@@ -84,6 +103,16 @@ video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
     </div>
 </div>
 
+<h3 style="
+    color: #ffffff; 
+    font-size: 1.5rem; 
+    border-left: 4px solid #9bf1ff; 
+    padding-left: 12px; 
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+">
+    Engineering Breakthroughs
+</h3>
 ### 🏗️ The Architecture: Event-Driven Architecture
 <div class="table-wrapper">
     <table class="alt" style="font-size: 0.9rem;">
