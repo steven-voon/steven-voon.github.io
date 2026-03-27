@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Cloudlines"
+title: "MOCAP Workshop - Virtual View"
 image: "/assets/images/pic04.jpg"
-pillar: "virtual-reality"
-genre: "storytelling"
+pillar: "technical-leadership"
+genre: "capacity-building"
 company: "Maitree House"
-hardware: "Meta Quest 2"
-technologies: ["Meta SDK", "Unity"]
+hardware: "Rokoko Suit"
+technologies: ["Rokoko Studio", "Unity"]
 project_url: "https://www.ceritalah.com" # Referral link
 carousel_images: 
   - "/assets/images/pic07.jpg"

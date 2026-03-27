@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Cloudlines"
+title: "Welcome to Brown's Mart"
 image: "/assets/images/pic04.jpg"
-pillar: "virtual-reality"
-genre: "storytelling"
+pillar: "augmented-reality"
+genre: "heritage"
 company: "Maitree House"
-hardware: "Meta Quest 2"
-technologies: ["Meta SDK", "Unity"]
+hardware: "Mobile"
+technologies: ["AR", "Unity"]
 project_url: "https://www.ceritalah.com" # Referral link
 carousel_images: 
   - "/assets/images/pic07.jpg"
