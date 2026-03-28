@@ -9,9 +9,28 @@ hardware: "Meta Quest 2, Web Browser"
 technologies: ["Meta SDK", "Unity", WebGL]
 project_url: "https://www.ceritalah.com" # Referral link
 carousel_images: 
-  - "/assets/images/pic07.jpg"
-  - "/assets/images/pic07.jpg"
-  - "/assets/images/pic07.jpg"
+  - "/assets/images/firstedition-ss1.png"
+  - "/assets/images/firstedition-ss2.png"
+  - "/assets/images/firstedition-ss3.png"
+  - "/assets/images/firstedition-ss4.png"
+  - "/assets/images/firstedition-ss5.png"
+  - "/assets/images/firstedition-ss6.png"
+  - "/assets/images/firstedition-ss7.png"
+  - "/assets/images/firstedition-ss8.png"
+  - "/assets/images/firstedition-ss9.png"
+  - "/assets/images/firstedition-ss10.png"
+  - "/assets/images/firstedition-ss11.png"
+  - "/assets/images/firstedition-ss12.png"
+  - "/assets/images/firstedition-ss13.png"
+  - "/assets/images/firstedition-ss14.png"
+  - "/assets/images/firstedition-ss15.png"
+  - "/assets/images/firstedition-ss16.png"
+  - "/assets/images/firstedition-ss17.png"
+  - "/assets/images/firstedition-ss18.png"
+  - "/assets/images/firstedition-ss19.png"
+  - "/assets/images/firstedition-ss20.png"
+  - "/assets/images/firstedition-ss21.png"
+
 ---
 
 <div class="project-specs" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-left: 4px solid #9bf1ff; margin-top: -2.5rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;">

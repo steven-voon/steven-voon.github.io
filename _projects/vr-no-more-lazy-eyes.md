@@ -8,7 +8,13 @@ company: "Creatinno Tech"
 hardware: "Meta Quest 3"
 technologies: ["Unity", "OpenXR"]
 project_url: "https://sidequestvr.com/app/53740/no-more-lazy-eyes"
-video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
+carousel_images: 
+  - "/assets/images/nomorelazyeye-ss1.png"
+  - "/assets/images/nomorelazyeye-ss2.png"
+  - "/assets/images/nomorelazyeye-ss3.png"
+  - "/assets/images/nomorelazyeye-ss4.png"
+  - "/assets/images/nomorelazyeye-ss5.png"
+  - "/assets/images/nomorelazyeye-ss6.png"
 ---
 
 <div class="project-specs" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-left: 4px solid #9bf1ff; margin-top: -2.5rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;">
@@ -24,18 +30,45 @@ video_id: "https://www.youtube.com/watch?v=h3KoZ5dodtY"
         <p><strong>No More Lazy Eyes</strong> is a gamified XR proof-of-concept that uses a custom dichoptic rendering system to facilitate binocular vision therapy through interactive gameplay.</p> 
         <p>As <strong>Techincal Lead cum XR Engineer</strong>, my goal was to architected the dual-track rendering pipeline, engineered the core game logic, and developed calibration and data-logging systems to track coordination metrics.</p>     
     </div>
-    {% if page.video_id %}
-    <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
-        <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
-            <iframe src="https://www.youtube.com/embed/{{ page.video_id }}" 
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-                    frameborder="0" allowfullscreen></iframe>
+    <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); position: relative; overflow: hidden;">         
+        <button onclick="document.getElementById('case-study-carousel').scrollBy({left: -document.getElementById('case-study-carousel').offsetWidth, behavior: 'smooth'})" 
+            style="position: absolute; left: 25px; top: 50%; transform: translateY(-50%); z-index: 5; background: transparent !important; border: none !important; outline: none !important; box-shadow: none !important; color: white; font-size: 2.2rem; cursor: pointer; text-shadow: 0px 0px 15px rgba(0,0,0,0.9); transition: all 0.3s ease; padding: 10px; min-width: 44px; display: flex; align-items: center; justify-content: center;"
+            onmouseover="this.style.opacity='0.6'; this.style.transform='translateY(-50%) scale(1.1)';" 
+            onmouseout="this.style.opacity='1'; this.style.transform='translateY(-50%) scale(1)';">
+            &#10094;
+        </button>
+        <button onclick="document.getElementById('case-study-carousel').scrollBy({left: document.getElementById('case-study-carousel').offsetWidth, behavior: 'smooth'})" 
+            style="position: absolute; right: 25px; top: 50%; transform: translateY(-50%); z-index: 5; background: transparent !important; border: none !important; outline: none !important; box-shadow: none !important; color: white; font-size: 2.2rem; cursor: pointer; text-shadow: 0px 0px 15px rgba(0,0,0,0.9); transition: all 0.3s ease; padding: 10px; min-width: 44px; display: flex; align-items: center; justify-content: center;"
+            onmouseover="this.style.opacity='0.6'; this.style.transform='translateY(-50%) scale(1.1)';" 
+            onmouseout="this.style.opacity='1'; this.style.transform='translateY(-50%) scale(1)';">
+            &#10095;
+        </button>
+        <div id="case-study-carousel" class="carousel-container" style="cursor: grab;">
+            {% for img in page.carousel_images %}
+            <div class="carousel-item">
+                <img src="{{ img }}" alt="Project slide" style="pointer-events: none; -webkit-user-drag: none;">
+            </div>
+            {% endfor %}
         </div>
-        <p style="font-size: 0.7rem; text-align: center; margin: 0.5rem 0 0 0; color: #9bf1ff; letter-spacing: 1px; text-transform: uppercase;">
-            Technical Demo: POC for VR Amblyopia Treatment
+        <style>
+            .dot { 
+                width: 6px; height: 6px; border-radius: 50%; 
+                background: rgba(155, 241, 255, 0.3); transition: all 0.3s ease; 
+            }
+            .dot.active { 
+                background: #9bf1ff !important; 
+                box-shadow: 0 0 8px #9bf1ff; transform: scale(1.3); 
+            }
+        </style>
+        <div class="carousel-dots" style="display: flex; justify-content: center; gap: 8px; margin-top: 10px;">
+            {% for img in page.carousel_images %}
+            <div class="dot {% if forloop.first %}active{% endif %}"></div>
+            {% endfor %}
+        </div>                 
+        <p style="font-size: 0.7rem; text-align: center; margin: 0.5rem 0 0 0; color: #9bf1ff; letter-spacing: 1px; text-transform: uppercase; opacity: 0.6;">
+            Swipe or use arrows to view
         </p>
     </div>
-    {% endif %}
 </div>
 
 <div style="margin-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 1rem;">

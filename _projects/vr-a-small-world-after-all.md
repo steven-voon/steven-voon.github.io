@@ -9,9 +9,18 @@ hardware: "Meta Quest 2"
 technologies: ["Meta SDK", "Unity"]
 project_url: "https://www.ceritalah.com" # Referral link
 carousel_images: 
-  - "/assets/images/pic07.jpg"
-  - "/assets/images/pic07.jpg"
-  - "/assets/images/pic07.jpg"
+  - "/assets/images/smallworldafterall-ss1.png"
+  - "/assets/images/smallworldafterall-ss2.png"
+  - "/assets/images/smallworldafterall-ss3.png"
+  - "/assets/images/smallworldafterall-ss4.png"
+  - "/assets/images/smallworldafterall-ss5.png"
+  - "/assets/images/smallworldafterall-ss6.png"
+  - "/assets/images/smallworldafterall-ss7.png"
+  - "/assets/images/smallworldafterall-ss8.png"
+  - "/assets/images/smallworldafterall-ss9.png"
+  - "/assets/images/smallworldafterall-ss10.png"
+  - "/assets/images/smallworldafterall-ss11.png"
+  - "/assets/images/smallworldafterall-ss12.png"
 ---
 
 <div class="project-specs" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-left: 4px solid #9bf1ff; margin-top: -2.5rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;">

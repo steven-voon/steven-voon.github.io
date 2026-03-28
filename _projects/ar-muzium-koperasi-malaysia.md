@@ -8,7 +8,16 @@ company: "Creatinno Tech"
 hardware: "Mobile"
 technologies: ["Unity", "ARCore", "ARKit", "C#", "Blender"]
 project_url: "https://www.ceritalah.com"
-video_id: "https://www.youtube.com/watch?v=GIYklSH7qoA&list=PLfLzhRAcLiXRHTuJPkCSowJI48C6dzXj0&index=1"
+carousel_images: 
+  - "/assets/images/muziumkoperasimalaysia-ss1.png"
+  - "/assets/images/muziumkoperasimalaysia-ss2.png"
+  - "/assets/images/muziumkoperasimalaysia-ss3.png"
+  - "/assets/images/muziumkoperasimalaysia-ss4.png"
+  - "/assets/images/muziumkoperasimalaysia-ss5.png"
+  - "/assets/images/muziumkoperasimalaysia-ss6.png"
+  - "/assets/images/muziumkoperasimalaysia-ss7.png"
+  - "/assets/images/muziumkoperasimalaysia-ss8.png"
+
 ---
 
 <div class="project-specs" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-left: 4px solid #9bf1ff; margin-top: -2.5rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;">
