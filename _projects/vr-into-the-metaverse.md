@@ -9,18 +9,18 @@ hardware: "Meta Quest 2"
 technologies: ["Tiltbrush", "Unity", "Oculus SDK"]
 project_url: "https://www.ceritalah.com" # Referral link
 carousel_images: 
-  - "/assets/images/intometaverse-ss1.png"
-  - "/assets/images/intometaverse-ss2.png"
-  - "/assets/images/intometaverse-ss3.png"
-  - "/assets/images/intometaverse-ss4.png"
-  - "/assets/images/intometaverse-ss5.png"
-  - "/assets/images/intometaverse-ss6.png"
-  - "/assets/images/intometaverse-ss7.png"
-  - "/assets/images/intometaverse-ss8.png"
-  - "/assets/images/intometaverse-ss9.png"
-  - "/assets/images/intometaverse-ss10.png"
-  - "/assets/images/intometaverse-ss11.png"
-  - "/assets/images/intometaverse-ss12.png"
+  - "/assets/images/intometaverse-ss1.jpg"
+  - "/assets/images/intometaverse-ss2.jpg"
+  - "/assets/images/intometaverse-ss3.jpg"
+  - "/assets/images/intometaverse-ss4.jpg"
+  - "/assets/images/intometaverse-ss5.jpg"
+  - "/assets/images/intometaverse-ss6.jpg"
+  - "/assets/images/intometaverse-ss7.jpg"
+  - "/assets/images/intometaverse-ss8.jpg"
+  - "/assets/images/intometaverse-ss9.jpg"
+  - "/assets/images/intometaverse-ss10.jpg"
+  - "/assets/images/intometaverse-ss11.jpg"
+  - "/assets/images/intometaverse-ss12.jpg"
 
 ---
 
