@@ -9,9 +9,14 @@ hardware: "Meta Quest 2"
 technologies: ["Meta SDK", "Unity"]
 project_url: "https://www.ceritalah.com" # Referral link
 carousel_images: 
-  - "/assets/images/pic07.jpg"
-  - "/assets/images/pic07.jpg"
-  - "/assets/images/pic07.jpg"
+  - "/assets/images/bioticX-ss0.png"
+  - "/assets/images/bioticX-ss1.png"
+  - "/assets/images/bioticX-ss2.png"
+  - "/assets/images/bioticX-ss3.png"
+  - "/assets/images/bioticX-ss4.png"
+  - "/assets/images/bioticX-ss5.png"
+  - "/assets/images/bioticX-ss6.png"
+  - "/assets/images/bioticX-ss7.png"
 ---
 
 <div class="project-specs" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-left: 4px solid #9bf1ff; margin-top: -2.5rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;">
