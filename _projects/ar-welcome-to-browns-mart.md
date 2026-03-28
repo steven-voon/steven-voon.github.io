@@ -9,9 +9,11 @@ hardware: "Mobile"
 technologies: ["AR", "Unity"]
 project_url: "https://www.ceritalah.com" # Referral link
 carousel_images: 
-  - "/assets/images/pic07.jpg"
-  - "/assets/images/pic07.jpg"
-  - "/assets/images/pic07.jpg"
+  - "/assets/images/brownsamrt-ss1.jpg"
+  - "/assets/images/brownsamrt-ss2.jpg"
+  - "/assets/images/brownsamrt-ss3.jpg"
+  - "/assets/images/brownsamrt-ss4.jpg"
+  - "/assets/images/brownsamrt-ss5.jpg"
 ---
 
 <div class="project-specs" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-left: 4px solid #9bf1ff; margin-top: -2.5rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;">
