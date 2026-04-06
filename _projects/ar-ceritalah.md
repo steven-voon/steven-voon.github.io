@@ -7,20 +7,21 @@ genre: "heritage"
 company: "Maitree House"
 hardware: "Mobile"
 technologies: ["AR", "Unity"]
+project_url: "https://www.ceritalah.app/" # Referral link
 ---
 
 <div class="project-specs" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-left: 4px solid #9bf1ff; margin-top: -2.5rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;">
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">ROLE</strong><br><span style="color: #9bf1ff; font-weight: 600;">Technical Lead</span></div>
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">PLATFORM</strong><br>Unity 6.000 (URP)</div>
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">CORE TECH</strong><br>ARFoundation</div>
-    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">LIVE SITE</strong><br><a href="{{ page.project_url }}" target="_blank" class="button small primary">Visit Project ↗</a></div>
+    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">PROJECT SITE</strong><br><a href="{{ page.project_url }}" target="_blank" class="button small primary">More About Project ↗</a></div>
 </div>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: start; margin-bottom: 3rem;">   
     <div>
         <h2 style="margin-top: 0;">The Vision</h2>
-        <p><strong>Ceritalah</strong> is a location-based AR platform designed to bridge Malaysian history with modern spatial computing.</p> 
-        <p>As <strong>Technical Lead</strong>, my goal was to move beyond simple markers and create a "world-scale" AR experience that feels persistent and integrated into the physical environment.</p>     
+        <p><strong>Ceritalah</strong>  is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia.</p> 
+        <p>As <strong>Technical Lead cum XR Engineer</strong>, led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology.</p>     
     </div>
     {% if page.video_id %}
     <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">

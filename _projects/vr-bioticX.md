@@ -7,7 +7,7 @@ genre: "storytelling"
 company: "Maitree House"
 hardware: "Meta Quest 2"
 technologies: ["Meta SDK", "Unity"]
-project_url: "https://www.ceritalah.com" # Referral link
+project_url: "https://www.maitreehouse.com/work/bioticx" # Referral link
 carousel_images: 
   - "/assets/images/bioticX-ss0.png"
   - "/assets/images/bioticX-ss1.png"
@@ -23,14 +23,14 @@ carousel_images:
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">ROLE</strong><br><span style="color: #9bf1ff; font-weight: 600;">Technical Lead</span></div>
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">PLATFORM</strong><br>Unity 2022.3 (URP)</div>
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">CORE TECH</strong><br>VPS & Cloud Assets</div>
-    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">LIVE SITE</strong><br><a href="{{ page.project_url }}" target="_blank" class="button small primary">Visit Project ↗</a></div>
+    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">PROJECT SITE</strong><br><a href="{{ page.project_url }}" target="_blank" class="button small primary">More About Project ↗</a></div>
 </div>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: start; margin-bottom: 3rem;">   
     <div>
         <h2 style="margin-top: 0;">The Vision</h2>
-        <p><strong>Ceritalah</strong> is a location-based AR platform designed to bridge Malaysian history with modern spatial computing.</p> 
-        <p>As <strong>Technical Lead</strong>, my goal was to move beyond simple markers and create a "world-scale" AR experience.</p>     
+        <p><strong>Biotic X</strong> is a VR theatre experience that explores environmental challenges and collective action through immersive parallel virtual realities.</p> 
+        <p>As <strong>Unity XR Engineer</strong>, collaborated with producers to develop a Beat Saber–style VR storytelling experience.</p>     
     </div>
     <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); position: relative; overflow: hidden;">         
         <button onclick="document.getElementById('case-study-carousel').scrollBy({left: -document.getElementById('case-study-carousel').offsetWidth, behavior: 'smooth'})" 

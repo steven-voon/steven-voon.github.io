@@ -1,36 +1,30 @@
 ---
 layout: post
-title: "VR Organ Bath Lab Experiement"
+title: "CahayaXR Storylab:Inheritance Masterclass"
 image: "/assets/images/pic04.jpg"
-pillar: "virtual-reality"
-genre: "education"
-company: "Creatinno Tech"
-hardware: "Web Browser"
-technologies: ["WebGL", "Unity"]
-project_url: "https://papers.iafor.org/wp-content/uploads/papers/ace2023/ACE2023_76065.pdf?t=8" # Referral link
-carousel_images: 
-  - "/assets/images/vrobl-ss1.png"
-  - "/assets/images/vrobl-ss2.png"
-  - "/assets/images/vrobl-ss3.png"
-  - "/assets/images/vrobl-ss4.png"
-  - "/assets/images/vrobl-ss5.png"
-  - "/assets/images/vrobl-ss6.png"
-  - "/assets/images/vrobl-ss7.png"
+pillar: "technical-leadership"
+genre: "capacity-building"
+company: "Maitree House"
+hardware: "Rokoko Suit"
+technologies: ["Rokoko Studio", "Unity"]
+project_url: "https://www.cahayaxr.com/cahayaxrstorylabs2026" # Referral link
+# carousel_images: 
+#   - "/assets/images/virtualview-ss13.png"
+#   - "/assets/images/virtualview-ss14.png"
 ---
 
 <div class="project-specs" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-left: 4px solid #9bf1ff; margin-top: -2.5rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;">
-    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">ROLE</strong><br><span style="color: #9bf1ff; font-weight: 600;">Technical Lead</span></div>
+    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">ROLE</strong><br><span style="color: #9bf1ff; font-weight: 600;">Technical Producer</span></div>
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">PLATFORM</strong><br>Unity 2022.3 (URP)</div>
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">CORE TECH</strong><br>VPS & Cloud Assets</div>
-    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">RESEARCH PUBLICATION</strong><br><a href="{{ page.project_url }}" target="_blank" class="button small primary">See it Now   ↗</a></div>
+    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">PROGRAMME INFO</strong><br><a href="{{ page.project_url }}" target="_blank" class="button small primary">More About Programme ↗</a></div>
 </div>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: start; margin-bottom: 3rem;">   
     <div>
         <h2 style="margin-top: 0;">The Vision</h2>
-        <p><strong>VR Organ Bath Lab</strong>  is a VR lab training module, digitalizing traditional lab experiments for direct integration into the university curriculum.</p> 
-        <p>As <strong>Unity XR Engineer</strong>, my responsibilities included: requirement analysis, WebVR development
-</p>     
+        <p><strong>CahayaXR Storylab : Inheritance</strong> is an initiative designed to develop Malaysia's next generation of immersive storytellers. </p> 
+        <p>As <strong>Technical Producer</strong>, i spoke to the topic XR Prototyping and Production in one of the masterclasses. Im in charged of designing and delivering the programme for over 30 participants.  </p>     
     </div>
     <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); position: relative; overflow: hidden;">         
         <button onclick="document.getElementById('case-study-carousel').scrollBy({left: -document.getElementById('case-study-carousel').offsetWidth, behavior: 'smooth'})" 

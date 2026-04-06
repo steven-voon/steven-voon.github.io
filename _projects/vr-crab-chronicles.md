@@ -7,7 +7,7 @@ genre: "storytelling"
 company: "CahayaXR"
 hardware: "Meta Quest 2, Web Browser"
 technologies: ["Meta SDK", "Unity", WebGL]
-project_url: "https://www.ceritalah.com" # Referral link
+project_url: "https://www.instagram.com/p/C6YAcKpyCBq/?img_index=2" # Referral link
 carousel_images: 
   - "/assets/images/crabchronicles-ss1.jpg"
   - "/assets/images/crabchronicles-ss2.jpg"
@@ -21,14 +21,14 @@ carousel_images:
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">ROLE</strong><br><span style="color: #9bf1ff; font-weight: 600;">Technical Lead</span></div>
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">PLATFORM</strong><br>Unity 2022.3 (URP)</div>
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">CORE TECH</strong><br>VPS & Cloud Assets</div>
-    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">LIVE SITE</strong><br><a href="{{ page.project_url }}" target="_blank" class="button small primary">Visit Project ↗</a></div>
+    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">EXPOSURE</strong><br><a href="{{ page.project_url }}" target="_blank" class="button small primary">Featured in MMU ↗</a></div>
 </div>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: start; margin-bottom: 3rem;">   
     <div>
         <h2 style="margin-top: 0;">The Vision</h2>
-        <p><strong>Ceritalah</strong> is a location-based AR platform designed to bridge Malaysian history with modern spatial computing.</p> 
-        <p>As <strong>Technical Lead</strong>, my goal was to move beyond simple markers and create a "world-scale" AR experience.</p>     
+        <p><strong>Crab Chronicles</strong> is an immersive VR experience that follows the ecological journey of a crab from rainforest to shoreline, highlighting crab species connected to Penang and their role in the local ecosystem.</p> 
+        <p>As <strong>VR mentor cum XR Enginner</strong>, collaborated with artists to refine ideas, address technical limitations, and craft a smooth, immersive VR experience from 3D models.</p>     
     </div>
     <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); position: relative; overflow: hidden;">         
         <button onclick="document.getElementById('case-study-carousel').scrollBy({left: -document.getElementById('case-study-carousel').offsetWidth, behavior: 'smooth'})" 

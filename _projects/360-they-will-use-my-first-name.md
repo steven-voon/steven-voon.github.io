@@ -1,36 +1,32 @@
 ---
 layout: post
-title: "VR Organ Bath Lab Experiement"
+title: "[They Will Use] My First Name"
 image: "/assets/images/pic04.jpg"
 pillar: "virtual-reality"
-genre: "education"
-company: "Creatinno Tech"
-hardware: "Web Browser"
-technologies: ["WebGL", "Unity"]
-project_url: "https://papers.iafor.org/wp-content/uploads/papers/ace2023/ACE2023_76065.pdf?t=8" # Referral link
+genre: "heritage"
+company: "Avventura"
+hardware: "Meta Quest 2"
+technologies: ["Meta SDk", "Unity"]
+project_url: "https://www.maitreehouse.com/news/people-with-intellectual-disability-falling-through-the-cracks-in-our-justice-systems" # Referral link
 carousel_images: 
-  - "/assets/images/vrobl-ss1.png"
-  - "/assets/images/vrobl-ss2.png"
-  - "/assets/images/vrobl-ss3.png"
-  - "/assets/images/vrobl-ss4.png"
-  - "/assets/images/vrobl-ss5.png"
-  - "/assets/images/vrobl-ss6.png"
-  - "/assets/images/vrobl-ss7.png"
+  - "/assets/images/myfirstname-ss1.png"
+  - "/assets/images/myfirstname-ss2.png"
+  - "/assets/images/myfirstname-ss3.png"
+  - "/assets/images/myfirstname-ss4.png"
 ---
 
 <div class="project-specs" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-left: 4px solid #9bf1ff; margin-top: -2.5rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;">
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">ROLE</strong><br><span style="color: #9bf1ff; font-weight: 600;">Technical Lead</span></div>
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">PLATFORM</strong><br>Unity 2022.3 (URP)</div>
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">CORE TECH</strong><br>VPS & Cloud Assets</div>
-    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">RESEARCH PUBLICATION</strong><br><a href="{{ page.project_url }}" target="_blank" class="button small primary">See it Now   ↗</a></div>
+    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">PROJECT SITE</strong><br><a href="{{ page.project_url }}" target="_blank" class="button small primary">More About Project ↗</a></div>
 </div>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: start; margin-bottom: 3rem;">   
     <div>
         <h2 style="margin-top: 0;">The Vision</h2>
-        <p><strong>VR Organ Bath Lab</strong>  is a VR lab training module, digitalizing traditional lab experiments for direct integration into the university curriculum.</p> 
-        <p>As <strong>Unity XR Engineer</strong>, my responsibilities included: requirement analysis, WebVR development
-</p>     
+        <p><strong>[They Will Use] My First Name</strong> is an immersive VR documentary addressing the urgent need for advocacy and support for people with intellectual disabilities in the criminal justice system. </p> 
+        <p>As <strong>Unity XR Enginner</strong>, created two immersive 360° scenes for a documentary: a closing-text visualization of thoughts in a grey space, and a scene with fading anonymous figures synchronized with voiceover.</p>     
     </div>
     <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); position: relative; overflow: hidden;">         
         <button onclick="document.getElementById('case-study-carousel').scrollBy({left: -document.getElementById('case-study-carousel').offsetWidth, behavior: 'smooth'})" 

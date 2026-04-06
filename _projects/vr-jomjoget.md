@@ -7,7 +7,7 @@ genre: "heritage"
 company: "Avventura"
 hardware: "Meta Quest 2"
 technologies: ["Meta SDk", "Unity"]
-project_url: "https://www.ceritalah.com" # Referral link
+project_url: "https://www.avventura.co/copy-of-reimagining-popular-folktales" # Referral link
 carousel_images: 
   - "/assets/images/jogetvr-ss1.png"
   - "/assets/images/jogetvr-ss2.png"
@@ -16,19 +16,19 @@ carousel_images:
   - "/assets/images/jogetvr-ss5.png"
 
 ---
-
+    
 <div class="project-specs" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-left: 4px solid #9bf1ff; margin-top: -2.5rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;">
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">ROLE</strong><br><span style="color: #9bf1ff; font-weight: 600;">Technical Lead</span></div>
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">PLATFORM</strong><br>Unity 2022.3 (URP)</div>
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">CORE TECH</strong><br>VPS & Cloud Assets</div>
-    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">LIVE SITE</strong><br><a href="{{ page.project_url }}" target="_blank" class="button small primary">Visit Project ↗</a></div>
+    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">PROJECT SITE</strong><br><a href="{{ page.project_url }}" target="_blank" class="button small primary">More About Project ↗</a></div>
 </div>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: start; margin-bottom: 3rem;">   
     <div>
         <h2 style="margin-top: 0;">The Vision</h2>
-        <p><strong>Ceritalah</strong> is a location-based AR platform designed to bridge Malaysian history with modern spatial computing.</p> 
-        <p>As <strong>Technical Lead</strong>, my goal was to move beyond simple markers and create a "world-scale" AR experience.</p>     
+        <p><strong>Jom Joget</strong> is a VR experience which blends historical storytelling with hands-on dance practice, offering a fun and educational way to discover Malay cultural heritage. </p> 
+        <p>As <strong>Unity XR Enginner</strong>,  created an onboarding session allowing users to select male or female dancers, integrating provided MOCAP data with two 3D dancers.</p>     
     </div>
     <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); position: relative; overflow: hidden;">         
         <button onclick="document.getElementById('case-study-carousel').scrollBy({left: -document.getElementById('case-study-carousel').offsetWidth, behavior: 'smooth'})" 

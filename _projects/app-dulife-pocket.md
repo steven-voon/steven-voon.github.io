@@ -7,7 +7,7 @@ genre: "productivity"
 company: "Creatinno Tech"
 hardware: "Mobile"
 technologies: ["Flutter", "Unity", "FERN Stack"]
-project_url: "https://www.ceritalah.com" # Referral link
+# project_url: "https://www.ceritalah.com" # Referral link
 carousel_images: 
   - "/assets/images/dulife-ss1.jpg"
   - "/assets/images/dulife-ss2.jpg"
@@ -23,14 +23,14 @@ carousel_images:
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">ROLE</strong><br><span style="color: #9bf1ff; font-weight: 600;">Technical Lead</span></div>
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">PLATFORM</strong><br>Unity 2022.3 (URP)</div>
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">CORE TECH</strong><br>VPS & Cloud Assets</div>
-    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">LIVE SITE</strong><br><a href="{{ page.project_url }}" target="_blank" class="button small primary">Visit Project ↗</a></div>
+    <!-- <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">LIVE SITE</strong><br><a href="{{ page.project_url }}" target="_blank" class="button small primary">Visit Project ↗</a></div> -->
 </div>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: start; margin-bottom: 3rem;">   
     <div>
         <h2 style="margin-top: 0;">The Vision</h2>
-        <p><strong>Ceritalah</strong> is a location-based AR platform designed to bridge Malaysian history with modern spatial computing.</p> 
-        <p>As <strong>Technical Lead</strong>, my goal was to move beyond simple markers and create a "world-scale" AR experience.</p>     
+        <p><strong>DULife Pocket</strong> is a utility app that digitalizes various administrative tasks to simplify everyday management and documentation.</p> 
+        <p>As <strong>Technical Lead cum Web Developer</strong>, collaborated with administrative and sales teams to define digitalization scope and develop corresponding web applications.</p>     
     </div>
     <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); position: relative; overflow: hidden;">         
         <button onclick="document.getElementById('case-study-carousel').scrollBy({left: -document.getElementById('case-study-carousel').offsetWidth, behavior: 'smooth'})" 
