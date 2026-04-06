@@ -7,7 +7,7 @@ genre: "heritage"
 company: "Creatinno Tech"
 hardware: "Mobile"
 technologies: ["Unity", "ARCore", "ARKit", "C#", "Blender"]
-project_url: "https://www.ceritalah.com"
+project_url: "https://pelancar.online/muzium-koperasi-malaysia-angkasa-perkenal-pameran-bertema-khas-sempena-mapa/"
 carousel_images: 
   - "/assets/images/muziumkoperasimalaysia-ss1.png"
   - "/assets/images/muziumkoperasimalaysia-ss2.png"
@@ -24,14 +24,14 @@ carousel_images:
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">ROLE</strong><br><span style="color: #9bf1ff; font-weight: 600;">Technical Lead</span></div>
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">PLATFORM</strong><br>Unity 2022.3 (URP)</div>
     <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">CORE TECH</strong><br>VPS & Cloud Assets</div>
-    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">LIVE SITE</strong><br><a href="{{ page.project_url }}" target="_blank" class="button small primary">Visit Project ↗</a></div>
+    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">LIVE SITE</strong><br><a href="{{ page.project_url }}" target="_blank" class="button small primary">What Director Says ↗</a></div>
 </div>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: start; margin-bottom: 3rem;">   
     <div>
         <h2 style="margin-top: 0;">The Vision</h2>
-        <p><strong>Muzium Koperasi Malaysia</strong> is an interactive AR app showcasing historical moment of the organisation (ANGKASA) and showcase their batik collection.</p> 
-        <p>As <strong>Technical Lead cum XR Engineer</strong>, my goal was to recreate the historical moment of one of the annual meeting and design a interactive photo session for their batik collectiont. </p>     
+        <p><strong>Muzium Koperasi Malaysia</strong>  is an interactive AR app showcasing historical moment of the organisation (ANGKASA) and showcase their batik collection.</p> 
+        <p>As <strong>Technical Lead cum XR Engineer</strong>, led the AR recreation of a historic annual meeting with an interactive batik experience. </p>     
     </div>
     {% if page.video_id %}
     <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
