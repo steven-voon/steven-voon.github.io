@@ -109,7 +109,6 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
                     {% comment %} --- VIDEO MODE (Shows only the video if ID exists) --- {% endcomment %}
                     <div class="carousel-item video-slide">
                         <div class="video-wrapper">
-                            <div class="video-shield"></div>
                             {% if page.video_type == "youtube" %}
                                 <iframe
                                     src="https://www.youtube.com/embed/{{ page.video_id }}?autoplay=1&mute=1&loop=1&playlist={{ page.video_id }}&controls=0&modestbranding=1&rel=0&iv_load_policy=3"                                
@@ -323,19 +322,6 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
         overflow: hidden;
         border-radius: 8px;
         background: #000;
-    }
-
-    /* THE SHIELD: Add this new class */
-    .video-wrapper::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 10; /* Sits on top of the iframe */
-        background: rgba(0,0,0,0); /* Invisible */
-        pointer-events: auto; /* Captures the swipe gesture */
     }
 
     .video-wrapper iframe, 
