@@ -103,30 +103,46 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
         </div>
     </div>
     <div class="vision-media-container">
-        <div class="carousel-container">
-            <div class="carousel-scroll" id="carouselScroll">             
-                {% if page.video_id and page.video_id != "" %}
-                    <div class="carousel-item"> ... </div>
-                {% elsif page.project_images %}
-                    {% for img in page.project_images %}
-                    <div class="carousel-item">
-                        <img src="{{ img }}" alt="Project Image">
+    <div class="carousel-container">
+        <div class="carousel-scroll" id="carouselScroll">             
+            {% if page.video_id and page.video_id != "" %}
+                {% comment %} --- VIDEO MODE --- {% endcomment %}
+                <div class="carousel-item video-slide">
+                    <div class="video-wrapper">
+                        {% if page.video_type == "youtube" %}
+                            <iframe
+                                src="https://www.youtube.com/embed/{{ page.video_id }}?autoplay=1&mute=1&loop=1&playlist={{ page.video_id }}&controls=0&modestbranding=1&rel=0&iv_load_policy=3"                                
+                                frameborder="0" 
+                                allow="autoplay; encrypted-media"
+                                allowfullscreen>
+                            </iframe>                     
+                        {% elsif page.video_type == "vimeo" %}
+                            <iframe src="https://player.vimeo.com/video/{{ page.video_id }}?autoplay=1&muted=1&loop=1&background=1" frameborder="0" allowfullscreen></iframe>
+                        {% endif %}
                     </div>
-                    {% endfor %}
-                {% endif %}              
-            </div>     
-            {% if page.video_id == nil and page.project_images.size > 1 %}
-            <div class="carousel-dots" id="carouselDots">
+                </div>
+            {% elsif page.project_images %}
+                {% comment %} --- IMAGE MODE --- {% endcomment %}
                 {% for img in page.project_images %}
-                    <span class="dot {% if forloop.first %}active{% endif %}"></span>
+                <div class="carousel-item">
+                    <img src="{{ img }}" alt="Project Image">
+                </div>
                 {% endfor %}
-            </div>
-            {% endif %}
+            {% endif %}              
         </div>     
-        <p class="media-caption">
-            {{ page.media_caption | default: "Project Media Gallery" }}
-        </p>
-    </div>
+        {% comment %} Dots only show for images {% endcomment %}
+        {% if page.video_id == nil and page.project_images.size > 1 %}
+        <div class="carousel-dots" id="carouselDots">
+            {% for img in page.project_images %}
+                <span class="dot {% if forloop.first %}active{% endif %}"></span>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>     
+    <p class="media-caption">
+        {{ page.media_caption | default: "Project Media Gallery" }}
+    </p>
+</div>
 </div>
 
 <div style="background: rgba(155, 241, 255, 0.05); padding: 2rem; border-radius: 20px; border: 1px dashed rgba(155, 241, 255, 0.3); margin-bottom: 4rem; backdrop-filter: blur(5px);">
