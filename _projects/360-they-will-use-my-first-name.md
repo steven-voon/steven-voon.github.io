@@ -5,6 +5,7 @@ image: "/assets/images/pic04.jpg"
 pillar: "virtual-reality"
 genre: "heritage"
 company: "Avventura"
+company_url: "https://www.maitreehouse.com/"
 hardware: "Meta Quest 2"
 technologies: ["Meta SDk", "Unity"]
 project_url: "https://www.maitreehouse.com/news/people-with-intellectual-disability-falling-through-the-cracks-in-our-justice-systems" # 
@@ -30,8 +31,8 @@ project_performance: "60 FPS"
 
 # PROJECT GALLERY
 # VIDEO (COMMENT THIS OUT IF VIDEO IS NOT AVAILABLE)
-<!-- video_id: "dGrWmW-sRdM"
-video_type: "youtube" -->
+# video_id: "dGrWmW-sRdM"
+# video_type: "youtube"
 # IMAGES (COMMENT THIS OUT IF IMAGES ARE NOT AVAILABLE)
 project_images: 
   - "/assets/images/myfirstname-ss1.png"
@@ -102,6 +103,9 @@ project_retrospective:
   verdict: "Mobile AR success depends on Environmental UX."
 
 ---
+
+<!-- Main content goes here in markdown format -->
+
 
 <!-- ---
 layout: post
