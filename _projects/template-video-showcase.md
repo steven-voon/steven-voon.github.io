@@ -20,6 +20,10 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
 
 
 <div class="project-dashboard" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; background: rgba(255, 255, 255, 0.07); backdrop-filter: blur(10px); padding: 2rem; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 16px; margin-top: -2.5rem; margin-bottom: 3.5rem; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1); padding: 0 10px;">
+        <span style="display: block; font-size: 0.7rem; color: #ccc; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 5px;">Client</span>
+        <span style="color: #ffffff; font-weight: 800; font-size: 1.1rem;">{{ page.company }}</span>
+    </div>
     <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.15);">
         <span style="display: block; font-size: 0.85rem; color: #ccc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Role</span>
         <span style="color: #9bf1ff; font-weight: 800; font-size: 1.4rem;">Technical Lead</span>
