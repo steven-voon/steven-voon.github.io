@@ -59,20 +59,36 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
     {% endif %}
 </div> -->
 
-<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2.5rem;">
+<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2.5rem; margin-top: 4rem;">
     <div style="width: 5px; height: 35px; background: #9bf1ff; border-radius: 10px; box-shadow: 0 0 15px rgba(155, 241, 255, 0.6);"></div>
     <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">The Vision</h3>
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 4rem; align-items: center; margin-bottom: 6rem;">   
-    <p style="font-size: 1.3rem; line-height: 1.8; color: #ffffff; margin: 0;">
-        <strong>Ceritalah</strong> is a spatial heritage platform bridging local history with AR. I architected the cross-team workflow and optimized the delivery pipeline for complex outdoor environments in Malaysia.
-    </p>
-    {% if page.video_id %}
-    <div style="background: rgba(0,0,0,0.4); padding: 12px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.15);">
-        <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
-            <iframe src="https://www.youtube.com/embed/{{ page.video_id }}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 4rem; align-items: start; margin-bottom: 6rem;">   
+    <div style="display: flex; flex-direction: column; gap: 2rem;">
+        <div>
+            <h5 style="font-size: 0.7rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">Project Overview</h5>
+            <p style="font-size: 1.2rem; line-height: 1.7; color: #ffffff; margin: 0; opacity: 0.9;">
+                <strong>Ceritalah</strong> is a premier digital heritage platform designed to preserve and broadcast Malaysia's local history. By leveraging <strong>Augmented Reality</strong>, the project transforms physical landmarks into immersive storytelling hubs, connecting travelers with deep cultural narratives through their mobile devices.
+            </p>
         </div>
+        <div style="background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-radius: 12px; border-left: 2px solid rgba(155, 241, 255, 0.3);">
+            <h5 style="font-size: 0.7rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">My Role & Strategic Goal</h5>
+            <p style="font-size: 1.2rem; line-height: 1.7; color: #ffffff; margin: 0;">
+                As <strong>Technical Lead</strong>, my primary goal was to bridge the gap between complex heritage data and consumer-grade hardware. I focused on architecting a <strong>modular delivery pipeline</strong> that ensured high-fidelity AR visuals could remain stable under extreme outdoor environmental constraints while maintaining a 0% regression rate across a remote development team.
+            </p>
+        </div>
+    </div>
+    {% if page.video_id %}
+    <div style="background: rgba(0,0,0,0.4); padding: 12px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
+        <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
+            <iframe src="https://www.youtube.com/embed/{{ page.video_id }}" 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                    frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p style="font-size: 0.7rem; text-align: center; margin: 1rem 0 0.5rem 0; color: #9bf1ff; letter-spacing: 1px; text-transform: uppercase; opacity: 0.8;">
+            Field Demo: Visual Positioning System in Outdoor Environments
+        </p>
     </div>
     {% endif %}
 </div>
