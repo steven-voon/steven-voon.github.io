@@ -14,8 +14,8 @@ achievement_url_2: "https://www.ceritalah.app/"
 achievement_url_3: "https://www.ceritalah.app/" 
 
 # CASE A: YouTube
-# video_id: "dGrWmW-sRdM"
-# video_type: "youtube"
+video_id: "dGrWmW-sRdM"
+video_type: "youtube"
 
 # CASE B: Vimeo
 # video_id: "123456789"
@@ -299,8 +299,6 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
         border-radius: 20px; 
         border: 1px solid rgba(255,255,255,0.15); 
         box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-        
-        /* ADD THESE TWO LINES: */
         display: flex;
         flex-direction: column; 
         gap: 5px; /* Subtle spacing between the carousel, dots, and caption */
