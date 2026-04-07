@@ -141,15 +141,15 @@
 						</div>
 						{% endfor %}
 						{% endif %}
-					</div>			
-				</div>
-				{% if page.video_id == nil and page.project_images.size > 1 %}
+					</div>
+					{% if page.video_id == nil and page.project_images.size > 1 %}
 					<div class="carousel-dots" id="carouselDots">
 						{% for img in page.project_images %}
 						<span class="dot {% if forloop.first %}active{% endif %}"></span>
 						{% endfor %}
 					</div>
 					{% endif %}
+				</div>
 				<p class="media-caption">{{ page.media_caption | default: "Project Media Gallery" }}</p>
 			</div>
 			{% endif %}
