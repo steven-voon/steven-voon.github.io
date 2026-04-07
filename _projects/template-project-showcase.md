@@ -144,6 +144,62 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
     </div>
 </div>
 
+<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2.5rem;">
+    <div style="width: 5px; height: 35px; background: #9bf1ff; border-radius: 10px; box-shadow: 0 0 15px rgba(155, 241, 255, 0.6);"></div>
+    <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">Project Ecosystem</h3>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 4.5rem;">
+    <div class="tech-box">
+        <h5 class="tech-label">Core Engine</h5>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;"><span class="tech-tag">Unity 2022.3</span><span class="tech-tag">URP</span><span class="tech-tag">ARFoundation</span></div>
+    </div>
+    <div class="tech-box">
+        <h5 class="tech-label">Infrastructure</h5>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;"><span class="tech-tag">AWS S3</span><span class="tech-tag">Addressables</span><span class="tech-tag">Google VPS</span></div>
+    </div>
+    <div class="tech-box">
+        <h5 class="tech-label">Production</h5>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;"><span class="tech-tag">GitHub CI/CD</span><span class="tech-tag">Slack API</span><span class="tech-tag">Jira</span></div>
+    </div>
+</div>
+
+<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2.5rem;">
+    <div style="width: 5px; height: 35px; background: #9bf1ff; border-radius: 10px; box-shadow: 0 0 15px rgba(155, 241, 255, 0.6);"></div>
+    <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">Engineering Post-Mortem</h3>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 6rem;">
+    <div class="challenge-card" style="border-top-color: #ff9b9b; background: rgba(255, 155, 155, 0.05);">
+        <h4 style="color: #ff9b9b; font-size: 1.1rem; text-transform: uppercase; margin-bottom: 1rem;">Spatial Logic</h4>
+        <p style="font-size: 1.1rem; color: #f0f0f0; margin-bottom: 1.5rem;">Hybrid Localization to solve 10m GPS inaccuracy.</p>
+        <div class="result-tag" style="border-left-color: #9bff9b; color: #9bff9b;">✔ Sub-centimeter anchoring.</div>
+    </div>
+    <div class="challenge-card" style="border-top-color: #9bf1ff; background: rgba(155, 241, 255, 0.05);">
+        <h4 style="color: #9bf1ff; font-size: 1.1rem; text-transform: uppercase; margin-bottom: 1rem;">Performance</h4>
+        <p style="font-size: 1.1rem; color: #f0f0f0; margin-bottom: 1.5rem;">Mitigated 38°C thermal throttling.</p>
+        <div class="result-tag" style="border-left-color: #9bf1ff; color: #9bf1ff;">✔ Stable 60FPS.</div>
+    </div>
+    <div class="challenge-card" style="border-top-color: #ffcc66; background: rgba(255, 204, 102, 0.05);">
+        <h4 style="color: #ffcc66; font-size: 1.1rem; text-transform: uppercase; margin-bottom: 1rem;">Strategic UX</h4>
+        <p style="font-size: 1.1rem; color: #f0f0f0; margin-bottom: 1.5rem;">Solved User Placement friction.</p>
+        <div class="result-tag" style="border-left-color: #ffcc66; color: #ffcc66;">✔ Ghosting guide system.</div>
+    </div>
+</div>
+
+<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2.5rem;">
+    <div style="width: 5px; height: 35px; background: #9bf1ff; border-radius: 10px; box-shadow: 0 0 15px rgba(155, 241, 255, 0.6);"></div>
+    <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">Architect's Retrospective</h3>
+</div>
+
+<div style="background: rgba(255, 255, 255, 0.07); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 20px; padding: 3rem; margin-bottom: 5rem;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem;">
+        <div><h5 class="retro-label" style="color: #ff9b9b;">Technical Debt</h5><ul class="retro-list"><li>5G/3G handover</li><li>Device fragmentation</li></ul></div>
+        <div><h5 class="retro-label" style="color: #9bff9b;">Future Roadmap</h5><ul class="retro-list"><li>Occlusion 2.0</li><li>Solar light estimation</li></ul></div>
+        <div><h5 class="retro-label" style="color: #9bf1ff;">The Verdict</h5><p style="font-size: 1.1rem; color: #eee; line-height: 1.8;">Mobile AR success depends on <strong>Environmental UX</strong>.</p></div>
+    </div>
+</div>
+
 <style>
     /* Global Layout Safety */
     body { overflow-x: hidden; }
