@@ -12,32 +12,39 @@ project_url: "https://www.ceritalah.app/"
 video_id: "dGrWmW-sRdM"
 ---
 
-<div class="project-dashboard" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; background: rgba(255, 255, 255, 0.07); backdrop-filter: blur(10px); padding: 2rem; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 16px; margin-top: -2.5rem; margin-bottom: 4rem; box-shadow: 0 20px 40px rgba(0,0,0,0.3); align-items: stretch; position: relative; z-index: 5;"> 
-    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1); padding: 0 10px; display: flex; flex-direction: column; justify-content: center;">
-        <span style="display: block; font-size: 0.75rem; color: #aaa; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px;">Client</span>
-        <a href="{{ page.company_url }}" target="_blank" style="color: #9bf1ff; font-weight: 800; font-size: 1.2rem; text-decoration: none !important; border-bottom: none !important; outline: none;">
-            {{ page.company }} <span style="font-size: 0.8rem; vertical-align: middle; opacity: 0.7;">↗</span>
+<div class="project-dashboard" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 0; background: rgba(255, 255, 255, 0.07); backdrop-filter: blur(10px); padding: 1.5rem; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 16px; margin-top: -2.5rem; margin-bottom: 4rem; box-shadow: 0 20px 40px rgba(0,0,0,0.3); position: relative; z-index: 5;"> 
+    <div class="dash-item">
+        <span class="dash-label">Client</span>
+        <a href="{{ page.company_url }}" target="_blank" class="dash-client-link">
+            {{ page.company }} <span style="font-size: 0.8rem; opacity: 0.7;">↗</span>
         </a>
     </div>
-    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1); padding: 0 10px; display: flex; flex-direction: column; justify-content: center;">
-        <span style="display: block; font-size: 0.75rem; color: #aaa; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px;">Role</span>
-        <span style="color: #ffffff; font-weight: 800; font-size: 1.2rem;">Technical Lead</span>
+    <div class="dash-sep"></div>
+    <div class="dash-item">
+        <span class="dash-label">Role</span>
+        <span class="dash-value" style="color: #9bf1ff;">Technical Lead</span>
     </div>
-    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1); padding: 0 10px; display: flex; flex-direction: column; justify-content: center;">
-        <span style="display: block; font-size: 0.75rem; color: #aaa; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px;">Team Size</span>
-        <span style="color: #ffffff; font-weight: 800; font-size: 1.2rem;">3 Devs + 1 Agency</span>
+    <div class="dash-sep"></div>
+    <div class="dash-item">
+        <span class="dash-label">Team Size</span>
+        <span class="dash-value">3 Devs + 1 Agency</span>
     </div>
-    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1); padding: 0 10px; display: flex; flex-direction: column; justify-content: center;">
-        <span style="display: block; font-size: 0.75rem; color: #aaa; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px;">Timeline</span>
-        <span style="color: #ffffff; font-weight: 800; font-size: 1.2rem; line-height: 1.1;">2 Years</span>
-        <span style="display: block; font-size: 0.6rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; opacity: 0.9;">R&D • Proto • Live Ops</span>
+    <div class="dash-sep"></div>
+    <div class="dash-item">
+        <span class="dash-label">Timeline</span>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <span class="dash-value">2 Years</span>
+            <span style="font-size: 0.6rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; opacity: 0.9;">R&D • Proto • Live Ops</span>
+        </div>
     </div>
-    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1); padding: 0 10px; display: flex; flex-direction: column; justify-content: center;">
-        <span style="display: block; font-size: 0.75rem; color: #aaa; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px;">Performance</span>
-        <span style="color: #9bff9b; font-weight: 800; font-size: 1.2rem;">60 FPS</span>
+    <div class="dash-sep"></div>
+    <div class="dash-item">
+        <span class="dash-label">Performance</span>
+        <span class="dash-value" style="color: #9bff9b;">60 FPS</span>
     </div>
-    <div style="display: flex; align-items: center; justify-content: center; padding: 0 10px;">
-        <a href="{{ page.project_url }}" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; background: #9bf1ff; color: #0b1118; padding: 12px 20px; border-radius: 12px; font-weight: 700; text-decoration: none; font-size: 0.9rem; box-shadow: 0 4px 15px rgba(155, 241, 255, 0.3); white-space: nowrap;">Project Site ↗</a>
+    <div class="dash-sep"></div>
+    <div class="dash-item" style="min-width: 180px;">
+        <a href="{{ page.project_url }}" target="_blank" class="dash-btn">Project Site ↗</a>
     </div>
 </div>
 
@@ -160,7 +167,67 @@ video_id: "dGrWmW-sRdM"
     .tech-box { background: rgba(255,255,255,0.05); padding: 1.8rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); }
     .tech-label { font-size: 0.9rem; color: #9bf1ff; text-transform: uppercase; margin-bottom: 1.2rem; letter-spacing: 1px; font-weight: 700; }
     .tech-tag { background: rgba(255,255,255,0.1); color: #fff; padding: 6px 14px; border-radius: 6px; font-size: 0.9rem; border: 1px solid rgba(255,255,255,0.2); }
-    
+    /* New Dashboard Styles for Perfect Centering */
+    .dash-item {
+        flex: 1 1 150px; /* Allows items to grow and shrink equally */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+        min-height: 80px;
+    }
+
+    .dash-sep {
+        width: 1px;
+        background: rgba(255, 255, 255, 0.15);
+        margin: 1.5rem 0;
+    }
+
+    .dash-label {
+        display: block;
+        font-size: 0.75rem;
+        color: #aaa;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 8px;
+    }
+
+    .dash-value {
+        color: #ffffff;
+        font-weight: 800;
+        font-size: 1.15rem;
+        line-height: 1.2;
+    }
+
+    .dash-client-link {
+        color: #9bf1ff !important;
+        font-weight: 800;
+        font-size: 1.15rem;
+        text-decoration: none !important;
+        border-bottom: none !important;
+        transition: opacity 0.3s ease;
+    }
+
+    .dash-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #9bf1ff;
+        color: #0b1118 !important;
+        padding: 12px 20px;
+        border-radius: 12px;
+        font-weight: 700;
+        text-decoration: none !important;
+        font-size: 0.85rem;
+        box-shadow: 0 4px 15px rgba(155, 241, 255, 0.3);
+        white-space: nowrap;
+        transition: transform 0.2s ease;
+    }
+
+    .dash-btn:hover { transform: scale(1.05); }
+
     .achievement-breakout {
         position: relative;
         left: 50%; right: 50%;
@@ -190,5 +257,13 @@ video_id: "dGrWmW-sRdM"
     @media (max-width: 768px) {
         .achievement-breakout { flex-direction: column; padding: 3rem 1rem; width: 100vw; left: 50%; margin-left: -50vw; }
         .breakout-label { border-right: none; border-bottom: 1px solid rgba(155, 241, 255, 0.2); padding-right: 0; padding-bottom: 10px; }
+    }
+
+    @media (max-width: 900px) {
+        .dash-sep { display: none; }
+        .dash-item { 
+            flex: 1 1 45%; 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
     }
 </style>
