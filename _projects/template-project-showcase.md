@@ -105,15 +105,17 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
     <div class="vision-media-container">
     <div class="carousel-container">
         <div class="carousel-scroll" id="carouselScroll">             
-            {% if page.video_id and page.video_id != "" %}
+           {% if page.video_id and page.video_id != "" %}
                 <div class="carousel-item">
-                    <div class="video-wrapper">
-                        <div class="video-shield"></div>          
-                        <iframe
-                            src="https://www.youtube.com/embed/{{ page.video_id }}?autoplay=1&mute=1&loop=1&playlist={{ page.video_id }}&controls=0&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&disablekb=1"                                
-                            frameborder="0" 
-                            allow="autoplay; encrypted-media">
-                        </iframe>                     
+                    <div class="video-clipper">
+                        <div class="video-wrapper">
+                            <iframe
+                                src="https://www.youtube.com/embed/{{ page.video_id }}?autoplay=1&mute=1&loop=1&playlist={{ page.video_id }}&controls=1&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&disablekb=1"                                
+                                frameborder="0" 
+                                allow="autoplay; encrypted-media"
+                                allowfullscreen>
+                            </iframe>                     
+                        </div>
                     </div>
                 </div>
             {% elsif page.project_images %}
@@ -320,34 +322,35 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
         width: 100%;
         padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
         height: 0;
-        overflow: hidden; 
-        border-radius: 8px;
         background: #000;
-    }
-
-    /* The Shield: Blocks mouse interaction with the iframe */
-    .video-shield {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 10;
-        cursor: default;
     }
 
     .video-wrapper iframe {
         position: absolute;
-        /* Zoom in slightly (115%) to push the remaining UI off-screen */
-        top: 50%;
-        left: 50%;
-        width: 100%; 
-        height: 100%;
-        transform: translate(-50%, -50%);
-        pointer-events: none; /* Secondary layer of interaction blocking */
+        /* Push the video UP so the title bar is hidden behind the 'clipper' */
+        top: -60px; 
+        left: 0;
+        width: 100%;
+        /* Make the height taller to compensate for pushing it up */
+        height: calc(100% + 120px); 
         border: none;
     }
 
+    .video-clipper {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .video-ready {
+        opacity: 1 !important;
+    }
+
+    /* Ensure the Playback bar at the bottom is still visible */
+    .video-wrapper:hover iframe {
+        /* Optional: you can adjust positioning on hover if needed */
+    }
    
     .carousel-container {
         position: relative;
@@ -481,5 +484,15 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
         const x = e.pageX - scrollContainer.offsetLeft;
         const walk = (x - startX) * 2; // Scroll speed
         scrollContainer.scrollLeft = scrollLeft - walk;
+    });
+
+    window.addEventListener('load', function() {
+        const videoWrap = document.getElementById('videoWrapper');
+        if (videoWrap) {
+            // Wait an extra 200ms just to be sure the YouTube "flash" is over
+            setTimeout(() => {
+                videoWrap.classList.add('video-ready');
+            }, 200);
+        }
     });
 </script>
