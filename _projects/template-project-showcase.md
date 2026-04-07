@@ -106,22 +106,14 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
     <div class="carousel-container">
         <div class="carousel-scroll" id="carouselScroll">             
             {% if page.video_id and page.video_id != "" %}
-                {% comment %} --- VIDEO MODE --- {% endcomment %}
-                <div class="carousel-item video-slide">
-                    <div class="video-slide-container">
-                        <div class="video-wrapper">
-                            {% if page.video_type == "youtube" %}
-                                <iframe
-                                    src="https://www.youtube.com/embed/{{ page.video_id }}?autoplay=1&mute=1&loop=1&playlist={{ page.video_id }}&controls=1&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0"                                
-                                    frameborder="0" 
-                                    allow="autoplay; encrypted-media"
-                                    allowfullscreen>
-                                </iframe>                     
-                            {% elsif page.video_type == "vimeo" %}
-                                <iframe src="https://player.vimeo.com/video/{{ page.video_id }}?autoplay=1&muted=1&loop=1&background=0" frameborder="0" allowfullscreen></iframe>
-                            {% endif %}
-                        </div>
-                        <div class="video-interaction-hint">Hover to seek timeline</div>
+                <div class="carousel-item">
+                    <div class="video-wrapper">
+                        <div class="video-shield"></div>          
+                        <iframe
+                            src="https://www.youtube.com/embed/{{ page.video_id }}?autoplay=1&mute=1&loop=1&playlist={{ page.video_id }}&controls=0&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&disablekb=1"                                
+                            frameborder="0" 
+                            allow="autoplay; encrypted-media">
+                        </iframe>                     
                     </div>
                 </div>
             {% elsif page.project_images %}
@@ -323,67 +315,40 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
         gap: 5px; /* Subtle spacing between the carousel, dots, and caption */
     }
 
-    /* Container for video logic */
-    .video-slide-container {
-        position: relative;
-        width: 100%;
-        border-radius: 8px;
-        overflow: hidden;
-    }
-
     .video-wrapper {
         position: relative;
         width: 100%;
-        padding-bottom: 56.25%; /* 16:9 */
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
         height: 0;
+        overflow: hidden; 
+        border-radius: 8px;
         background: #000;
-        overflow: hidden;
+    }
+
+    /* The Shield: Blocks mouse interaction with the iframe */
+    .video-shield {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        cursor: default;
     }
 
     .video-wrapper iframe {
         position: absolute;
-        /* Zoomed in by default to hide the top/bottom UI bars */
+        /* Zoom in slightly (115%) to push the remaining UI off-screen */
         top: 50%;
         left: 50%;
         width: 115%; 
         height: 115%;
         transform: translate(-50%, -50%);
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        pointer-events: none; /* Secondary layer of interaction blocking */
         border: none;
     }
 
-    /* REVEAL UI ON HOVER */
-    .video-slide-container:hover iframe {
-        /* Zoom out to 100% so the user can see the seek bar */
-        width: 100%;
-        height: 100%;
-    }
-
-    /* Optional Hint overlay */
-    .video-interaction-hint {
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: rgba(155, 241, 255, 0.8);
-        color: #0b1118;
-        padding: 4px 12px;
-        border-radius: 20px;
-        font-size: 0.6rem;
-        font-weight: 800;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        pointer-events: none;
-        opacity: 1;
-        transition: opacity 0.3s ease;
-        z-index: 5;
-    }
-
-    .video-slide-container:hover .video-interaction-hint {
-        opacity: 0; /* Hide hint when they are interacting */
-    }
-
-    
+   
     .carousel-container {
         position: relative;
         width: 100%;
