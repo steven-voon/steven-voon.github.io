@@ -129,6 +129,25 @@ project_url: "https://www.ceritalah.app/" # Referral link
 </div> -->
 
 <h3 style="font-size: 1.8rem; margin-bottom: 2rem;">Project Ecosystem & Tooling</h3>
+
+<div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 5rem;">
+    <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem; display: flex; gap: 1.5rem; align-items: start;">
+        <div style="background: rgba(255, 155, 155, 0.2); color: #ff9b9b; padding: 10px; border-radius: 8px; font-weight: 900;">01</div>
+        <div>
+            <h4 style="margin: 0 0 0.5rem 0; color: #ff9b9b; text-transform: uppercase; font-size: 0.9rem;">Spatial Logic: The Drift Problem</h4>
+            <p style="margin: 0; font-size: 1rem; color: #ccc;">Solved GPS inaccuracy ($\pm$10m) by architecting a Hybrid VPS/GPS anchoring system.</p>
+        </div>
+    </div>
+
+    <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem; display: flex; gap: 1.5rem; align-items: start;">
+        <div style="background: rgba(155, 241, 255, 0.2); color: #9bf1ff; padding: 10px; border-radius: 8px; font-weight: 900;">02</div>
+        <div>
+            <h4 style="margin: 0 0 0.5rem 0; color: #9bf1ff; text-transform: uppercase; font-size: 0.9rem;">Optimization: Thermal Throttling</h4>
+            <p style="margin: 0; font-size: 1rem; color: #ccc;">Mitigated 38°C hardware shutdowns via custom frustum culling and background thread logic.</p>
+        </div>
+    </div>
+</div>
+
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 4.5rem;">
     <div style="background: rgba(255,255,255,0.05); padding: 1.8rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
         <h5 style="font-size: 0.9rem; color: #9bf1ff; text-transform: uppercase; margin-bottom: 1.2rem; letter-spacing: 1px;">Core Engine</h5>
