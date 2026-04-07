@@ -102,34 +102,39 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
             </p>
         </div>
     </div>
-    <<div class="vision-media-container">
+    <div class="vision-media-container">
         <div class="carousel-container">
             <div class="carousel-scroll">             
-                {% if page.video_id %}
+               {% if page.video_id %}
+                {% comment %} Show ONLY the video if video_id exists {% endcomment %}
                 <div class="carousel-item video-slide">
                     <div class="video-wrapper">
-                        <div class="video-shield"></div>                   
+                        <div class="video-shield"></div>
                         {% if page.video_type == "youtube" %}
-                            <iframe 
-                                src="https://www.youtube.com/embed/{{ page.video_id }}?autoplay=1&mute=1&loop=1&playlist={{ page.video_id }}&modestbranding=1&rel=0&iv_load_policy=3&controls=0" 
-                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                            <iframe
+                                src="https://www.youtube.com/embed/{{ page.video_id }}?autoplay=1&mute=1&loop=1&playlist={{ page.video_id }}&controls=0&modestbranding=1&rel=0&iv_load_policy=3"                                
+                                frameborder="0" 
+                                allow="autoplay; encrypted-media"
+                                allowfullscreen>
                             </iframe>                     
                         {% elsif page.video_type == "vimeo" %}
                             <iframe src="https://player.vimeo.com/video/{{ page.video_id }}?autoplay=1&muted=1&loop=1&background=1" frameborder="0" allowfullscreen></iframe>
                         {% endif %}
                     </div>
                 </div>
-                {% endif %}
-                {% for img in page.project_images %}
-                <div class="carousel-item">
-                    <img src="{{ img }}" alt="Project Detail Image">
-                </div>
-                {% endfor %}               
+                {% else %}
+                    {% comment %} Show images ONLY if there is no video {% endcomment %}
+                    {% for img in page.project_images %}
+                    <div class="carousel-item">
+                        <img src="{{ img }}" alt="Project Detail Image">
+                    </div>
+                    {% endfor %}
+                {% endif %}              
             </div>                
-        </div>      
+        </div>     
         <div class="carousel-hint">
-            <span>⟵ Swipe to see details ⟶</span>
-        </div> 
+                <span>⟵ Swipe to see details ⟶</span>
+            </div> 
         <p class="media-caption">
             {{ page.media_caption | default: "Project Media Gallery" }}
         </p>
@@ -307,34 +312,27 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
     .video-wrapper {
         position: relative;
         width: 100%;
-        padding-bottom: 56.25%;
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
         height: 0;
         overflow: hidden;
         border-radius: 8px;
         background: #000;
     }
 
-    .video-shield {
+    /* THE SHIELD: Add this new class */
+    .video-wrapper::after {
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: 10; 
-        background: rgba(0,0,0,0); /* Invisible but physically there */
-        pointer-events: auto; /* This captures the swipe */
+        z-index: 10; /* Sits on top of the iframe */
+        background: rgba(0,0,0,0); /* Invisible */
+        pointer-events: auto; /* Captures the swipe gesture */
     }
 
-    .video-wrapper iframe {
-        position: absolute; 
-        top: 0; 
-        left: 0; 
-        width: 100%; 
-        height: 100%; 
-        z-index: 1; 
-        pointer-events: none; /* This prevents the iframe from stealing the touch */
-    }
-
+    .video-wrapper iframe, 
     .video-wrapper video {
         position: absolute; 
         top: 0; 
@@ -349,21 +347,13 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
     .carousel-container { position: relative; width: 100%; border-radius: 12px; overflow: hidden; }
     
     .carousel-scroll {
-        display: flex;
-        overflow-x: auto !important;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        scrollbar-width: none;     /* Firefox */
-        gap: 20px;
-        padding-bottom: 10px;
-        -webkit-overflow-scrolling: touch; /* Essential for iOS */
-        -ms-overflow-style: none;  /* IE and Edge */
-        touch-action: pan-x; /* Essential for Android: tells browser to ignore vertical scroll here */
+        display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 20px; padding-bottom: 10px;
+        scrollbar-width: none; -ms-overflow-style: none;
     }
 
     .carousel-scroll::-webkit-scrollbar { display: none; }
 
-    .carousel-item { flex: 0 0 100%; scroll-snap-align: start; display: flex; align-items: center; justify-content: center; transform: translateZ(0);}
+    .carousel-item { flex: 0 0 100%; scroll-snap-align: start; display: flex; align-items: center; justify-content: center; }
 
     .carousel-item img { width: 100%; height: auto; aspect-ratio: 16/9; display: block; border-radius: 8px; object-fit: cover; }
 
