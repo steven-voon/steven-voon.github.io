@@ -125,7 +125,7 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
                     {% comment %} --- IMAGE CAROUSEL MODE (Shows images only if no video) --- {% endcomment %}
                     {% for img in page.project_images %}
                     <div class="carousel-item">
-                        <img src="{{ img | relative_url }}" alt="Project Detail Image">
+                        <img src="{{ img }}" alt="Project Detail Image">
                     </div>
                     {% endfor %}
                 {% endif %}              
