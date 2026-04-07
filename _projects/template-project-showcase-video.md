@@ -13,6 +13,13 @@ achievement_url_1: "https://www.ceritalah.app/"
 achievement_url_2: "https://www.ceritalah.app/" 
 achievement_url_3: "https://www.ceritalah.app/" 
 
+# PROJECT DETAILS
+project_role: "Technical Lead"
+project_team_size: "3 Devs + 1 Agency"
+project_timeline: "2 Years"
+project_timeline_detail: "R&D • Proto • Live Ops"
+project_performance: "60 FPS"
+
 # CASE A: YouTube
 video_id: "dGrWmW-sRdM"
 video_type: "youtube"
@@ -33,7 +40,7 @@ project_images:
 media_caption: "Interaction Design: User Flow and AR Interface Mockups"
 ---
 
-<div class="project-dashboard" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 0; background: rgba(255, 255, 255, 0.07); backdrop-filter: blur(10px); padding: 1.5rem; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 16px; margin-top: -2.5rem; margin-bottom: 4rem; box-shadow: 0 20px 40px rgba(0,0,0,0.3); position: relative; z-index: 10;"> 
+<div class="project-dashboard"> 
     <div class="dash-item">
         <span class="dash-label">Client</span>
         <a href="{{ page.company_url }}" target="_blank" class="dash-client-link">
@@ -43,25 +50,25 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
     <div class="dash-sep"></div>
     <div class="dash-item">
         <span class="dash-label">Role</span>
-        <span class="dash-value" style="color: #9bf1ff;">Technical Lead</span>
+        <span class="dash-value" style="color: #9bf1ff;">{{ page.project_role }}</span>
     </div>
     <div class="dash-sep"></div>
     <div class="dash-item">
         <span class="dash-label">Team Size</span>
-        <span class="dash-value">3 Devs + 1 Agency</span>
+        <span class="dash-value">{{ page.project_team_size }}</span>
     </div>
     <div class="dash-sep"></div>
     <div class="dash-item">
         <span class="dash-label">Timeline</span>
         <div style="display: flex; flex-direction: column; align-items: center;">
-            <span class="dash-value">2 Years</span>
-            <span style="font-size: 0.6rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; opacity: 0.9;">R&D • Proto • Live Ops</span>
+            <span class="dash-value">{{ page.project_timeline }}</span>
+            <span style="font-size: 0.6rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; opacity: 0.9;">{{ page.project_timeline_detail }}</span>
         </div>
     </div>
     <div class="dash-sep"></div>
     <div class="dash-item">
         <span class="dash-label">Performance</span>
-        <span class="dash-value" style="color: #9bff9b;">60 FPS</span>
+        <span class="dash-value" style="color: #9bff9b;">{{ page.project_performance }}</span>
     </div>
     <div class="dash-sep"></div>
     <div class="dash-item" style="min-width: 180px;">
@@ -217,7 +224,20 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
     /* Global Layout Safety */
     body { overflow-x: hidden; }
 
-    /* --- Project Dashboard --- */
+    .project-dashboard{
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch; gap: 0;
+        background: rgba(255, 255, 255, 0.07);
+        backdrop-filter: blur(10px); padding: 1.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 16px; margin-top: -2.5rem;
+        margin-bottom: 4rem; box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        position: relative; 
+        z-index: 10;
+    }
+
     .dash-item {
         flex: 1 1 150px;
         display: flex;
