@@ -106,23 +106,15 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
         <div class="carousel-container">
             <div class="carousel-scroll" id="carouselScroll">             
                 {% if page.video_id and page.video_id != "" %}
-                    <div class="carousel-item video-slide">
-                        <div class="video-wrapper">
-                            {% if page.video_type == "youtube" %}
-                                <iframe src="https://www.youtube.com/embed/{{ page.video_id }}?autoplay=1&mute=1&loop=1&playlist={{ page.video_id }}&controls=0&modestbranding=1&rel=0&iv_load_policy=3" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                     
-                            {% elsif page.video_type == "vimeo" %}
-                                <iframe src="https://player.vimeo.com/video/{{ page.video_id }}?autoplay=1&muted=1&loop=1&background=1" frameborder="0" allowfullscreen></iframe>
-                            {% endif %}
-                        </div>
-                    </div>
+                    <div class="carousel-item"> ... </div>
                 {% elsif page.project_images %}
                     {% for img in page.project_images %}
                     <div class="carousel-item">
-                        <img src="{{ img }}" alt="Project Detail Image">
+                        <img src="{{ img }}" alt="Project Image">
                     </div>
                     {% endfor %}
                 {% endif %}              
-            </div>         
+            </div>     
             {% if page.video_id == nil and page.project_images.size > 1 %}
             <div class="carousel-dots" id="carouselDots">
                 {% for img in page.project_images %}
@@ -302,7 +294,16 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
 
     /* --- Media Carousel --- */
     .vision-media-container {
-        background: rgba(0,0,0,0.4); padding: 12px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.4); 
+        padding: 12px; 
+        border-radius: 20px; 
+        border: 1px solid rgba(255,255,255,0.15); 
+        box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        
+        /* ADD THESE TWO LINES: */
+        display: flex;
+        flex-direction: column; 
+        gap: 5px; /* Subtle spacing between the carousel, dots, and caption */
     }
 
     .video-wrapper {
@@ -326,52 +327,62 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
         background: #000;
         z-index: 1; /* Sits below the shield */
     }
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        display: block; /* Forces dots to go underneath the scroll area */
+        overflow: hidden;
+        border-radius: 12px;
+    }    
 
-    .carousel-container { position: relative; width: 100%; border-radius: 12px; overflow: hidden; }
-    
-  .carousel-scroll {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory; /* This enables the "snap" */
-    scroll-behavior: smooth;       /* This makes the jump smooth */
-    gap: 0;                        /* Set to 0 for perfect full-width snapping */
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    cursor: grab;
-}
+    .carousel-scroll {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .carousel-scroll::-webkit-scrollbar { display: none; }
 
     .carousel-scroll:active {
         cursor: grabbing;
     }
 
-.carousel-item {
-    flex: 0 0 100%;
-    min-width: 100%;
-    scroll-snap-align: start;      /* Tells the item where to stop */
-    scroll-snap-stop: always;
-}
+    .carousel-item {
+        flex: 0 0 100%;
+        min-width: 100%;
+        scroll-snap-align: start;
+    }
 
-/* Dots Styling */
-.carousel-dots {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 15px;
-}
+    /* Dots Styling - Forced to the bottom */
+    .carousel-dots {
+        display: flex;
+        width: 100%;
+        justify-content: center; /* Centers dots horizontally */
+        align-items: center;
+        gap: 10px;
+        padding: 15px 0; /* Adds space between image and dots */
+        background: transparent;
+    }
 
-.dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: rgba(155, 241, 255, 0.2);
-    transition: all 0.3s ease;
-}
+    .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(155, 241, 255, 0.3);
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
 
-.dot.active {
-    background: #9bf1ff;
-    transform: scale(1.3);
-    box-shadow: 0 0 10px rgba(155, 241, 255, 0.6);
-}
+    .dot.active {
+        background: #9bf1ff;
+        transform: scale(1.2);
+        box-shadow: 0 0 8px rgba(155, 241, 255, 0.5);
+    }
 
     .carousel-item img { width: 100%; height: auto; aspect-ratio: 16/9; display: block; border-radius: 8px; object-fit: cover; }
 
@@ -407,46 +418,46 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
 </style>
 
 <script>
-const scrollContainer = document.getElementById('carouselScroll');
-const dots = document.querySelectorAll('.dot');
+    const scrollContainer = document.getElementById('carouselScroll');
+    const dots = document.querySelectorAll('.dot');
 
-// 1. Update Dots on Scroll
-scrollContainer.addEventListener('scroll', () => {
-    const width = scrollContainer.offsetWidth;
-    const index = Math.round(scrollContainer.scrollLeft / width);
-    
-    dots.forEach((dot, i) => {
-        dot.classList.toggle('active', i === index);
+    // 1. Update Dots on Scroll
+    scrollContainer.addEventListener('scroll', () => {
+        const width = scrollContainer.offsetWidth;
+        const index = Math.round(scrollContainer.scrollLeft / width);
+        
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+        });
     });
-});
 
-// 2. Mouse Click & Drag to Scroll
-let isDown = false;
-let startX;
-let scrollLeft;
+    // 2. Mouse Click & Drag to Scroll
+    let isDown = false;
+    let startX;
+    let scrollLeft;
 
-scrollContainer.addEventListener('mousedown', (e) => {
-    isDown = true;
-    scrollContainer.style.cursor = 'grabbing';
-    startX = e.pageX - scrollContainer.offsetLeft;
-    scrollLeft = scrollContainer.scrollLeft;
-});
+    scrollContainer.addEventListener('mousedown', (e) => {
+        isDown = true;
+        scrollContainer.style.cursor = 'grabbing';
+        startX = e.pageX - scrollContainer.offsetLeft;
+        scrollLeft = scrollContainer.scrollLeft;
+    });
 
-scrollContainer.addEventListener('mouseleave', () => {
-    isDown = false;
-    scrollContainer.style.cursor = 'grab';
-});
+    scrollContainer.addEventListener('mouseleave', () => {
+        isDown = false;
+        scrollContainer.style.cursor = 'grab';
+    });
 
-scrollContainer.addEventListener('mouseup', () => {
-    isDown = false;
-    scrollContainer.style.cursor = 'grab';
-});
+    scrollContainer.addEventListener('mouseup', () => {
+        isDown = false;
+        scrollContainer.style.cursor = 'grab';
+    });
 
-scrollContainer.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - scrollContainer.offsetLeft;
-    const walk = (x - startX) * 2; // Scroll speed
-    scrollContainer.scrollLeft = scrollLeft - walk;
-});
+    scrollContainer.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - scrollContainer.offsetLeft;
+        const walk = (x - startX) * 2; // Scroll speed
+        scrollContainer.scrollLeft = scrollLeft - walk;
+    });
 </script>
