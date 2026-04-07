@@ -110,7 +110,7 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
                     <div class="video-clipper">
                         <div class="video-wrapper">
                             <iframe
-                                src="https://www.youtube.com/embed/{{ page.video_id }}?autoplay=1&mute=1&loop=1&playlist={{ page.video_id }}&controls=1&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&disablekb=1"                                
+                                src="https://www.youtube.com/embed/{{ page.video_id }}?autoplay=1&mute=0&loop=1&playlist={{ page.video_id }}&controls=1&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&disablekb=1"                                
                                 frameborder="0" 
                                 allow="autoplay; encrypted-media"
                                 allowfullscreen>
