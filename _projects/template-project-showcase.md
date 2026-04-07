@@ -105,36 +105,42 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
     <div class="vision-media-container">
         <div class="carousel-container">
             <div class="carousel-scroll">             
-               {% if page.video_id %}
-                {% comment %} Show ONLY the video if video_id exists {% endcomment %}
-                <div class="carousel-item video-slide">
-                    <div class="video-wrapper">
-                        <div class="video-shield"></div>
-                        {% if page.video_type == "youtube" %}
-                            <iframe
-                                src="https://www.youtube.com/embed/{{ page.video_id }}?autoplay=1&mute=1&loop=1&playlist={{ page.video_id }}&controls=0&modestbranding=1&rel=0&iv_load_policy=3"                                
-                                frameborder="0" 
-                                allow="autoplay; encrypted-media"
-                                allowfullscreen>
-                            </iframe>                     
-                        {% elsif page.video_type == "vimeo" %}
-                            <iframe src="https://player.vimeo.com/video/{{ page.video_id }}?autoplay=1&muted=1&loop=1&background=1" frameborder="0" allowfullscreen></iframe>
-                        {% endif %}
+                {% if page.video_id and page.video_id != "" %}
+                    {% comment %} --- VIDEO MODE (Shows only the video if ID exists) --- {% endcomment %}
+                    <div class="carousel-item video-slide">
+                        <div class="video-wrapper">
+                            <div class="video-shield"></div>
+                            {% if page.video_type == "youtube" %}
+                                <iframe
+                                    src="https://www.youtube.com/embed/{{ page.video_id }}?autoplay=1&mute=1&loop=1&playlist={{ page.video_id }}&controls=0&modestbranding=1&rel=0&iv_load_policy=3"                                
+                                    frameborder="0" 
+                                    allow="autoplay; encrypted-media"
+                                    allowfullscreen>
+                                </iframe>                     
+                            {% elsif page.video_type == "vimeo" %}
+                                <iframe src="https://player.vimeo.com/video/{{ page.video_id }}?autoplay=1&muted=1&loop=1&background=1" frameborder="0" allowfullscreen></iframe>
+                            {% endif %}
+                        </div>
                     </div>
-                </div>
-                {% else %}
-                    {% comment %} Show images ONLY if there is no video {% endcomment %}
+                {% elsif page.project_images %}
+                    {% comment %} --- IMAGE CAROUSEL MODE (Shows images only if no video) --- {% endcomment %}
                     {% for img in page.project_images %}
                     <div class="carousel-item">
-                        <img src="{{ img }}" alt="Project Detail Image">
+                        <img src="{{ img | relative_url }}" alt="Project Detail Image">
                     </div>
                     {% endfor %}
                 {% endif %}              
             </div>                
         </div>     
+        {% comment %} 
+           HINT LOGIC: 
+           Only show "Swipe" if there is NO video and more than 1 image.
+        {% endcomment %}
+        {% if page.video_id == nil and page.project_images.size > 1 %}
         <div class="carousel-hint">
-                <span>⟵ Swipe to see details ⟶</span>
-            </div> 
+            <span>⟵ Swipe to see details ⟶</span>
+        </div> 
+        {% endif %}
         <p class="media-caption">
             {{ page.media_caption | default: "Project Media Gallery" }}
         </p>
