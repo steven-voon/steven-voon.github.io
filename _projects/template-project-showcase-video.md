@@ -13,6 +13,22 @@ achievement_url_1: "https://www.ceritalah.app/"
 achievement_url_2: "https://www.ceritalah.app/" 
 achievement_url_3: "https://www.ceritalah.app/" 
 
+
+
+# Project Achievements
+achievements:
+  - title: "Digital Heritage Exhibition 2025"
+    icon: "🖼️"
+    url: "https://www.ceritalah.app/"
+  - title: "Featured on Media"
+    icon: "📰"
+    url: "https://www.ceritalah.app/"
+  - title: "XR Summit Malaysia Showcase"
+    icon: "🎤"
+    url: "https://www.ceritalah.app/"
+
+
+
 # PROJECT DETAILS
 project_role: "Technical Lead"
 project_team_size: "3 Devs + 1 Agency"
@@ -20,14 +36,11 @@ project_timeline: "2 Years"
 project_timeline_detail: "R&D • Proto • Live Ops"
 project_performance: "60 FPS"
 
-# CASE A: YouTube
+# PROJECT GALLERY
+# VIDEO (COMMENT THIS OUT IF VIDEO IS NOT AVAILABLE)
 video_id: "dGrWmW-sRdM"
 video_type: "youtube"
-
-# CASE B: Vimeo
-# video_id: "123456789"
-# video_type: "vimeo"
-
+# IMAGES (COMMENT THIS OUT IF IMAGES ARE NOT AVAILABLE)
 project_images: 
   - "/assets/images/bioticX-ss0.png"
   - "/assets/images/bioticX-ss1.png"
@@ -38,6 +51,7 @@ project_images:
   - "/assets/images/bioticX-ss6.png"
   - "/assets/images/bioticX-ss7.png"
 media_caption: "Interaction Design: User Flow and AR Interface Mockups"
+
 ---
 
 <div class="project-dashboard"> 
@@ -78,15 +92,11 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
 
 <div class="achievement-breakout"> 
     <div class="breakout-label">PROJECT RECOGNITION</div>
-    <a href="{{ page.achievement_url_1 }}" target="_blank" class="achievement-link">
-        <span class="achievement-icon">🖼️</span> Digital Heritage Exhibition 2025
+    {% for item in page.achievements %}
+    <a href="{{ item.url }}" target="_blank" class="achievement-link">
+        <span class="achievement-icon">{{ item.icon }}</span> {{ item.title }}
     </a>
-    <a href="{{ page.achievement_url_2 }}" target="_blank" class="achievement-link">
-        <span class="achievement-icon">📰</span> Featured on [Media Name]
-    </a>
-    <a href="{{ page.achievement_url_3 }}" target="_blank" class="achievement-link">
-        <span class="achievement-icon">🎤</span> XR Summit Malaysia Showcase
-    </a>
+    {% endfor %}
 </div>
 
 <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2.5rem; margin-top: 4rem;">
