@@ -51,22 +51,22 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
 </div>
 
 
-<div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center; justify-content: center; background: rgba(155, 241, 255, 0.1); border-top: 1px solid rgba(155, 241, 255, 0.2); border-bottom: 1px solid rgba(155, 241, 255, 0.2); padding: 1.5rem; margin-bottom: 4rem; border-radius: 8px;">  
-    <div style="font-size: 0.75rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; font-weight: 800; border-right: 2px solid rgba(155, 241, 255, 0.3); padding-right: 1.5rem; margin-right: 0.5rem;">
+<div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-top: 1px solid rgba(155, 241, 255, 0.2); border-bottom: 1px solid rgba(155, 241, 255, 0.2); padding: 1.5rem; margin-bottom: 4rem; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 2rem;">  
+    <div style="font-size: 0.75rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; font-weight: 800; border-right: 2px solid rgba(155, 241, 255, 0.3); padding-right: 2rem;">
         Featured & Recognized
     </div>
-    <div style="display: flex; align-items: center; gap: 10px;">
-        <span style="font-size: 1.2rem;">🖼️</span>
-        <span style="font-size: 1rem; color: #fff; font-weight: 600;">Digital Heritage Exhibition 2025</span>
-    </div>
-    <div style="display: flex; align-items: center; gap: 10px;">
-        <span style="font-size: 1.2rem;">📰</span>
-        <span style="font-size: 1rem; color: #fff; font-weight: 600;">Featured on [Media Name]</span>
-    </div>
-    <div style="display: flex; align-items: center; gap: 10px;">
-        <span style="font-size: 1.2rem;">🎤</span>
-        <span style="font-size: 1rem; color: #fff; font-weight: 600;">XR Summit Malaysia Showcase</span>
-    </div>
+    <a href="/archive/#{{ page.genre }}" class="achievement-link">
+        <span style="font-size: 1.2rem; margin-right: 8px;">🖼️</span>
+        Digital Heritage Exhibition 2025
+    </a>
+    <a href="https://media-link.com" target="_blank" class="achievement-link">
+        <span style="font-size: 1.2rem; margin-right: 8px;">📰</span>
+        Featured on [Media Name]
+    </a>
+    <a href="/archive/#AR" class="achievement-link">
+        <span style="font-size: 1.2rem; margin-right: 8px;">🎤</span>
+        XR Summit Malaysia Showcase
+    </a>
 </div>
 
 
@@ -275,26 +275,6 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
 
 
 
-<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2.5rem; margin-top: 5rem;">
-    <div style="width: 5px; height: 35px; background: #9bf1ff; border-radius: 10px; box-shadow: 0 0 15px rgba(155, 241, 255, 0.6);"></div>
-    <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">Public Impact & Media</h3>
-</div>
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 6rem;">
-    <a href="LINK_TO_ARTICLE" target="_blank" style="text-decoration: none; display: block; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 1.5rem; transition: transform 0.3s ease;">
-        <h5 style="color: #9bf1ff; font-size: 0.8rem; margin-bottom: 0.5rem; text-transform: uppercase;">[Publication Name]</h5>
-        <p style="color: #fff; font-size: 1.1rem; font-weight: 700; margin: 0;">"Ceritalah: The future of heritage storytelling in Malaysia."</p>
-    </a>
-
-    <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 1.5rem;">
-        <h5 style="color: #9bf1ff; font-size: 0.8rem; margin-bottom: 0.5rem; text-transform: uppercase;">Exhibition Showcase</h5>
-        <p style="color: #fff; font-size: 1.1rem; font-weight: 700; margin: 0;">Selected for the [Event Name] National Digital Pavilion.</p>
-    </div>
-</div>
-
-
-
-
 <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2.5rem;">
     <div style="width: 5px; height: 35px; background: #9bf1ff; border-radius: 10px; box-shadow: 0 0 15px rgba(155, 241, 255, 0.6);"></div>
     <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">Architect's Retrospective</h3>
@@ -327,5 +307,25 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
     .result-tag { background: rgba(255, 255, 255, 0.05); padding: 15px; border-left: 4px solid; font-size: 1rem; border-radius: 4px; font-weight: 600; }
     .retro-label { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1.2rem; font-weight: 700; }
     .retro-list { font-size: 1.1rem; padding-left: 1.2rem; color: #ddd; line-height: 2; margin: 0; }/* Ensure these styles are in your CSS or at the bottom of the file */
+    .achievement-link {
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 8px 16px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0);
+        transition: all 0.3s ease;
+        border: 1px solid transparent;
+    }
+    .achievement-link:hover {
+        background: rgba(155, 241, 255, 0.1);
+        border: 1px solid rgba(155, 241, 255, 0.3);
+        color: #9bf1ff;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
 </style>
 ---
