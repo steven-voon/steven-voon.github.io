@@ -21,7 +21,7 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
 
 <div class="project-dashboard" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; background: rgba(255, 255, 255, 0.07); backdrop-filter: blur(10px); padding: 2rem; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 16px; margin-top: -2.5rem; margin-bottom: 3.5rem; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
     <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1); padding: 0 10px;">
-        <span style="display: block; font-size: 0.7rem; color: #ccc; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 5px;">Client</span>
+        <span style="display: block; font-size: 0.85rem; color: #ccc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Client</span>
         <span style="color: #ffffff; font-weight: 800; font-size: 1.1rem;">{{ page.company }}</span>
     </div>
     <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.15);">
@@ -51,7 +51,25 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
 </div>
 
 
-<div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-top: 1px solid rgba(155, 241, 255, 0.2); border-bottom: 1px solid rgba(155, 241, 255, 0.2); padding: 1.5rem; margin-bottom: 4rem; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 2rem;">  
+<div class="achievement-breakout" style="
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    background: rgba(155, 241, 255, 0.08); 
+    backdrop-filter: blur(10px); 
+    border-top: 1px solid rgba(155, 241, 255, 0.2); 
+    border-bottom: 1px solid rgba(155, 241, 255, 0.2); 
+    padding: 1.5rem 0; 
+    margin-bottom: 5rem; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 2rem;
+    box-shadow: inset 0 20px 40px rgba(0,0,0,0.1);"> 
     <div style="font-size: 0.75rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; font-weight: 800; border-right: 2px solid rgba(155, 241, 255, 0.3); padding-right: 2rem;">
         Featured & Recognized
     </div>
@@ -298,6 +316,7 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
 </div>
 
 <style>
+    body { overflow-x: hidden; }
     .tech-box { background: rgba(255,255,255,0.06); padding: 2rem; border-radius: 16px; border: 1px solid rgba(255,255,255,0.12); }
     .tech-label { font-size: 0.9rem; color: #9bf1ff; text-transform: uppercase; margin-bottom: 1.2rem; letter-spacing: 2px; font-weight: 700; }
     .tech-tag { background: rgba(255,255,255,0.12); color: #fff; padding: 6px 14px; border-radius: 6px; font-size: 0.95rem; border: 1px solid rgba(255,255,255,0.25); }
@@ -308,24 +327,32 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
     .retro-label { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1.2rem; font-weight: 700; }
     .retro-list { font-size: 1.1rem; padding-left: 1.2rem; color: #ddd; line-height: 2; margin: 0; }/* Ensure these styles are in your CSS or at the bottom of the file */
     .achievement-link {
-        display: flex;
-        align-items: center;
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 1rem;
-        font-weight: 600;
-        padding: 8px 16px;
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0);
-        transition: all 0.3s ease;
-        border: 1px solid transparent;
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
     }
     .achievement-link:hover {
-        background: rgba(155, 241, 255, 0.1);
-        border: 1px solid rgba(155, 241, 255, 0.3);
+        background: rgba(155, 241, 255, 0.15);
         color: #9bf1ff;
         transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    @media (max-width: 768px) {
+        .achievement-breakout {
+            flex-direction: column;
+            gap: 1rem;
+            padding: 2rem 0;
+        }
+        .achievement-breakout div {
+            border-right: none !important;
+            padding-right: 0 !important;
+            margin-bottom: 10px;
+        }
     }
 </style>
 ---
