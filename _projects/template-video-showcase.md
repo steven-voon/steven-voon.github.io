@@ -44,32 +44,6 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
 </div>
 
 
-<div style="background: rgba(155, 241, 255, 0.05); padding: 2rem; border-radius: 20px; border: 1px dashed rgba(155, 241, 255, 0.3); margin-bottom: 4rem; backdrop-filter: blur(5px);">
-    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1.5rem;">
-        <div style="width: 4px; height: 20px; background: #9bf1ff; border-radius: 4px;"></div>
-        <h5 style="font-size: 0.85rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; margin: 0; font-weight: 700;">Leadership & Agency Management</h5>
-    </div>
-    <p style="font-size: 1.2rem; line-height: 1.8; color: #eee; margin-bottom: 2rem;">
-        As the technical bridge for <strong>Ceritalah</strong>, I coordinated a remote team of 3 developers and an external creative agency. I was responsible for defining the <strong>API contracts</strong> and <strong>Asset Delivery Pipelines</strong>, ensuring that the agency's high-fidelity heritage assets were optimized for our mobile XR engine without compromising performance.
-    </p>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem;">
-        <div style="font-size: 1rem; color: #9bff9b; display: flex; align-items: center; gap: 8px;">
-            <span style="font-size: 1.2rem;">✔</span> <strong>Weekly Syncs:</strong> Managed sprint goals & blockers.
-        </div>
-        <div style="font-size: 1rem; color: #9bff9b; display: flex; align-items: center; gap: 8px;">
-            <span style="font-size: 1.2rem;">✔</span> <strong>QA Gatekeeper:</strong> Conducted weekly code & asset reviews.
-        </div>
-        <div style="font-size: 1rem; color: #9bff9b; display: flex; align-items: center; gap: 8px;">
-            <span style="font-size: 1.2rem;">✔</span> <strong>CI/CD Workflow:</strong> Enforced 0% regression via GitHub.
-        </div>
-    </div>
-</div>
-
-<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2.5rem;">
-    <div style="width: 5px; height: 35px; background: #9bf1ff; border-radius: 10px; box-shadow: 0 0 15px rgba(155, 241, 255, 0.6);"></div>
-    <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">The Vision</h3>
-</div>
-
 <!-- <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: start; margin-bottom: 3rem;">   
     <div>
         <h2 style="margin-top: 0;">The Vision</h2>
@@ -124,6 +98,34 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
     {% endif %}
 </div>
 
+
+
+<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2.5rem; margin-top: 4rem;">
+    <div style="width: 5px; height: 35px; background: #9bf1ff; border-radius: 10px; box-shadow: 0 0 15px rgba(155, 241, 255, 0.6);"></div>
+    <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">Leadership & Agency Management</h3>
+</div>
+
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1.5rem;">
+    <div style="width: 4px; height: 20px; background: #9bf1ff; border-radius: 4px;"></div>
+    <h5 style="font-size: 0.85rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; margin: 0; font-weight: 700;">Leadership & Agency Management</h5>
+</div>
+
+<div style="background: rgba(155, 241, 255, 0.05); padding: 2rem; border-radius: 20px; border: 1px dashed rgba(155, 241, 255, 0.3); margin-bottom: 4rem; backdrop-filter: blur(5px);">
+    <p style="font-size: 1.2rem; line-height: 1.8; color: #eee; margin-bottom: 2rem;">
+        As the technical bridge for <strong>Ceritalah</strong>, I coordinated a remote team of 3 developers and an external creative agency. I was responsible for defining the <strong>API contracts</strong> and <strong>Asset Delivery Pipelines</strong>, ensuring that the agency's high-fidelity heritage assets were optimized for our mobile XR engine without compromising performance.
+    </p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem;">
+        <div style="font-size: 1rem; color: #9bff9b; display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 1.2rem;">✔</span> <strong>Weekly Syncs:</strong> Managed sprint goals & blockers.
+        </div>
+        <div style="font-size: 1rem; color: #9bff9b; display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 1.2rem;">✔</span> <strong>QA Gatekeeper:</strong> Conducted weekly code & asset reviews.
+        </div>
+        <div style="font-size: 1rem; color: #9bff9b; display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 1.2rem;">✔</span> <strong>CI/CD Workflow:</strong> Enforced 0% regression via GitHub.
+        </div>
+    </div>
+</div>
 
 <!-- ### 💻 Technical Stack & Expertise
 <div class="tech-tags" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; margin-bottom: 3rem;">
