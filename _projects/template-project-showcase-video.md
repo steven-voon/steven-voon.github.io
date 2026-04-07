@@ -445,16 +445,50 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
 <script>
     const scrollContainer = document.getElementById('carouselScroll');
     const dots = document.querySelectorAll('.dot');
+    let autoSlideInterval;
+    let isUserInteracting = false;
 
-    // 1. Update Dots on Scroll
+    // --- 1. THE AUTO-SLIDE ENGINE ---
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(() => {
+            if (!isUserInteracting) {
+                const width = scrollContainer.offsetWidth;
+                const maxScroll = scrollContainer.scrollWidth - width;
+                
+                // If at the end, jump back to start, otherwise go to next
+                if (scrollContainer.scrollLeft >= maxScroll - 10) {
+                    scrollContainer.scrollTo({ left: 0, behavior: 'smooth' });
+                } else {
+                    scrollContainer.scrollBy({ left: width, behavior: 'smooth' });
+                }
+            }
+        }, 3000); // 3 Seconds
+    }
+
+    // --- 2. THE KILL SWITCH ---
+    // Stop auto-sliding forever once the user touches it
+    function stopAutoSlidePermanent() {
+        if (autoSlideInterval) {
+            clearInterval(autoSlideInterval);
+            autoSlideInterval = null;
+            isUserInteracting = true; 
+            console.log("User took control. Auto-slide disabled.");
+        }
+    }
+
+    // --- 3. EVENT LISTENERS ---
+
+    // Update Dots on Scroll
     scrollContainer.addEventListener('scroll', () => {
         const width = scrollContainer.offsetWidth;
         const index = Math.round(scrollContainer.scrollLeft / width);
-        
         dots.forEach((dot, i) => {
             dot.classList.toggle('active', i === index);
         });
     });
+
+    // Touch/Swipe Start (Mobile)
+    scrollContainer.addEventListener('touchstart', stopAutoSlidePermanent);
 
     // 2. Mouse Click & Drag to Scroll
     let isDown = false;
@@ -462,29 +496,26 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
     let scrollLeft;
 
     scrollContainer.addEventListener('mousedown', (e) => {
+        stopAutoSlidePermanent(); // Stop auto when user clicks
         isDown = true;
         scrollContainer.style.cursor = 'grabbing';
         startX = e.pageX - scrollContainer.offsetLeft;
         scrollLeft = scrollContainer.scrollLeft;
     });
 
-    scrollContainer.addEventListener('mouseleave', () => {
-        isDown = false;
-        scrollContainer.style.cursor = 'grab';
-    });
-
-    scrollContainer.addEventListener('mouseup', () => {
-        isDown = false;
-        scrollContainer.style.cursor = 'grab';
-    });
+    scrollContainer.addEventListener('mouseleave', () => { isDown = false; });
+    scrollContainer.addEventListener('mouseup', () => { isDown = false; });
 
     scrollContainer.addEventListener('mousemove', (e) => {
         if (!isDown) return;
         e.preventDefault();
         const x = e.pageX - scrollContainer.offsetLeft;
-        const walk = (x - startX) * 2; // Scroll speed
+        const walk = (x - startX) * 2;
         scrollContainer.scrollLeft = scrollLeft - walk;
     });
+
+    // Initialize
+    startAutoSlide();
 
     window.addEventListener('load', function() {
         const videoWrap = document.getElementById('videoWrapper');
