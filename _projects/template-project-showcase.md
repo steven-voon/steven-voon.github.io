@@ -136,9 +136,9 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
            Only show "Swipe" if there is NO video and more than 1 image.
         {% endcomment %}
         {% if page.video_id == nil and page.project_images.size > 1 %}
-        <div class="carousel-hint">
-            <span>⟵ Swipe to see details ⟶</span>
-        </div> 
+            <div class="carousel-hint">
+                <span>⟵ Swipe to see details ⟶</span>
+            </div> 
         {% endif %}
         <p class="media-caption">
             {{ page.media_caption | default: "Project Media Gallery" }}
@@ -338,14 +338,33 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
 
     .carousel-container { position: relative; width: 100%; border-radius: 12px; overflow: hidden; }
     
-    .carousel-scroll {
-        display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 20px; padding-bottom: 10px;
-        scrollbar-width: none; -ms-overflow-style: none;
+   .carousel-scroll {
+        display: flex; 
+        flex-wrap: nowrap; /* Force images to stay in a single line */
+        overflow-x: auto; 
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory; 
+        gap: 20px; 
+        padding-bottom: 10px;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
     }
 
-    .carousel-scroll::-webkit-scrollbar { display: none; }
+    .carousel-scroll {
+        cursor: grab;
+    }
+    .carousel-scroll:active {
+        cursor: grabbing;
+    }
 
-    .carousel-item { flex: 0 0 100%; scroll-snap-align: start; display: flex; align-items: center; justify-content: center; }
+    .carousel-item { 
+        flex: 0 0 100%; 
+        width: 100%; /* Force it to take full width */
+        min-width: 100%; /* Prevent it from shrinking */
+        scroll-snap-align: start; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+    }
 
     .carousel-item img { width: 100%; height: auto; aspect-ratio: 16/9; display: block; border-radius: 8px; object-fit: cover; }
 
@@ -379,3 +398,33 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
         .breakout-label { border-right: none; border-bottom: 1px solid rgba(155, 241, 255, 0.2); padding-right: 0; padding-bottom: 10px; }
     }
 </style>
+
+<script>
+const slider = document.querySelector('.carousel-scroll');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  slider.classList.add('active');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+
+slider.addEventListener('mouseleave', () => {
+  isDown = false;
+});
+
+slider.addEventListener('mouseup', () => {
+  isDown = false;
+});
+
+slider.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 2; // Scroll speed
+  slider.scrollLeft = scrollLeft - walk;
+});
+</script>
