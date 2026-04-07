@@ -70,7 +70,7 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
 </div>
 
 <div class="achievement-breakout"> 
-    <div class="breakout-label">Featured & Recognized</div>
+    <div class="breakout-label">PROJECT RECOGNITION</div>
     <a href="{{ page.achievement_url_1 }}" target="_blank" class="achievement-link">
         <span class="achievement-icon">🖼️</span> Digital Heritage Exhibition 2025
     </a>
@@ -84,19 +84,20 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
 
 <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2.5rem; margin-top: 4rem;">
     <div style="width: 5px; height: 35px; background: #9bf1ff; border-radius: 10px; box-shadow: 0 0 15px rgba(155, 241, 255, 0.6);"></div>
-    <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">The Vision</h3>
+    <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">STRATEGIC INTENT</h3>
 </div>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 4rem; align-items: start; margin-bottom: 6rem;">   
     <div style="display: flex; flex-direction: column; gap: 2rem;">
         <div>
-            <h5 style="font-size: 0.7rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">Project Overview</h5>
+            <h5 style="font-size: 0.7rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">PROJECT SUMMARY</h5>
             <p style="font-size: 1.2rem; line-height: 1.7; color: #ffffff; margin: 0; opacity: 0.9;">
                 <strong>Ceritalah</strong> is a digital heritage platform leveraging <strong>Augmented Reality</strong> to transform physical landmarks into storytelling hubs.
             </p>
         </div>
-        <div style="background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-radius: 12px; border-left: 2px solid rgba(155, 241, 255, 0.3);">
-            <h5 style="font-size: 0.7rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">My Role & Strategic Goal</h5>
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1.5rem;">
+            <div style="width: 4px; height: 20px; background: #9bf1ff; border-radius: 4px;"></div>
+            <h5 style="font-size: 0.7rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">MISSION & OBJECTIVES</h5>
             <p style="font-size: 1.2rem; line-height: 1.7; color: #ffffff; margin: 0;">
                 Architected a <strong>modular delivery pipeline</strong> ensuring high-fidelity AR stability under outdoor environmental constraints.
             </p>
@@ -145,7 +146,7 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
 <div style="background: rgba(155, 241, 255, 0.05); padding: 2rem; border-radius: 20px; border: 1px dashed rgba(155, 241, 255, 0.3); margin-bottom: 4rem; backdrop-filter: blur(5px);">
     <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1.5rem;">
         <div style="width: 4px; height: 20px; background: #9bf1ff; border-radius: 4px;"></div>
-        <h5 style="font-size: 0.85rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; margin: 0; font-weight: 700;">Leadership & Agency Management</h5>
+        <h5 style="font-size: 0.85rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; margin: 0; font-weight: 700;">TECHNICAL LEADERSHIP</h5>
     </div>
     <p style="font-size: 1.2rem; line-height: 1.8; color: #eee; margin-bottom: 2rem;">
         Coordinated a remote team of 3 developers and an external agency. Managed the project through a 24-month lifecycle from R&D to regional deployment.
@@ -159,7 +160,7 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
 
 <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2.5rem;">
     <div style="width: 5px; height: 35px; background: #9bf1ff; border-radius: 10px; box-shadow: 0 0 15px rgba(155, 241, 255, 0.6);"></div>
-    <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">Project Ecosystem</h3>
+    <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">TECHNICAL ARCHITECTURE</h3>
 </div>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 4.5rem;">
@@ -179,7 +180,7 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
 
 <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2.5rem;">
     <div style="width: 5px; height: 35px; background: #9bf1ff; border-radius: 10px; box-shadow: 0 0 15px rgba(155, 241, 255, 0.6);"></div>
-    <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">Engineering Post-Mortem</h3>
+    <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">TECHNICAL DEEP-DIVE</h3>
 </div>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 6rem;">
@@ -202,7 +203,7 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
 
 <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2.5rem;">
     <div style="width: 5px; height: 35px; background: #9bf1ff; border-radius: 10px; box-shadow: 0 0 15px rgba(155, 241, 255, 0.6);"></div>
-    <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">Architect's Retrospective</h3>
+    <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">PROJECT RETROSPECTIVE</h3>
 </div>
 
 <div style="background: rgba(255, 255, 255, 0.07); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 20px; padding: 3rem; margin-bottom: 5rem;">
