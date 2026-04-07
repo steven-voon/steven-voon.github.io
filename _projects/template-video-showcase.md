@@ -5,6 +5,7 @@ image: "/assets/images/pic04.jpg"
 pillar: "augmented-reality"
 genre: "heritage"
 company: "Maitree House"
+company_url: "https://www.maitreehouse.com/"
 hardware: "Mobile"
 technologies: ["AR", "Unity"]
 project_url: "https://www.ceritalah.app/" # Referral link
@@ -22,7 +23,7 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
 <div class="project-dashboard" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; background: rgba(255, 255, 255, 0.07); backdrop-filter: blur(10px); padding: 2rem; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 16px; margin-top: -2.5rem; margin-bottom: 4rem; box-shadow: 0 20px 40px rgba(0,0,0,0.3); align-items: stretch;"> 
     <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1); padding: 0 10px; display: flex; flex-direction: column; justify-content: center;">
         <span style="display: block; font-size: 0.75rem; color: #aaa; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px;">Client</span>
-        <a href="https://www.maitreehouse.com" target="_blank" style="color: #9bf1ff; font-weight: 800; font-size: 1.2rem; text-decoration: none; transition: opacity 0.3s ease;">
+        <a href="{{ page.company_url }}" target="_blank" style="color: #9bf1ff; font-weight: 800; font-size: 1.2rem; text-decoration: none !important; border-bottom: none !important; transition: opacity 0.3s ease;">
             {{ page.company }} <span style="font-size: 0.8rem; vertical-align: middle; opacity: 0.7;">↗</span>
         </a>
     </div>
@@ -53,25 +54,7 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
 </div>
 
 
-<div class="achievement-breakout" style="
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    width: 100vw;
-    background: rgba(155, 241, 255, 0.08); 
-    backdrop-filter: blur(10px); 
-    border-top: 1px solid rgba(155, 241, 255, 0.2); 
-    border-bottom: 1px solid rgba(155, 241, 255, 0.2); 
-    padding: 1.5rem 0; 
-    margin-bottom: 5rem; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    flex-wrap: wrap; 
-    gap: 2rem;
-    box-shadow: inset 0 20px 40px rgba(0,0,0,0.1);"> 
+<div class="achievement-breakout"> 
     <div style="font-size: 0.75rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; font-weight: 800; border-right: 2px solid rgba(155, 241, 255, 0.3); padding-right: 2rem;">
         Featured & Recognized
     </div>
@@ -353,17 +336,22 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
         margin-left: -50vw;
         margin-right: -50vw;
         width: 100vw;
-        background: rgba(155, 241, 255, 0.08); 
-        backdrop-filter: blur(10px); 
-        border-top: 1px solid rgba(155, 241, 255, 0.2); 
-        border-bottom: 1px solid rgba(155, 241, 255, 0.2); 
-        padding: 1.5rem 0; 
-        margin-bottom: 5rem; 
+
+        /* THE FIXES: */
         display: flex; 
         align-items: center; 
         justify-content: center; 
         flex-wrap: wrap; 
         gap: 2rem;
+        padding: 2rem 0; /* Increased vertical padding */
+        height: auto;    /* Ensure it grows with content */
+        overflow: visible; /* Prevents clipping of the hover 'jump' */
+
+        background: rgba(155, 241, 255, 0.08); 
+        backdrop-filter: blur(10px); 
+        border-top: 1px solid rgba(155, 241, 255, 0.2); 
+        border-bottom: 1px solid rgba(155, 241, 255, 0.2); 
+        margin-bottom: 5rem; 
         box-shadow: inset 0 20px 40px rgba(0,0,0,0.1);
     }
     .breakout-label {
