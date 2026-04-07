@@ -70,7 +70,7 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
 </div>
 
 <div class="achievement-breakout"> 
-    <div class="breakout-label section-label">PROJECT RECOGNITION</div>
+    <div class="breakout-label">PROJECT RECOGNITION</div>
     <a href="{{ page.achievement_url_1 }}" target="_blank" class="achievement-link">
         <span class="achievement-icon">🖼️</span> Digital Heritage Exhibition 2025
     </a>
@@ -90,13 +90,13 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 4rem; align-items: start; margin-bottom: 6rem;">   
     <div style="display: flex; flex-direction: column; gap: 2rem;">
         <div>
-            <h5 class="section-label">PROJECT SUMMARY</h5>
+            <h5 style="font-size: 0.7rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">PROJECT SUMMARY</h5>
             <p style="font-size: 1.2rem; line-height: 1.7; color: #ffffff; margin: 0; opacity: 0.9;">
                 <strong>Ceritalah</strong> is a digital heritage platform leveraging <strong>Augmented Reality</strong> to transform physical landmarks into storytelling hubs.
             </p>
         </div>
         <div style="background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-radius: 12px; border-left: 2px solid rgba(155, 241, 255, 0.3);">
-            <h5 class="section-label">MISSION & OBJECTIVES</h5>
+            <h5 style="font-size: 0.7rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">MISSION & IMPACT</h5>
             <p style="font-size: 1.2rem; line-height: 1.7; color: #ffffff; margin: 0;">
                 Architected a <strong>modular delivery pipeline</strong> ensuring high-fidelity AR stability under outdoor environmental constraints.
             </p>
@@ -145,7 +145,7 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
 <div style="background: rgba(155, 241, 255, 0.05); padding: 2rem; border-radius: 20px; border: 1px dashed rgba(155, 241, 255, 0.3); margin-bottom: 4rem; backdrop-filter: blur(5px);">
     <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1.5rem;">
         <div style="width: 4px; height: 20px; background: #9bf1ff; border-radius: 4px;"></div>
-        <h5 class="section-label">TECHNICAL LEADERSHIP</h5>
+        <h5 style="font-size: 0.85rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; margin: 0; font-weight: 700;">TECHNICAL LEADERSHIP</h5>
     </div>
     <p style="font-size: 1.2rem; line-height: 1.8; color: #eee; margin-bottom: 2rem;">
         Coordinated a remote team of 3 developers and an external agency. Managed the project through a 24-month lifecycle from R&D to regional deployment.
@@ -164,15 +164,15 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 4.5rem;">
     <div class="tech-box">
-        <h5 class="section-label">Core Engine</h5>
+        <h5 class="tech-label">Core Engine</h5>
         <div style="display: flex; flex-wrap: wrap; gap: 8px;"><span class="tech-tag">Unity 2022.3</span><span class="tech-tag">URP</span><span class="tech-tag">ARFoundation</span></div>
     </div>
     <div class="tech-box">
-        <h5 class="section-label">Infrastructure</h5>
+        <h5 class="tech-label">Infrastructure</h5>
         <div style="display: flex; flex-wrap: wrap; gap: 8px;"><span class="tech-tag">AWS S3</span><span class="tech-tag">Addressables</span><span class="tech-tag">Google VPS</span></div>
     </div>
     <div class="tech-box">
-        <h5 class="section-label">Production</h5>
+        <h5 class="tech-label">Production</h5>
         <div style="display: flex; flex-wrap: wrap; gap: 8px;"><span class="tech-tag">GitHub CI/CD</span><span class="tech-tag">Slack API</span><span class="tech-tag">Jira</span></div>
     </div>
 </div>
@@ -277,18 +277,6 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
     }
 
     .dash-btn:hover { transform: scale(1.05); }
-
-
-    .section-label {
-        font-size: 0.75rem !important;
-        color: #9bf1ff !important;
-        text-transform: uppercase !important;
-        letter-spacing: 2px !important;
-        font-weight: 800 !important;
-        margin-bottom: 12px !important;
-        display: block;
-        opacity: 0.9;
-    }s
 
     /* --- Achievement Ribbon --- */
     .achievement-breakout {
