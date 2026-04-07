@@ -59,19 +59,19 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
     {% endif %}
 </div> -->
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; align-items: center; margin-bottom: 4rem;">   
-    <div>
-        <h2 style="margin-top: 0; font-size: 2.2rem; border-bottom: 3px solid #9bf1ff; display: inline-block; padding-bottom: 8px; margin-bottom: 1.5rem;">The Vision</h2>
-        <p style="font-size: 1.25rem; line-height: 1.7; color: #ffffff; margin-bottom: 2rem;">
-            <strong>Ceritalah</strong> is a spatial heritage platform bridging local history with AR. As <strong>Technical Lead</strong>, I architected the cross-team workflow and optimized the delivery pipeline for complex outdoor environments in Malaysia.
-        </p>
-    </div>
+<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2.5rem;">
+    <div style="width: 5px; height: 35px; background: #9bf1ff; border-radius: 10px; box-shadow: 0 0 15px rgba(155, 241, 255, 0.6);"></div>
+    <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">The Vision</h3>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 4rem; align-items: center; margin-bottom: 6rem;">   
+    <p style="font-size: 1.3rem; line-height: 1.8; color: #ffffff; margin: 0;">
+        <strong>Ceritalah</strong> is a spatial heritage platform bridging local history with AR. I architected the cross-team workflow and optimized the delivery pipeline for complex outdoor environments in Malaysia.
+    </p>
     {% if page.video_id %}
-    <div style="background: rgba(0,0,0,0.3); padding: 12px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 15px 35px rgba(0,0,0,0.4);">
+    <div style="background: rgba(0,0,0,0.4); padding: 12px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.15);">
         <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
-            <iframe src="https://www.youtube.com/embed/{{ page.video_id }}" 
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-                    frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/{{ page.video_id }}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
     {% endif %}
@@ -128,24 +128,9 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
     </div>
 </div> -->
 
-<h3 style="font-size: 1.8rem; margin-bottom: 2rem;">Project Ecosystem & Tooling</h3>
-
-<div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 5rem;">
-    <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem; display: flex; gap: 1.5rem; align-items: start;">
-        <div style="background: rgba(255, 155, 155, 0.2); color: #ff9b9b; padding: 10px; border-radius: 8px; font-weight: 900;">01</div>
-        <div>
-            <h4 style="margin: 0 0 0.5rem 0; color: #ff9b9b; text-transform: uppercase; font-size: 0.9rem;">Spatial Logic: The Drift Problem</h4>
-            <p style="margin: 0; font-size: 1rem; color: #ccc;">Solved GPS inaccuracy ($\pm$10m) by architecting a Hybrid VPS/GPS anchoring system.</p>
-        </div>
-    </div>
-
-    <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem; display: flex; gap: 1.5rem; align-items: start;">
-        <div style="background: rgba(155, 241, 255, 0.2); color: #9bf1ff; padding: 10px; border-radius: 8px; font-weight: 900;">02</div>
-        <div>
-            <h4 style="margin: 0 0 0.5rem 0; color: #9bf1ff; text-transform: uppercase; font-size: 0.9rem;">Optimization: Thermal Throttling</h4>
-            <p style="margin: 0; font-size: 1rem; color: #ccc;">Mitigated 38°C hardware shutdowns via custom frustum culling and background thread logic.</p>
-        </div>
-    </div>
+<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2.5rem;">
+    <div style="width: 5px; height: 35px; background: #9bf1ff; border-radius: 10px; box-shadow: 0 0 15px rgba(155, 241, 255, 0.6);"></div>
+    <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">Project Ecosystem</h3>
 </div>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 4.5rem;">
@@ -175,8 +160,44 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
     </div>
 </div>
 
-<h3 style="font-size: 1.8rem; text-align: center; margin-bottom: 2.5rem;">Engineering Post-Mortem</h3>
+
+<!-- FOR TOPDOWN LIST AND IF MORE THAN 5 ITEMS
+<div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 5rem;">
+    <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem; display: flex; gap: 1.5rem; align-items: start;">
+        <div style="background: rgba(255, 155, 155, 0.2); color: #ff9b9b; padding: 10px; border-radius: 8px; font-weight: 900;">01</div>
+        <div>
+            <h4 style="margin: 0 0 0.5rem 0; color: #ff9b9b; text-transform: uppercase; font-size: 0.9rem;">Spatial Logic: The Drift Problem</h4>
+            <p style="margin: 0; font-size: 1rem; color: #ccc;">Solved GPS inaccuracy ($\pm$10m) by architecting a Hybrid VPS/GPS anchoring system.</p>
+        </div>
+    </div>
+
+    <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem; display: flex; gap: 1.5rem; align-items: start;">
+        <div style="background: rgba(155, 241, 255, 0.2); color: #9bf1ff; padding: 10px; border-radius: 8px; font-weight: 900;">02</div>
+        <div>
+            <h4 style="margin: 0 0 0.5rem 0; color: #9bf1ff; text-transform: uppercase; font-size: 0.9rem;">Optimization: Thermal Throttling</h4>
+            <p style="margin: 0; font-size: 1rem; color: #ccc;">Mitigated 38°C hardware shutdowns via custom frustum culling and background thread logic.</p>
+        </div>
+    </div>
+</div> 
+-->
+
+<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2.5rem;">
+    <div style="width: 5px; height: 35px; background: #9bf1ff; border-radius: 10px; box-shadow: 0 0 15px rgba(155, 241, 255, 0.6);"></div>
+    <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">Engineering Post-Mortem</h3>
+</div>
+
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 2.5rem; margin-bottom: 5rem;">
+    <div style="border: 1px solid rgba(255,255,255,0.15); border-radius: 16px; overflow: hidden; background: rgba(0,0,0,0.2);">
+        <div style="background: rgba(255, 155, 155, 0.15); padding: 1.2rem 1.8rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <h4 style="margin: 0; color: #ff9b9b; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">The "Drift" Problem</h4>
+        </div>
+        <div style="padding: 2rem;">
+            <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.5rem; color: #eee;">Architected a <strong>Hybrid Localization system</strong> (GPS + VPS) to solve the 10m drift inherent in standard mobile GPS.</p>
+            <div style="background: rgba(155, 255, 155, 0.1); padding: 15px; border-left: 4px solid #9bff9b; color: #9bff9b; font-size: 0.95rem; border-radius: 0 8px 8px 0;">
+                <strong>RESULT:</strong> Sub-centimeter anchoring achieved via visual feature matching.
+            </div>
+        </div>
+    </div>
     <div style="border: 1px solid rgba(255,255,255,0.15); border-radius: 16px; overflow: hidden; background: rgba(0,0,0,0.2);">
         <div style="background: rgba(255, 155, 155, 0.15); padding: 1.2rem 1.8rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
             <h4 style="margin: 0; color: #ff9b9b; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">The "Drift" Problem</h4>
@@ -199,50 +220,48 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
             </div>
         </div>
     </div>
+        <div style="border: 1px solid rgba(255,255,255,0.15); border-radius: 16px; overflow: hidden; background: rgba(0,0,0,0.2);">
+        <div style="background: rgba(155, 241, 255, 0.15); padding: 1.2rem 1.8rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <h4 style="margin: 0; color: #9bf1ff; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Thermal Constraints</h4>
+        </div>
+        <div style="padding: 2rem;">
+            <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.5rem; color: #eee;">Managed 38°C outdoor throttling by shifting tracking logic to background threads and custom culling.</p>
+            <div style="background: rgba(155, 241, 255, 0.1); padding: 15px; border-left: 4px solid #9bf1ff; color: #9bf1ff; font-size: 0.95rem; border-radius: 0 8px 8px 0;">
+                <strong>RESULT:</strong> Maintained 60FPS stability over 20min+ sessions.
+            </div>
+        </div>
+    </div>
 </div>
 
-<div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 16px; padding: 3rem;">
-    <h4 style="margin-top: 0; color: #9bf1ff; font-size: 1.6rem; margin-bottom: 2rem;">Architect's Retrospective</h4>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 3rem;">
+<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2.5rem;">
+    <div style="width: 5px; height: 35px; background: #9bf1ff; border-radius: 10px; box-shadow: 0 0 15px rgba(155, 241, 255, 0.6);"></div>
+    <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">Architect's Retrospective</h3>
+</div>
+
+<div style="background: rgba(255, 255, 255, 0.07); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 20px; padding: 3rem; margin-bottom: 5rem;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem;">
         <div>
-            <h5 style="font-size: 0.85rem; color: #ff9b9b; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1.2rem;">Technical Debt</h5>
-            <ul style="font-size: 1.05rem; padding-left: 1.2rem; color: #ddd; line-height: 1.8;">
-                <li>5G/3G handover logic</li>
-                <li>Device fragmentation (Non-LiDAR)</li>
-            </ul>
+            <h5 class="retro-label" style="color: #ff9b9b;">Technical Debt</h5>
+            <ul class="retro-list"><li>5G/3G handover logic</li><li>Device fragmentation</li></ul>
         </div>
         <div>
-            <h5 style="font-size: 0.85rem; color: #9bff9b; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1.2rem;">Future Roadmap</h5>
-            <ul style="font-size: 1.05rem; padding-left: 1.2rem; color: #ddd; line-height: 1.8;">
-                <li>Occlusion 2.0 (Depth API)</li>
-                <li>Real-time solar light estimation</li>
-            </ul>
+            <h5 class="retro-label" style="color: #9bff9b;">Future Roadmap</h5>
+            <ul class="retro-list"><li>Occlusion 2.0 (Depth API)</li><li>Solar light estimation</li></ul>
         </div>
         <div>
-            <h5 style="font-size: 0.85rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1.2rem;">The Verdict</h5>
-            <p style="font-size: 1.05rem; color: #ddd; line-height: 1.8;">Mobile AR is heritage-ready; success depends on <strong>Environmental UX</strong> over raw polycounts.</p>
+            <h5 class="retro-label" style="color: #9bf1ff;">The Verdict</h5>
+            <p style="font-size: 1.1rem; color: #eee; line-height: 1.8; margin: 0;">Mobile AR is heritage-ready; success depends on <strong>Environmental UX</strong>.</p>
         </div>
     </div>
 </div>
 
 <style>
-    /* Global Overrides for Legibility */
-    .tech-tag {
-        background: rgba(255,255,255,0.1);
-        color: #fff;
-        padding: 6px 14px;
-        border-radius: 6px;
-        font-size: 0.9rem;
-        border: 1px solid rgba(255,255,255,0.2);
-        font-weight: 500;
-    }
-    h3 { font-size: 2rem !important; }
-    strong { color: #9bf1ff; }
-    /* Responsive adjustment for small screens */
-    @media (max-width: 768px) {
-        .project-dashboard { grid-template-columns: 1fr 1fr; }
-        .project-dashboard div { border: none !important; margin-bottom: 10px; }
-    }
+    .tech-box { background: rgba(255,255,255,0.06); padding: 2rem; border-radius: 16px; border: 1px solid rgba(255,255,255,0.12); }
+    .tech-label { font-size: 0.9rem; color: #9bf1ff; text-transform: uppercase; margin-bottom: 1.2rem; letter-spacing: 2px; font-weight: 700; }
+    .tech-tag { background: rgba(255,255,255,0.12); color: #fff; padding: 6px 14px; border-radius: 6px; font-size: 0.95rem; border: 1px solid rgba(255,255,255,0.25); }
+    .challenge-card { background: rgba(0,0,0,0.25); padding: 2.5rem; border-radius: 0 0 20px 20px; border: 1px solid rgba(255,255,255,0.1); border-top-width: 4px; }
+    .result-tag { background: rgba(255, 255, 255, 0.05); padding: 15px; border-left: 4px solid; font-size: 1rem; border-radius: 4px; font-weight: 600; }
+    .retro-label { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1.2rem; font-weight: 700; }
+    .retro-list { font-size: 1.1rem; padding-left: 1.2rem; color: #ddd; line-height: 2; margin: 0; }
 </style>
-
 ---
