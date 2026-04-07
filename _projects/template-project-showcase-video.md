@@ -390,7 +390,7 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
         justify-content: center; /* Centers dots horizontally */
         align-items: center;
         gap: 10px;
-        padding: 15px 0; /* Adds space between image and dots */
+        padding: 5px 0 10px 0;
         background: transparent;
     }
 
@@ -413,7 +413,7 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
 
     .carousel-hint { text-align: center; font-size: 0.65rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 1px; margin-top: 10px; opacity: 0.6; }
 
-    .media-caption { font-size: 0.7rem; text-align: center; margin: 1.5rem 0 0.5rem 0; color: #9bf1ff; letter-spacing: 1px; text-transform: uppercase; font-weight: 600; opacity: 0.8; }
+    .media-caption { font-size: 0.7rem; text-align: center; margin: 0 0 0.5rem 0; color: #9bf1ff; letter-spacing: 1px; text-transform: uppercase; font-weight: 600; opacity: 0.8; }
 
     /* --- Technical Sections --- */
     .tech-box { background: rgba(255,255,255,0.05); padding: 1.8rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); }
