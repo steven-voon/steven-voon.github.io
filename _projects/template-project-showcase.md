@@ -104,42 +104,33 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
     </div>
     <div class="vision-media-container">
         <div class="carousel-container">
-            <div class="carousel-scroll">             
+            <div class="carousel-scroll" id="carouselScroll">             
                 {% if page.video_id and page.video_id != "" %}
-                    {% comment %} --- VIDEO MODE (Shows only the video if ID exists) --- {% endcomment %}
                     <div class="carousel-item video-slide">
                         <div class="video-wrapper">
                             {% if page.video_type == "youtube" %}
-                                <iframe
-                                    src="https://www.youtube.com/embed/{{ page.video_id }}?autoplay=1&mute=1&loop=1&playlist={{ page.video_id }}&controls=0&modestbranding=1&rel=0&iv_load_policy=3"                                
-                                    frameborder="0" 
-                                    allow="autoplay; encrypted-media"
-                                    allowfullscreen>
-                                </iframe>                     
+                                <iframe src="https://www.youtube.com/embed/{{ page.video_id }}?autoplay=1&mute=1&loop=1&playlist={{ page.video_id }}&controls=0&modestbranding=1&rel=0&iv_load_policy=3" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                     
                             {% elsif page.video_type == "vimeo" %}
                                 <iframe src="https://player.vimeo.com/video/{{ page.video_id }}?autoplay=1&muted=1&loop=1&background=1" frameborder="0" allowfullscreen></iframe>
                             {% endif %}
                         </div>
                     </div>
                 {% elsif page.project_images %}
-                    {% comment %} --- IMAGE CAROUSEL MODE (Shows images only if no video) --- {% endcomment %}
                     {% for img in page.project_images %}
                     <div class="carousel-item">
                         <img src="{{ img }}" alt="Project Detail Image">
                     </div>
                     {% endfor %}
                 {% endif %}              
-            </div>                
+            </div>         
+            {% if page.video_id == nil and page.project_images.size > 1 %}
+            <div class="carousel-dots" id="carouselDots">
+                {% for img in page.project_images %}
+                    <span class="dot {% if forloop.first %}active{% endif %}"></span>
+                {% endfor %}
+            </div>
+            {% endif %}
         </div>     
-        {% comment %} 
-           HINT LOGIC: 
-           Only show "Swipe" if there is NO video and more than 1 image.
-        {% endcomment %}
-        {% if page.video_id == nil and page.project_images.size > 1 %}
-            <div class="carousel-hint">
-                <span>⟵ Swipe to see details ⟶</span>
-            </div> 
-        {% endif %}
         <p class="media-caption">
             {{ page.media_caption | default: "Project Media Gallery" }}
         </p>
@@ -338,33 +329,49 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
 
     .carousel-container { position: relative; width: 100%; border-radius: 12px; overflow: hidden; }
     
-   .carousel-scroll {
-        display: flex; 
-        flex-wrap: nowrap; /* Force images to stay in a single line */
-        overflow-x: auto; 
-        overflow-y: hidden;
-        scroll-snap-type: x mandatory; 
-        gap: 20px; 
-        padding-bottom: 10px;
-        -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
-    }
+  .carousel-scroll {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /* This enables the "snap" */
+    scroll-behavior: smooth;       /* This makes the jump smooth */
+    gap: 0;                        /* Set to 0 for perfect full-width snapping */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    cursor: grab;
+}
 
-    .carousel-scroll {
-        cursor: grab;
-    }
     .carousel-scroll:active {
         cursor: grabbing;
     }
 
-    .carousel-item { 
-        flex: 0 0 100%; 
-        width: 100%; /* Force it to take full width */
-        min-width: 100%; /* Prevent it from shrinking */
-        scroll-snap-align: start; 
-        display: flex; 
-        align-items: center; 
-        justify-content: center; 
-    }
+.carousel-item {
+    flex: 0 0 100%;
+    min-width: 100%;
+    scroll-snap-align: start;      /* Tells the item where to stop */
+    scroll-snap-stop: always;
+}
+
+/* Dots Styling */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(155, 241, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: #9bf1ff;
+    transform: scale(1.3);
+    box-shadow: 0 0 10px rgba(155, 241, 255, 0.6);
+}
 
     .carousel-item img { width: 100%; height: auto; aspect-ratio: 16/9; display: block; border-radius: 8px; object-fit: cover; }
 
@@ -400,31 +407,46 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
 </style>
 
 <script>
-const slider = document.querySelector('.carousel-scroll');
+const scrollContainer = document.getElementById('carouselScroll');
+const dots = document.querySelectorAll('.dot');
+
+// 1. Update Dots on Scroll
+scrollContainer.addEventListener('scroll', () => {
+    const width = scrollContainer.offsetWidth;
+    const index = Math.round(scrollContainer.scrollLeft / width);
+    
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+    });
+});
+
+// 2. Mouse Click & Drag to Scroll
 let isDown = false;
 let startX;
 let scrollLeft;
 
-slider.addEventListener('mousedown', (e) => {
-  isDown = true;
-  slider.classList.add('active');
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
+scrollContainer.addEventListener('mousedown', (e) => {
+    isDown = true;
+    scrollContainer.style.cursor = 'grabbing';
+    startX = e.pageX - scrollContainer.offsetLeft;
+    scrollLeft = scrollContainer.scrollLeft;
 });
 
-slider.addEventListener('mouseleave', () => {
-  isDown = false;
+scrollContainer.addEventListener('mouseleave', () => {
+    isDown = false;
+    scrollContainer.style.cursor = 'grab';
 });
 
-slider.addEventListener('mouseup', () => {
-  isDown = false;
+scrollContainer.addEventListener('mouseup', () => {
+    isDown = false;
+    scrollContainer.style.cursor = 'grab';
 });
 
-slider.addEventListener('mousemove', (e) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 2; // Scroll speed
-  slider.scrollLeft = scrollLeft - walk;
+scrollContainer.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - scrollContainer.offsetLeft;
+    const walk = (x - startX) * 2; // Scroll speed
+    scrollContainer.scrollLeft = scrollLeft - walk;
 });
 </script>
