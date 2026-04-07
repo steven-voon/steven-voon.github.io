@@ -1,0 +1,223 @@
+---
+layout: post
+title: "Template"
+image: "/assets/images/pic04.jpg"
+pillar: "augmented-reality"
+genre: "heritage"
+company: "Maitree House"
+hardware: "Mobile"
+technologies: ["AR", "Unity"]
+project_url: "https://www.ceritalah.app/" # Referral link
+---
+
+<!-- <div class="project-specs" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-left: 4px solid #9bf1ff; margin-top: -2.5rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;">
+    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">ROLE</strong><br><span style="color: #9bf1ff; font-weight: 600;">Technical Lead</span></div>
+    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">PLATFORM</strong><br>Unity 6.000 (URP)</div>
+    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">CORE TECH</strong><br>ARFoundation</div>
+    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">PROJECT SITE</strong><br><a href="{{ page.project_url }}" target="_blank" class="button small primary">More About Project ↗</a></div>
+</div> -->
+
+
+<div class="project-dashboard" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; background: #0b1118; padding: 1.5rem; border: 1px solid #1e2d3d; border-radius: 12px; margin-top: -2.5rem; margin-bottom: 2.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+    <div style="text-align: center; border-right: 1px solid #1e2d3d;">
+        <span style="display: block; font-size: 0.65rem; color: #888; text-transform: uppercase; letter-spacing: 1px;">Role</span>
+        <span style="color: #9bf1ff; font-weight: 700; font-size: 1.1rem;">Technical Lead</span>
+    </div>
+    <div style="text-align: center; border-right: 1px solid #1e2d3d;">
+        <span style="display: block; font-size: 0.65rem; color: #888; text-transform: uppercase; letter-spacing: 1px;">Performance</span>
+        <span style="color: #9bff9b; font-weight: 700; font-size: 1.1rem;">60 FPS Stable</span>
+    </div>
+    <div style="text-align: center; border-right: 1px solid #1e2d3d;">
+        <span style="display: block; font-size: 0.65rem; color: #888; text-transform: uppercase; letter-spacing: 1px;">Optimization</span>
+        <span style="color: #fff; font-weight: 700; font-size: 1.1rem;">-60% APK Size</span>
+    </div>
+    <div style="text-align: center;">
+        <span style="display: block; font-size: 0.65rem; color: #888; text-transform: uppercase; letter-spacing: 1px;">QA Metric</span>
+        <span style="color: #ff9b9b; font-weight: 700; font-size: 1.1rem;">0% Regression</span>
+    </div>
+</div>
+
+<!-- <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: start; margin-bottom: 3rem;">   
+    <div>
+        <h2 style="margin-top: 0;">The Vision</h2>
+        <p><strong>Ceritalah</strong>  is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia.</p> 
+        <p>As <strong>Technical Lead cum XR Engineer</strong>, led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology.</p>     
+    </div>
+    {% if page.video_id %}
+    <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+        <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+            <iframe src="https://www.youtube.com/embed/{{ page.video_id }}" 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                    frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p style="font-size: 0.7rem; text-align: center; margin: 0.5rem 0 0 0; color: #9bf1ff; letter-spacing: 1px; text-transform: uppercase;">
+            Technical Demo: VPS Localization
+        </p>
+    </div>
+    {% endif %}
+</div> -->
+
+<div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 2.5rem; align-items: start; margin-bottom: 3rem;">   
+    <div>
+        <h2 style="margin-top: 0; border-bottom: 2px solid #9bf1ff; display: inline-block; padding-bottom: 5px;">The Vision</h2>
+        <p style="font-size: 1.1rem; line-height: 1.6; color: #eee;">
+            <strong>Ceritalah</strong> is a spatial heritage platform bridging local history with AR. As <strong>Technical Lead</strong>, I architected the cross-team workflow and optimized the delivery pipeline for complex outdoor environments.
+        </p>
+        <a href="{{ page.project_url }}" target="_blank" class="button small primary" style="margin-top: 10px;">Visit Project Site ↗</a>
+    </div>
+    {% if page.video_id %}
+    <div style="background: #111; padding: 8px; border-radius: 12px; border: 1px solid #222;">
+        <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px;">
+            <iframe src="https://www.youtube.com/embed/{{ page.video_id }}" 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                    frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+
+<!-- ### 💻 Technical Stack & Expertise
+<div class="tech-tags" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; margin-bottom: 3rem;">
+    <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">Unity 2022.3 LTS</span>
+    <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">ARFoundation</span>
+    <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">Google Geospatial API</span>
+    <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">AWS S3</span>
+    <span style="background: rgba(155, 241, 255, 0.1); color: #9bf1ff; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(155, 241, 255, 0.3);">Addressables</span>
+</div>
+
+> **Leadership Note:** Coordinated a remote team of 3 developers and 1 software agency, conducting weekly code reviews and defining the CI/CD pipeline via GitHub Actions to ensure a 0% regression rate on new features.
+
+### 🛠️ Core Engineering Challenges
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+    <div style="background: rgba(255, 255, 255, 0.02); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+        <h4 style="color: #9bf1ff; margin-bottom: 0.5rem;">The "Drift" Problem</h4>
+        <p style="font-size: 0.9rem; line-height: 1.6;">Standard GPS accuracy ($\pm$10m) is insufficient for historical landmarks. I architected a <strong>Hybrid Localization</strong> system that uses GPS for geofencing and the <strong>Google Geospatial API</strong> for sub-centimeter visual anchoring.</p>
+        <span style="font-size: 0.8rem; color: #9bff9b;">✔ Result: Zero asset jittering in variable lighting.</span>
+    </div>
+    <div style="background: rgba(255, 255, 255, 0.02); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+        <h4 style="color: #9bf1ff; margin-bottom: 0.5rem;">Mobile Constraints</h4>
+        <p style="font-size: 0.9rem; line-height: 1.6;">Outdoor AR causes rapid thermal throttling. I implemented <strong>Custom Frustum Culling</strong> and <strong>LZ4-compressed Addressables</strong> to reduce CPU overhead and storage footprint.</p>
+        <span style="font-size: 0.8rem; color: #9bff9b;">✔ Result: 60FPS stability & 60% smaller APK size.</span>
+    </div>
+</div>
+
+
+### 🧠 Architect’s Retrospective
+
+<div style="background: rgba(155, 241, 255, 0.03); border: 1px solid rgba(155, 241, 255, 0.2); padding: 2rem; border-radius: 8px; margin: 2rem 0;">
+    <h4 style="color: #9bf1ff; margin-top: 0;">Post-Mortem & Lessons Learned</h4>
+    <p style="font-size: 0.95rem;">Building for the "Wild" (outdoor AR) proved that <strong>Environmental UX</strong> is as critical as the code. High-noon sunlight in Malaysia causes aggressive thermal throttling; our next iteration will move tracking logic to background threads more aggressively.</p>  
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem;">
+        <div>
+            <h5 style="font-size: 0.7rem; letter-spacing: 1px; color: #ff9b9b; text-transform: uppercase;">Technical Debt</h5>
+            <ul style="font-size: 0.85rem; padding-left: 1.2rem;">
+                <li>Network Edge Cases: Handling 5G to 3G handoffs during asset streaming.</li>
+                <li>Device Fragmention: Optimizing depth-sensing for non-LiDAR Android devices.</li>
+            </ul>
+        </div>
+        <div>
+            <h5 style="font-size: 0.7rem; letter-spacing: 1px; color: #9bff9b; text-transform: uppercase;">Future Roadmap</h5>
+            <ul style="font-size: 0.85rem; padding-left: 1.2rem;">
+                <li>Occlusion 2.0: Integrating depth-sensing for crowd integration.</li>
+                <li>Light Estimation: Matching AR shadows with real-time solar data.</li>
+            </ul>
+        </div>
+    </div>
+</div> -->
+
+<hr style="opacity: 0.1; margin-bottom: 3rem;">
+
+<h3>Project Ecosystem & Tooling</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 3.5rem;">
+    <div style="background: rgba(255,255,255,0.03); padding: 1.2rem; border-radius: 8px;">
+        <h5 style="font-size: 0.7rem; color: #888; text-transform: uppercase; margin-bottom: 1rem;">Core Engine</h5>
+        <div style="display: flex; flex-wrap: wrap; gap: 5px;">
+            <span class="tech-tag">Unity 2022.3</span>
+            <span class="tech-tag">URP</span>
+            <span class="tech-tag">ARFoundation</span>
+        </div>
+    </div>
+    <div style="background: rgba(255,255,255,0.03); padding: 1.2rem; border-radius: 8px;">
+        <h5 style="font-size: 0.7rem; color: #888; text-transform: uppercase; margin-bottom: 1rem;">Infrastructure</h5>
+        <div style="display: flex; flex-wrap: wrap; gap: 5px;">
+            <span class="tech-tag">AWS S3</span>
+            <span class="tech-tag">Addressables</span>
+            <span class="tech-tag">Google VPS</span>
+        </div>
+    </div>
+    <div style="background: rgba(255,255,255,0.03); padding: 1.2rem; border-radius: 8px;">
+        <h5 style="font-size: 0.7rem; color: #888; text-transform: uppercase; margin-bottom: 1rem;">Production</h5>
+        <div style="display: flex; flex-wrap: wrap; gap: 5px;">
+            <span class="tech-tag">GitHub CI/CD</span>
+            <span class="tech-tag">Slack API</span>
+            <span class="tech-tag">Jira</span>
+        </div>
+    </div>
+</div>
+
+<h3 style="text-align: center; margin-bottom: 2rem;">Engineering Post-Mortem</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+    <div style="border: 1px solid #333; border-radius: 12px; overflow: hidden;">
+        <div style="background: #1a1a1a; padding: 1rem 1.5rem;">
+            <h4 style="margin: 0; color: #ff9b9b; font-size: 0.9rem; text-transform: uppercase;">The "Drift" Problem</h4>
+        </div>
+        <div style="padding: 1.5rem; background: #0f0f0f;">
+            <p style="font-size: 0.9rem; margin-bottom: 1rem;">Architected a <strong>Hybrid Localization system</strong> (GPS + VPS) to solve the 10m drift inherent in standard mobile GPS.</p>
+            <div style="background: rgba(155, 255, 155, 0.05); padding: 10px; border-left: 3px solid #9bff9b; color: #9bff9b; font-size: 0.8rem;">
+                <strong>SOLUTION:</strong> Sub-centimeter anchoring achieved via visual feature matching.
+            </div>
+        </div>
+    </div>
+    <div style="border: 1px solid #333; border-radius: 12px; overflow: hidden;">
+        <div style="background: #1a1a1a; padding: 1rem 1.5rem;">
+            <h4 style="margin: 0; color: #9bf1ff; font-size: 0.9rem; text-transform: uppercase;">Thermal Constraints</h4>
+        </div>
+        <div style="padding: 1.5rem; background: #0f0f0f;">
+            <p style="font-size: 0.9rem; margin-bottom: 1rem;">Managed 38°C outdoor throttling in Malaysia by shifting tracking logic to background threads and custom culling.</p>
+            <div style="background: rgba(155, 241, 255, 0.05); padding: 10px; border-left: 3px solid #9bf1ff; color: #9bf1ff; font-size: 0.8rem;">
+                <strong>SOLUTION:</strong> Maintained 60FPS stability over 20min+ sessions.
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="background: #0b1118; border: 1px solid #1e2d3d; border-radius: 12px; padding: 2rem;">
+    <h4 style="margin-top: 0; color: #9bf1ff;">Architect's Retrospective</h4>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 1.5rem;">
+        <div>
+            <h5 style="font-size: 0.65rem; color: #ff9b9b; text-transform: uppercase; letter-spacing: 1px;">Technical Debt</h5>
+            <ul style="font-size: 0.85rem; padding-left: 1rem; color: #ccc;">
+                <li>5G/3G handover logic</li>
+                <li>Device fragmentation (Non-LiDAR)</li>
+            </ul>
+        </div>
+        <div>
+            <h5 style="font-size: 0.65rem; color: #9bff9b; text-transform: uppercase; letter-spacing: 1px;">Future Roadmap</h5>
+            <ul style="font-size: 0.85rem; padding-left: 1rem; color: #ccc;">
+                <li>Occlusion 2.0 (Depth API)</li>
+                <li>Real-time solar light estimation</li>
+            </ul>
+        </div>
+        <div>
+            <h5 style="font-size: 0.65rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 1px;">The Verdict</h5>
+            <p style="font-size: 0.85rem; color: #ccc;">Mobile AR is heritage-ready; success depends on <strong>Environmental UX</strong> over raw polycounts.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .tech-tag {
+        background: rgba(255,255,255,0.05);
+        color: #fff;
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        border: 1px solid #333;
+    }
+    h3 { font-size: 1.5rem; letter-spacing: -0.5px; }
+    h4 { font-weight: 700; }
+</style>
+
+---
