@@ -69,13 +69,13 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
         <div>
             <h5 style="font-size: 0.7rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">Project Overview</h5>
             <p style="font-size: 1.2rem; line-height: 1.7; color: #ffffff; margin: 0; opacity: 0.9;">
-                <strong>Ceritalah</strong> is a premier digital heritage platform designed to preserve and broadcast Malaysia's local history. By leveraging <strong>Augmented Reality</strong>, the project transforms physical landmarks into immersive storytelling hubs, connecting travelers with deep cultural narratives through their mobile devices.
+                <strong>Ceritalah</strong> is a premier digital heritage platform leveraging <strong>Augmented Reality</strong>, the project transforms physical landmarks into immersive storytelling hubs, connecting travelers with deep cultural narratives through their mobile devices.
             </p>
         </div>
         <div style="background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-radius: 12px; border-left: 2px solid rgba(155, 241, 255, 0.3);">
             <h5 style="font-size: 0.7rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">My Role & Strategic Goal</h5>
             <p style="font-size: 1.2rem; line-height: 1.7; color: #ffffff; margin: 0;">
-                As <strong>Technical Lead</strong>, my primary goal was to bridge the gap between complex heritage data and consumer-grade hardware. I focused on architecting a <strong>modular delivery pipeline</strong> that ensured high-fidelity AR visuals could remain stable under extreme outdoor environmental constraints while maintaining a 0% regression rate across a remote development team.
+                As <strong>Technical Lead</strong>, my primary goal was to bridge the gap between complex heritage data and consumer-grade hardware. I focused on architecting a <strong>modular delivery pipeline</strong> that ensured high-fidelity AR visuals could remain stable under extreme outdoor environmental constraints.
             </p>
         </div>
     </div>
