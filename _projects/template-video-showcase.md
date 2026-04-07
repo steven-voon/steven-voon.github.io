@@ -19,33 +19,35 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
 </div> -->
 
 
-<div class="project-dashboard" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; background: rgba(255, 255, 255, 0.07); backdrop-filter: blur(10px); padding: 2rem; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 16px; margin-top: -2.5rem; margin-bottom: 3.5rem; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
-    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1); padding: 0 10px;">
-        <span style="display: block; font-size: 0.85rem; color: #ccc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Client</span>
-        <span style="color: #ffffff; font-weight: 800; font-size: 1.1rem;">{{ page.company }}</span>
+<div class="project-dashboard" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; background: rgba(255, 255, 255, 0.07); backdrop-filter: blur(10px); padding: 2rem; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 16px; margin-top: -2.5rem; margin-bottom: 4rem; box-shadow: 0 20px 40px rgba(0,0,0,0.3); align-items: stretch;"> 
+    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1); padding: 0 10px; display: flex; flex-direction: column; justify-content: center;">
+        <span style="display: block; font-size: 0.75rem; color: #aaa; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px;">Client</span>
+        <a href="https://www.maitreehouse.com" target="_blank" style="color: #9bf1ff; font-weight: 800; font-size: 1.2rem; text-decoration: none; transition: opacity 0.3s ease;">
+            {{ page.company }} <span style="font-size: 0.8rem; vertical-align: middle; opacity: 0.7;">↗</span>
+        </a>
     </div>
-    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.15);">
-        <span style="display: block; font-size: 0.85rem; color: #ccc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Role</span>
-        <span style="color: #9bf1ff; font-weight: 800; font-size: 1.4rem;">Technical Lead</span>
+    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1); padding: 0 10px; display: flex; flex-direction: column; justify-content: center;">
+        <span style="display: block; font-size: 0.75rem; color: #aaa; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px;">Role</span>
+        <span style="color: #ffffff; font-weight: 800; font-size: 1.2rem;">Technical Lead</span>
     </div>
-    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.15);">
-        <span style="display: block; font-size: 0.85rem; color: #ccc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Team Size</span>
-        <span style="color: #9bff9b; font-weight: 800; font-size: 1.4rem;">3 Devs + 1 Agency</span>
+    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1); padding: 0 10px; display: flex; flex-direction: column; justify-content: center;">
+        <span style="display: block; font-size: 0.75rem; color: #aaa; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px;">Team Size</span>
+        <span style="color: #ffffff; font-weight: 800; font-size: 1.2rem;">3 Devs + 1 Agency</span>
     </div>
-<div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.15); display: flex; flex-direction: column; justify-content: center; padding: 0 15px;">
-    <span style="display: block; font-size: 0.85rem; color: #ccc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Timeline</span>
-    <span style="color: #ffffff; font-weight: 800; font-size: 1.4rem; line-height: 1.1;">2 Years</span>
-    <span style="display: block; font-size: 0.65rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 1px; margin-top: 5px; opacity: 0.8;">
-        R&D • Prototyping • Live Ops
-    </span>
-</div>
-    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1); padding: 0 10px;">
-        <span style="display: block; font-size: 0.7rem; color: #ccc; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 5px;">Performance</span>
-        <span style="color: #9bff9b; font-weight: 800; font-size: 1.1rem;">60 FPS</span>
+    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1); padding: 0 10px; display: flex; flex-direction: column; justify-content: center;">
+        <span style="display: block; font-size: 0.75rem; color: #aaa; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px;">Timeline</span>
+        <span style="color: #ffffff; font-weight: 800; font-size: 1.2rem; line-height: 1.1;">2 Years</span>
+        <span style="display: block; font-size: 0.6rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; opacity: 0.9;">
+            R&D • Proto • Live Ops
+        </span>
     </div>
-    <div style="display: flex; align-items: center; justify-content: center; height: 100%;">
-        <a href="{{ page.project_url }}" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; background: #9bf1ff; color: #0b1118; padding: 12px 24px; border-radius: 12px; font-weight: 700; text-decoration: none; font-size: 0.95rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(155, 241, 255, 0.3); height: fit-content; line-height: 1;">
-            Live Project Site ↗
+    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1); padding: 0 10px; display: flex; flex-direction: column; justify-content: center;">
+        <span style="display: block; font-size: 0.75rem; color: #aaa; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px;">Performance</span>
+        <span style="color: #9bff9b; font-weight: 800; font-size: 1.2rem;">60 FPS</span>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: center; padding: 0 10px;">
+        <a href="{{ page.project_url }}" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; background: #9bf1ff; color: #0b1118; padding: 12px 20px; border-radius: 12px; font-weight: 700; text-decoration: none; font-size: 0.9rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(155, 241, 255, 0.3); height: fit-content; line-height: 1; white-space: nowrap;">
+            Project Site ↗
         </a>
     </div>
 </div>
