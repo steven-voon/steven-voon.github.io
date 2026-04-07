@@ -25,12 +25,12 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
         <span style="color: #9bf1ff; font-weight: 800; font-size: 1.4rem;">Technical Lead</span>
     </div>
     <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.15);">
-        <span style="display: block; font-size: 0.85rem; color: #ccc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Performance</span>
-        <span style="color: #9bff9b; font-weight: 800; font-size: 1.4rem;">60 FPS</span>
+        <span style="display: block; font-size: 0.85rem; color: #ccc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Team Size</span>
+        <span style="color: #9bff9b; font-weight: 800; font-size: 1.4rem;">1 software agent, internal development</span>
     </div>
     <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.15);">
-        <span style="display: block; font-size: 0.85rem; color: #ccc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Optimization</span>
-        <span style="color: #ffffff; font-weight: 800; font-size: 1.4rem;">-60% APK</span>
+        <span style="display: block; font-size: 0.85rem; color: #ccc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Timeline</span>
+        <span style="color: #ffffff; font-weight: 800; font-size: 1.4rem;">2 years from ideation to go public</span>
     </div>
     <div style="display: flex; align-items: center; justify-content: center; height: 100%;">
         <a href="{{ page.project_url }}" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; background: #9bf1ff; color: #0b1118; padding: 12px 24px; border-radius: 12px; font-weight: 700; text-decoration: none; font-size: 0.95rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(155, 241, 255, 0.3); height: fit-content; line-height: 1;">
