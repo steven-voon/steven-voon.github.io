@@ -14,7 +14,7 @@ achievement_url_2: "https://www.ceritalah.app/"
 achievement_url_3: "https://www.ceritalah.app/" 
 
 # CASE A: YouTube
-# video_id: "dGrWmW-sRdM"
+video_id: "dGrWmW-sRdM"
 video_type: "youtube"
 
 # CASE B: Vimeo
@@ -111,13 +111,12 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
                     <div class="video-shield"></div>
                         {% if page.video_type == "youtube" %}
                             <iframe
-                                src="https://www.youtube.com/embed/{{ page.video_id }}?modestbranding=1&rel=0&showinfo=0&iv_load_policy=3"
-                                frameborder="0" 
+                                src="https://www.youtube.com/embed/{{ page.video_id }}?autoplay=1&mute=1&loop=1&playlist={{ page.video_id }}&controls=0&modestbranding=1&rel=0&iv_load_policy=3"                                frameborder="0" 
                                 allow="autoplay; encrypted-media"
                                 allowfullscreen>
                             </iframe>                     
                         {% elsif page.video_type == "vimeo" %}
-                            <iframe src="https://player.vimeo.com/video/{{ page.video_id }}?h=0" frameborder="0" allowfullscreen></iframe>                       
+                            <iframe src="https://player.vimeo.com/video/{{ page.video_id }}?autoplay=1&muted=1&loop=1&background=1" frameborder="0" allowfullscreen></iframe>
                         {% endif %}
                     </div>
                 </div>
@@ -309,27 +308,34 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
     .video-wrapper {
         position: relative;
         width: 100%;
-        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+        padding-bottom: 56.25%;
         height: 0;
         overflow: hidden;
         border-radius: 8px;
         background: #000;
     }
 
-    /* THE SHIELD: Add this new class */
-    .video-wrapper::after {
-        content: "";
+    .video-shield {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: 10; /* Sits on top of the iframe */
-        background: rgba(0,0,0,0); /* Invisible */
-        pointer-events: auto; /* Captures the swipe gesture */
+        z-index: 10; 
+        background: transparent;
+        pointer-events: auto; /* This captures the swipe */
     }
 
-    .video-wrapper iframe, 
+    .video-wrapper iframe {
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%; 
+        z-index: 1; 
+        pointer-events: none; /* This prevents the iframe from stealing the touch */
+    }
+
     .video-wrapper video {
         position: absolute; 
         top: 0; 
@@ -344,8 +350,13 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
     .carousel-container { position: relative; width: 100%; border-radius: 12px; overflow: hidden; }
     
     .carousel-scroll {
-        display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 20px; padding-bottom: 10px;
-        scrollbar-width: none; -ms-overflow-style: none;
+        display: flex; 
+        overflow-x: auto !important; 
+        scroll-snap-type: x mandatory; 
+        gap: 20px; 
+        padding-bottom: 10px;
+        -webkit-overflow-scrolling: touch; /* Critical for iOS Swipe */
+        touch-action: pan-x; /* Critical for Android Swipe */
     }
 
     .carousel-scroll::-webkit-scrollbar { display: none; }
