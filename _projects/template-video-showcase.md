@@ -47,6 +47,25 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
 </div>
 
 
+<div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center; justify-content: center; background: rgba(155, 241, 255, 0.1); border-top: 1px solid rgba(155, 241, 255, 0.2); border-bottom: 1px solid rgba(155, 241, 255, 0.2); padding: 1.5rem; margin-bottom: 4rem; border-radius: 8px;">  
+    <div style="font-size: 0.75rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; font-weight: 800; border-right: 2px solid rgba(155, 241, 255, 0.3); padding-right: 1.5rem; margin-right: 0.5rem;">
+        Featured & Recognized
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px;">
+        <span style="font-size: 1.2rem;">🖼️</span>
+        <span style="font-size: 1rem; color: #fff; font-weight: 600;">Digital Heritage Exhibition 2025</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px;">
+        <span style="font-size: 1.2rem;">📰</span>
+        <span style="font-size: 1rem; color: #fff; font-weight: 600;">Featured on [Media Name]</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px;">
+        <span style="font-size: 1.2rem;">🎤</span>
+        <span style="font-size: 1rem; color: #fff; font-weight: 600;">XR Summit Malaysia Showcase</span>
+    </div>
+</div>
+
+
 <!-- <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: start; margin-bottom: 3rem;">   
     <div>
         <h2 style="margin-top: 0;">The Vision</h2>
@@ -103,17 +122,11 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
 
 
 
-<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2.5rem; margin-top: 4rem;">
-    <div style="width: 5px; height: 35px; background: #9bf1ff; border-radius: 10px; box-shadow: 0 0 15px rgba(155, 241, 255, 0.6);"></div>
-    <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">Leadership & Agency Management</h3>
-</div>
-
-<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1.5rem;">
-    <div style="width: 4px; height: 20px; background: #9bf1ff; border-radius: 4px;"></div>
-    <h5 style="font-size: 0.85rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; margin: 0; font-weight: 700;">Leadership & Agency Management</h5>
-</div>
-
 <div style="background: rgba(155, 241, 255, 0.05); padding: 2rem; border-radius: 20px; border: 1px dashed rgba(155, 241, 255, 0.3); margin-bottom: 4rem; backdrop-filter: blur(5px);">
+    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1.5rem;">
+        <div style="width: 4px; height: 20px; background: #9bf1ff; border-radius: 4px;"></div>
+        <h5 style="font-size: 0.85rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; margin: 0; font-weight: 700;">Leadership & Agency Management</h5>
+    </div>
     <p style="font-size: 1.2rem; line-height: 1.8; color: #eee; margin-bottom: 2rem;">
         As the technical bridge for <strong>Ceritalah</strong>, I coordinated a remote team of 3 developers and an external creative agency. I was responsible for defining the <strong>API contracts</strong> and <strong>Asset Delivery Pipelines</strong>, ensuring that the agency's high-fidelity heritage assets were optimized for our mobile XR engine without compromising performance. I managed the project through a 24-month lifecycle, navigating a 6-month initial R&D phase to validate VPS stability before transitioning into full-scale production and regional deployment."
     </p>
@@ -255,6 +268,28 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
         <div class="result-tag" style="border-left-color: #ffcc66; color: #ffcc66; background: rgba(255, 204, 102, 0.05);">✔ Engineered a "Holographic Ghost" guide system to intuitive placement.</div>
     </div>
 </div>
+
+
+
+<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2.5rem; margin-top: 5rem;">
+    <div style="width: 5px; height: 35px; background: #9bf1ff; border-radius: 10px; box-shadow: 0 0 15px rgba(155, 241, 255, 0.6);"></div>
+    <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">Public Impact & Media</h3>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 6rem;">
+    <a href="LINK_TO_ARTICLE" target="_blank" style="text-decoration: none; display: block; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 1.5rem; transition: transform 0.3s ease;">
+        <h5 style="color: #9bf1ff; font-size: 0.8rem; margin-bottom: 0.5rem; text-transform: uppercase;">[Publication Name]</h5>
+        <p style="color: #fff; font-size: 1.1rem; font-weight: 700; margin: 0;">"Ceritalah: The future of heritage storytelling in Malaysia."</p>
+    </a>
+
+    <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 1.5rem;">
+        <h5 style="color: #9bf1ff; font-size: 0.8rem; margin-bottom: 0.5rem; text-transform: uppercase;">Exhibition Showcase</h5>
+        <p style="color: #fff; font-size: 1.1rem; font-weight: 700; margin: 0;">Selected for the [Event Name] National Digital Pavilion.</p>
+    </div>
+</div>
+
+
+
 
 <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2.5rem;">
     <div style="width: 5px; height: 35px; background: #9bf1ff; border-radius: 10px; box-shadow: 0 0 15px rgba(155, 241, 255, 0.6);"></div>
