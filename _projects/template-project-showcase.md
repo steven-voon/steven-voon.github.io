@@ -14,8 +14,8 @@ achievement_url_2: "https://www.ceritalah.app/"
 achievement_url_3: "https://www.ceritalah.app/" 
 
 # CASE A: YouTube
-video_id: "dGrWmW-sRdM"
-video_type: "youtube"
+# video_id: "dGrWmW-sRdM"
+# video_type: "youtube"
 
 # CASE B: Vimeo
 # video_id: "123456789"
