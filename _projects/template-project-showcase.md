@@ -118,11 +118,11 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
                     <img src="{{ img }}" alt="Project Detail Image">
                 </div>
                 {% endfor %}               
-            </div>         
-            <div class="carousel-hint">
+            </div>                
+        </div>     
+        <div class="carousel-hint">
                 <span>⟵ Swipe to see details ⟶</span>
-            </div>
-        </div>      
+            </div> 
         <p class="media-caption">
             {{ page.media_caption | default: "Project Media Gallery" }}
         </p>
