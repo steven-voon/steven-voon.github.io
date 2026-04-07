@@ -314,7 +314,7 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
         box-shadow: 0 20px 50px rgba(0,0,0,0.5);
         display: flex;
         flex-direction: column; 
-        gap: 5px; /* Subtle spacing between the carousel, dots, and caption */
+        gap: 5px;
     }
 
     .video-wrapper {
@@ -327,7 +327,6 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
 
     .video-wrapper iframe {
         position: absolute;
-        /* Push the video UP so the title bar is hidden behind the 'clipper' */
         top: -60px; 
         left: 0;
         width: 100%;
@@ -390,7 +389,7 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
         justify-content: center; /* Centers dots horizontally */
         align-items: center;
         gap: 10px;
-        padding: 5px 0 10px 0;
+        padding: 10px 0 10px 0;
         background: transparent;
     }
 
