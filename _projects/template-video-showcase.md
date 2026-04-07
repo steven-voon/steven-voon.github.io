@@ -19,21 +19,22 @@ project_url: "https://www.ceritalah.app/" # Referral link
 
 
 <div class="project-dashboard" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; background: rgba(255, 255, 255, 0.07); backdrop-filter: blur(10px); padding: 2rem; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 16px; margin-top: -2.5rem; margin-bottom: 3.5rem; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
-    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1);">
-        <span style="display: block; font-size: 0.8rem; color: #ccc; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 5px;">Role</span>
-        <span style="color: #9bf1ff; font-weight: 800; font-size: 1.3rem;">Technical Lead</span>
+    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.15);">
+        <span style="display: block; font-size: 0.85rem; color: #ccc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Role</span>
+        <span style="color: #9bf1ff; font-weight: 800; font-size: 1.4rem;">Technical Lead</span>
     </div>
-    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1);">
-        <span style="display: block; font-size: 0.8rem; color: #ccc; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 5px;">Performance</span>
-        <span style="color: #9bff9b; font-weight: 800; font-size: 1.3rem;">60 FPS</span>
+    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.15);">
+        <span style="display: block; font-size: 0.85rem; color: #ccc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Performance</span>
+        <span style="color: #9bff9b; font-weight: 800; font-size: 1.4rem;">60 FPS</span>
     </div>
-    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1);">
-        <span style="display: block; font-size: 0.8rem; color: #ccc; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 5px;">Optimization</span>
-        <span style="color: #ffffff; font-weight: 800; font-size: 1.3rem;">-60% APK</span>
+    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.15);">
+        <span style="display: block; font-size: 0.85rem; color: #ccc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Optimization</span>
+        <span style="color: #ffffff; font-weight: 800; font-size: 1.4rem;">-60% APK</span>
     </div>
-    <div style="text-align: center;">
-        <span style="display: block; font-size: 0.8rem; color: #ccc; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 5px;">QA Stability</span>
-        <span style="color: #ff9b9b; font-weight: 800; font-size: 1.3rem;">0% Regression</span>
+    <div style="text-align: center; padding-left: 10px;">
+        <a href="{{ page.project_url }}" target="_blank" style="display: inline-block; background: #9bf1ff; color: #0b1118; padding: 12px 24px; border-radius: 12px; font-weight: 700; text-decoration: none; font-size: 0.95rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(155, 241, 255, 0.3);">
+            Live Project Site ↗
+        </a>
     </div>
 </div>
 
