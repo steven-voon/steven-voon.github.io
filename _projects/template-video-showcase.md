@@ -316,42 +316,138 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
 </div>
 
 <style>
+    /* Global Layout Safety */
     body { overflow-x: hidden; }
-    .tech-box { background: rgba(255,255,255,0.06); padding: 2rem; border-radius: 16px; border: 1px solid rgba(255,255,255,0.12); }
-    .tech-label { font-size: 0.9rem; color: #9bf1ff; text-transform: uppercase; margin-bottom: 1.2rem; letter-spacing: 2px; font-weight: 700; }
-    .tech-tag { background: rgba(255,255,255,0.12); color: #fff; padding: 6px 14px; border-radius: 6px; font-size: 0.95rem; border: 1px solid rgba(255,255,255,0.25); }
-    .challenge-card { background: rgba(0,0,0,0.25); padding: 2.5rem; border-radius: 0 0 20px 20px; border: 1px solid rgba(255,255,255,0.1); border-top-width: 4px; display: flex;
-        flex-direction: column;
-        justify-content: space-between;}
-    .result-tag { background: rgba(255, 255, 255, 0.05); padding: 15px; border-left: 4px solid; font-size: 1rem; border-radius: 4px; font-weight: 600; }
-    .retro-label { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1.2rem; font-weight: 700; }
-    .retro-list { font-size: 1.1rem; padding-left: 1.2rem; color: #ddd; line-height: 2; margin: 0; }/* Ensure these styles are in your CSS or at the bottom of the file */
+
+    /* --- Section 1: Dashboard & Tech Stack --- */
+    .tech-box { 
+        background: rgba(255,255,255,0.06); 
+        padding: 2rem; 
+        border-radius: 16px; 
+        border: 1px solid rgba(255,255,255,0.12); 
+    }
+    .tech-label { 
+        font-size: 0.9rem; 
+        color: #9bf1ff; 
+        text-transform: uppercase; 
+        margin-bottom: 1.2rem; 
+        letter-spacing: 2px; 
+        font-weight: 700; 
+    }
+    .tech-tag { 
+        background: rgba(255,255,255,0.12); 
+        color: #fff; 
+        padding: 6px 14px; 
+        border-radius: 6px; 
+        font-size: 0.95rem; 
+        border: 1px solid rgba(255,255,255,0.25); 
+    }
+
+    /* --- Section 2: Achievement Breakout (Full-Width) --- */
+    .achievement-breakout {
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        width: 100vw;
+        background: rgba(155, 241, 255, 0.08); 
+        backdrop-filter: blur(10px); 
+        border-top: 1px solid rgba(155, 241, 255, 0.2); 
+        border-bottom: 1px solid rgba(155, 241, 255, 0.2); 
+        padding: 1.5rem 0; 
+        margin-bottom: 5rem; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        flex-wrap: wrap; 
+        gap: 2rem;
+        box-shadow: inset 0 20px 40px rgba(0,0,0,0.1);
+    }
+    .breakout-label {
+        font-size: 0.75rem; 
+        color: #9bf1ff; 
+        text-transform: uppercase; 
+        letter-spacing: 2px; 
+        font-weight: 800; 
+        border-right: 2px solid rgba(155, 241, 255, 0.3); 
+        padding-right: 2rem;
+    }
     .achievement-link {
-            display: flex;
-            align-items: center;
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: 600;
-            padding: 8px 16px;
-            border-radius: 8px;
-            transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        color: #ffffff !important;
+        text-decoration: none !important;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 8px 16px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
     }
     .achievement-link:hover {
         background: rgba(155, 241, 255, 0.15);
-        color: #9bf1ff;
+        color: #9bf1ff !important;
         transform: translateY(-2px);
     }
+
+    /* --- Section 3: Engineering Post-Mortem --- */
+    .challenge-card { 
+        background: rgba(0,0,0,0.25); 
+        padding: 2.5rem; 
+        border-radius: 0 0 20px 20px; 
+        border: 1px solid rgba(255,255,255,0.1); 
+        border-top-width: 4px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 280px; /* Ensures balanced height */
+    }
+    .result-tag { 
+        background: rgba(255, 255, 255, 0.05); 
+        padding: 15px; 
+        border-left: 4px solid; 
+        font-size: 1rem; 
+        border-radius: 4px; 
+        font-weight: 600; 
+        margin-top: 1rem;
+    }
+
+    /* --- Section 4: Retrospective --- */
+    .retro-label { 
+        font-size: 0.9rem; 
+        text-transform: uppercase; 
+        letter-spacing: 2px; 
+        margin-bottom: 1.2rem; 
+        font-weight: 700; 
+    }
+    .retro-list { 
+        font-size: 1.1rem; 
+        padding-left: 1.2rem; 
+        color: #ddd; 
+        line-height: 2; 
+        margin: 0; 
+    }
+
+    /* --- Responsive Queries --- */
     @media (max-width: 768px) {
         .achievement-breakout {
             flex-direction: column;
             gap: 1rem;
-            padding: 2rem 0;
+            padding: 2.5rem 0;
+            width: 100%; /* Fallback for mobile */
+            left: 0;
+            right: 0;
+            margin: 2rem 0;
         }
-        .achievement-breakout div {
+        .breakout-label {
             border-right: none !important;
             padding-right: 0 !important;
+            border-bottom: 1px solid rgba(155, 241, 255, 0.2);
+            padding-bottom: 10px;
             margin-bottom: 10px;
+        }
+        .challenge-card {
+            margin-bottom: 1.5rem;
         }
     }
 </style>
