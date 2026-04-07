@@ -186,50 +186,21 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
     <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">Engineering Post-Mortem</h3>
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 2.5rem; margin-bottom: 5rem;">
-    <div style="border: 1px solid rgba(255,255,255,0.15); border-radius: 16px; overflow: hidden; background: rgba(0,0,0,0.2);">
-        <div style="background: rgba(255, 155, 155, 0.15); padding: 1.2rem 1.8rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <h4 style="margin: 0; color: #ff9b9b; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">The "Drift" Problem</h4>
-        </div>
-        <div style="padding: 2rem;">
-            <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.5rem; color: #eee;">Architected a <strong>Hybrid Localization system</strong> (GPS + VPS) to solve the 10m drift inherent in standard mobile GPS.</p>
-            <div style="background: rgba(155, 255, 155, 0.1); padding: 15px; border-left: 4px solid #9bff9b; color: #9bff9b; font-size: 0.95rem; border-radius: 0 8px 8px 0;">
-                <strong>RESULT:</strong> Sub-centimeter anchoring achieved via visual feature matching.
-            </div>
-        </div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 6rem;">
+    <div class="challenge-card" style="border-top: 4px solid #ff9b9b; background: rgba(255, 155, 155, 0.05);">
+        <h4 style="color: #ff9b9b; font-size: 1.1rem; text-transform: uppercase; margin-bottom: 1rem; letter-spacing: 1px;">Spatial Logic</h4>
+        <p style="font-size: 1.1rem; color: #f0f0f0; margin-bottom: 1.5rem; line-height: 1.6;">Architected a <strong>Hybrid Localization system</strong> to solve 10m GPS inaccuracy at historical landmarks.</p>
+        <div class="result-tag" style="border-left-color: #9bff9b; color: #9bff9b; background: rgba(155, 255, 155, 0.05);">✔ Sub-centimeter anchoring achieved via visual feature matching.</div>
     </div>
-    <div style="border: 1px solid rgba(255,255,255,0.15); border-radius: 16px; overflow: hidden; background: rgba(0,0,0,0.2);">
-        <div style="background: rgba(255, 155, 155, 0.15); padding: 1.2rem 1.8rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <h4 style="margin: 0; color: #ff9b9b; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">The "Drift" Problem</h4>
-        </div>
-        <div style="padding: 2rem;">
-            <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.5rem; color: #eee;">Architected a <strong>Hybrid Localization system</strong> (GPS + VPS) to solve the 10m drift inherent in standard mobile GPS.</p>
-            <div style="background: rgba(155, 255, 155, 0.1); padding: 15px; border-left: 4px solid #9bff9b; color: #9bff9b; font-size: 0.95rem; border-radius: 0 8px 8px 0;">
-                <strong>RESULT:</strong> Sub-centimeter anchoring achieved via visual feature matching.
-            </div>
-        </div>
+    <div class="challenge-card" style="border-top: 4px solid #9bf1ff; background: rgba(155, 241, 255, 0.05);">
+        <h4 style="color: #9bf1ff; font-size: 1.1rem; text-transform: uppercase; margin-bottom: 1rem; letter-spacing: 1px;">Mobile Constraints</h4>
+        <p style="font-size: 1.1rem; color: #f0f0f0; margin-bottom: 1.5rem; line-height: 1.6;">Managed 38°C outdoor thermal throttling by optimizing <strong>frustum culling</strong> and background threads.</p>
+        <div class="result-tag" style="border-left-color: #9bf1ff; color: #9bf1ff; background: rgba(155, 241, 255, 0.05);">✔ Maintained 60FPS stability over extended 20min+ sessions.</div>
     </div>
-    <div style="border: 1px solid rgba(255,255,255,0.15); border-radius: 16px; overflow: hidden; background: rgba(0,0,0,0.2);">
-        <div style="background: rgba(155, 241, 255, 0.15); padding: 1.2rem 1.8rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <h4 style="margin: 0; color: #9bf1ff; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Thermal Constraints</h4>
-        </div>
-        <div style="padding: 2rem;">
-            <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.5rem; color: #eee;">Managed 38°C outdoor throttling by shifting tracking logic to background threads and custom culling.</p>
-            <div style="background: rgba(155, 241, 255, 0.1); padding: 15px; border-left: 4px solid #9bf1ff; color: #9bf1ff; font-size: 0.95rem; border-radius: 0 8px 8px 0;">
-                <strong>RESULT:</strong> Maintained 60FPS stability over 20min+ sessions.
-            </div>
-        </div>
-    </div>
-        <div style="border: 1px solid rgba(255,255,255,0.15); border-radius: 16px; overflow: hidden; background: rgba(0,0,0,0.2);">
-        <div style="background: rgba(155, 241, 255, 0.15); padding: 1.2rem 1.8rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <h4 style="margin: 0; color: #9bf1ff; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Thermal Constraints</h4>
-        </div>
-        <div style="padding: 2rem;">
-            <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.5rem; color: #eee;">Managed 38°C outdoor throttling by shifting tracking logic to background threads and custom culling.</p>
-            <div style="background: rgba(155, 241, 255, 0.1); padding: 15px; border-left: 4px solid #9bf1ff; color: #9bf1ff; font-size: 0.95rem; border-radius: 0 8px 8px 0;">
-                <strong>RESULT:</strong> Maintained 60FPS stability over 20min+ sessions.
-            </div>
-        </div>
+    <div class="challenge-card" style="border-top: 4px solid #ffcc66; background: rgba(255, 204, 102, 0.05);">
+        <h4 style="color: #ffcc66; font-size: 1.1rem; text-transform: uppercase; margin-bottom: 1rem; letter-spacing: 1px;">Strategic & UX</h4>
+        <p style="font-size: 1.1rem; color: #f0f0f0; margin-bottom: 1.5rem; line-height: 1.6;">Solved <strong>User Placement friction</strong> where players struggled to anchor AR content in open public spaces.</p>
+        <div class="result-tag" style="border-left-color: #ffcc66; color: #ffcc66; background: rgba(255, 204, 102, 0.05);">✔ Engineered a "Holographic Ghost" guide system to intuitive placement.</div>
     </div>
 </div>
 
@@ -259,9 +230,11 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
     .tech-box { background: rgba(255,255,255,0.06); padding: 2rem; border-radius: 16px; border: 1px solid rgba(255,255,255,0.12); }
     .tech-label { font-size: 0.9rem; color: #9bf1ff; text-transform: uppercase; margin-bottom: 1.2rem; letter-spacing: 2px; font-weight: 700; }
     .tech-tag { background: rgba(255,255,255,0.12); color: #fff; padding: 6px 14px; border-radius: 6px; font-size: 0.95rem; border: 1px solid rgba(255,255,255,0.25); }
-    .challenge-card { background: rgba(0,0,0,0.25); padding: 2.5rem; border-radius: 0 0 20px 20px; border: 1px solid rgba(255,255,255,0.1); border-top-width: 4px; }
+    .challenge-card { background: rgba(0,0,0,0.25); padding: 2.5rem; border-radius: 0 0 20px 20px; border: 1px solid rgba(255,255,255,0.1); border-top-width: 4px; display: flex;
+        flex-direction: column;
+        justify-content: space-between;}
     .result-tag { background: rgba(255, 255, 255, 0.05); padding: 15px; border-left: 4px solid; font-size: 1rem; border-radius: 4px; font-weight: 600; }
     .retro-label { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1.2rem; font-weight: 700; }
-    .retro-list { font-size: 1.1rem; padding-left: 1.2rem; color: #ddd; line-height: 2; margin: 0; }
+    .retro-list { font-size: 1.1rem; padding-left: 1.2rem; color: #ddd; line-height: 2; margin: 0; }/* Ensure these styles are in your CSS or at the bottom of the file */
 </style>
 ---
