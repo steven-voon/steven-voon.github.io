@@ -28,10 +28,13 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
         <span style="display: block; font-size: 0.85rem; color: #ccc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Team Size</span>
         <span style="color: #9bff9b; font-weight: 800; font-size: 1.4rem;">3 Devs + 1 Agency</span>
     </div>
-    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.15);">
-        <span style="display: block; font-size: 0.85rem; color: #ccc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Timeline</span>
-        <span style="color: #ffffff; font-weight: 800; font-size: 1.4rem;">2 years from ideation to go public</span>
-    </div>
+<div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.15); display: flex; flex-direction: column; justify-content: center; padding: 0 15px;">
+    <span style="display: block; font-size: 0.85rem; color: #ccc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Timeline</span>
+    <span style="color: #ffffff; font-weight: 800; font-size: 1.4rem; line-height: 1.1;">2 Years</span>
+    <span style="display: block; font-size: 0.65rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 1px; margin-top: 5px; opacity: 0.8;">
+        R&D • Prototyping • Live Ops
+    </span>
+</div>
     <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1); padding: 0 10px;">
         <span style="display: block; font-size: 0.7rem; color: #ccc; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 5px;">Performance</span>
         <span style="color: #9bff9b; font-weight: 800; font-size: 1.1rem;">60 FPS</span>
@@ -80,7 +83,7 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
         <div style="background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-radius: 12px; border-left: 2px solid rgba(155, 241, 255, 0.3);">
             <h5 style="font-size: 0.7rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">My Role & Strategic Goal</h5>
             <p style="font-size: 1.2rem; line-height: 1.7; color: #ffffff; margin: 0;">
-                As <strong>Technical Lead</strong>, my primary goal was to bridge the gap between complex heritage data and consumer-grade hardware. I focused on architecting a <strong>modular delivery pipeline</strong> that ensured high-fidelity AR visuals could remain stable under extreme outdoor environmental constraints.
+                As <strong>Technical Lead</strong>, my primary goal was to bridge the gap between complex heritage data and consumer-grade hardware. I focused on architecting a <strong>modular delivery pipeline</strong> that ensured high-fidelity AR visuals could remain stable under extreme outdoor environmental constraints. 
             </p>
         </div>
     </div>
@@ -112,7 +115,7 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
 
 <div style="background: rgba(155, 241, 255, 0.05); padding: 2rem; border-radius: 20px; border: 1px dashed rgba(155, 241, 255, 0.3); margin-bottom: 4rem; backdrop-filter: blur(5px);">
     <p style="font-size: 1.2rem; line-height: 1.8; color: #eee; margin-bottom: 2rem;">
-        As the technical bridge for <strong>Ceritalah</strong>, I coordinated a remote team of 3 developers and an external creative agency. I was responsible for defining the <strong>API contracts</strong> and <strong>Asset Delivery Pipelines</strong>, ensuring that the agency's high-fidelity heritage assets were optimized for our mobile XR engine without compromising performance.
+        As the technical bridge for <strong>Ceritalah</strong>, I coordinated a remote team of 3 developers and an external creative agency. I was responsible for defining the <strong>API contracts</strong> and <strong>Asset Delivery Pipelines</strong>, ensuring that the agency's high-fidelity heritage assets were optimized for our mobile XR engine without compromising performance. I managed the project through a 24-month lifecycle, navigating a 6-month initial R&D phase to validate VPS stability before transitioning into full-scale production and regional deployment."
     </p>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem;">
         <div style="font-size: 1rem; color: #9bff9b; display: flex; align-items: center; gap: 8px;">
