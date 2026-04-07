@@ -254,8 +254,8 @@ body { overflow-x: hidden; }
 .carousel-container {
 	position: relative;
 	width: 100%;
-	display: block;
-	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 	border-radius: 12px;
 	
 	.carousel-scroll {
