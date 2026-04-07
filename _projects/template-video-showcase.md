@@ -8,6 +8,7 @@ company: "Maitree House"
 hardware: "Mobile"
 technologies: ["AR", "Unity"]
 project_url: "https://www.ceritalah.app/" # Referral link
+video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
 ---
 
 <!-- <div class="project-specs" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-left: 4px solid #9bf1ff; margin-top: -2.5rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;">
@@ -31,8 +32,8 @@ project_url: "https://www.ceritalah.app/" # Referral link
         <span style="display: block; font-size: 0.85rem; color: #ccc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Optimization</span>
         <span style="color: #ffffff; font-weight: 800; font-size: 1.4rem;">-60% APK</span>
     </div>
-    <div style="text-align: center; padding-left: 10px;">
-        <a href="{{ page.project_url }}" target="_blank" style="display: inline-block; background: #9bf1ff; color: #0b1118; padding: 12px 24px; border-radius: 12px; font-weight: 700; text-decoration: none; font-size: 0.95rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(155, 241, 255, 0.3);">
+    <div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+        <a href="{{ page.project_url }}" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; background: #9bf1ff; color: #0b1118; padding: 12px 24px; border-radius: 12px; font-weight: 700; text-decoration: none; font-size: 0.95rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(155, 241, 255, 0.3); height: fit-content; line-height: 1;">
             Live Project Site ↗
         </a>
     </div>
@@ -64,7 +65,6 @@ project_url: "https://www.ceritalah.app/" # Referral link
         <p style="font-size: 1.25rem; line-height: 1.7; color: #ffffff; margin-bottom: 2rem;">
             <strong>Ceritalah</strong> is a spatial heritage platform bridging local history with AR. As <strong>Technical Lead</strong>, I architected the cross-team workflow and optimized the delivery pipeline for complex outdoor environments in Malaysia.
         </p>
-        <a href="{{ page.project_url }}" target="_blank" class="button primary" style="padding: 0.8rem 2rem; font-size: 1rem; border-radius: 50px;">Visit Project Site ↗</a>
     </div>
     {% if page.video_id %}
     <div style="background: rgba(0,0,0,0.3); padding: 12px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 15px 35px rgba(0,0,0,0.4);">
