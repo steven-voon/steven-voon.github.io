@@ -26,17 +26,48 @@ video_id: "https://www.youtube.com/watch?v=dGrWmW-sRdM"
     </div>
     <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.15);">
         <span style="display: block; font-size: 0.85rem; color: #ccc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Team Size</span>
-        <span style="color: #9bff9b; font-weight: 800; font-size: 1.4rem;">1 software agent, internal development</span>
+        <span style="color: #9bff9b; font-weight: 800; font-size: 1.4rem;">3 Devs + 1 Agency</span>
     </div>
     <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.15);">
         <span style="display: block; font-size: 0.85rem; color: #ccc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Timeline</span>
         <span style="color: #ffffff; font-weight: 800; font-size: 1.4rem;">2 years from ideation to go public</span>
+    </div>
+    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1); padding: 0 10px;">
+        <span style="display: block; font-size: 0.7rem; color: #ccc; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 5px;">Performance</span>
+        <span style="color: #9bff9b; font-weight: 800; font-size: 1.1rem;">60 FPS</span>
     </div>
     <div style="display: flex; align-items: center; justify-content: center; height: 100%;">
         <a href="{{ page.project_url }}" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; background: #9bf1ff; color: #0b1118; padding: 12px 24px; border-radius: 12px; font-weight: 700; text-decoration: none; font-size: 0.95rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(155, 241, 255, 0.3); height: fit-content; line-height: 1;">
             Live Project Site ↗
         </a>
     </div>
+</div>
+
+
+<div style="background: rgba(155, 241, 255, 0.05); padding: 2rem; border-radius: 20px; border: 1px dashed rgba(155, 241, 255, 0.3); margin-bottom: 4rem; backdrop-filter: blur(5px);">
+    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1.5rem;">
+        <div style="width: 4px; height: 20px; background: #9bf1ff; border-radius: 4px;"></div>
+        <h5 style="font-size: 0.85rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; margin: 0; font-weight: 700;">Leadership & Agency Management</h5>
+    </div>
+    <p style="font-size: 1.2rem; line-height: 1.8; color: #eee; margin-bottom: 2rem;">
+        As the technical bridge for <strong>Ceritalah</strong>, I coordinated a remote team of 3 developers and an external creative agency. I was responsible for defining the <strong>API contracts</strong> and <strong>Asset Delivery Pipelines</strong>, ensuring that the agency's high-fidelity heritage assets were optimized for our mobile XR engine without compromising performance.
+    </p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem;">
+        <div style="font-size: 1rem; color: #9bff9b; display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 1.2rem;">✔</span> <strong>Weekly Syncs:</strong> Managed sprint goals & blockers.
+        </div>
+        <div style="font-size: 1rem; color: #9bff9b; display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 1.2rem;">✔</span> <strong>QA Gatekeeper:</strong> Conducted weekly code & asset reviews.
+        </div>
+        <div style="font-size: 1rem; color: #9bff9b; display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 1.2rem;">✔</span> <strong>CI/CD Workflow:</strong> Enforced 0% regression via GitHub.
+        </div>
+    </div>
+</div>
+
+<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2.5rem;">
+    <div style="width: 5px; height: 35px; background: #9bf1ff; border-radius: 10px; box-shadow: 0 0 15px rgba(155, 241, 255, 0.6);"></div>
+    <h3 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800;">The Vision</h3>
 </div>
 
 <!-- <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: start; margin-bottom: 3rem;">   
