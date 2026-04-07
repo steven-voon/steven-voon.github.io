@@ -18,22 +18,22 @@ project_url: "https://www.ceritalah.app/" # Referral link
 </div> -->
 
 
-<div class="project-dashboard" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; background: #0b1118; padding: 1.5rem; border: 1px solid #1e2d3d; border-radius: 12px; margin-top: -2.5rem; margin-bottom: 2.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-    <div style="text-align: center; border-right: 1px solid #1e2d3d;">
-        <span style="display: block; font-size: 0.65rem; color: #888; text-transform: uppercase; letter-spacing: 1px;">Role</span>
-        <span style="color: #9bf1ff; font-weight: 700; font-size: 1.1rem;">Technical Lead</span>
+<div class="project-dashboard" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; background: rgba(255, 255, 255, 0.07); backdrop-filter: blur(10px); padding: 2rem; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 16px; margin-top: -2.5rem; margin-bottom: 3.5rem; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1);">
+        <span style="display: block; font-size: 0.8rem; color: #ccc; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 5px;">Role</span>
+        <span style="color: #9bf1ff; font-weight: 800; font-size: 1.3rem;">Technical Lead</span>
     </div>
-    <div style="text-align: center; border-right: 1px solid #1e2d3d;">
-        <span style="display: block; font-size: 0.65rem; color: #888; text-transform: uppercase; letter-spacing: 1px;">Performance</span>
-        <span style="color: #9bff9b; font-weight: 700; font-size: 1.1rem;">60 FPS Stable</span>
+    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1);">
+        <span style="display: block; font-size: 0.8rem; color: #ccc; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 5px;">Performance</span>
+        <span style="color: #9bff9b; font-weight: 800; font-size: 1.3rem;">60 FPS</span>
     </div>
-    <div style="text-align: center; border-right: 1px solid #1e2d3d;">
-        <span style="display: block; font-size: 0.65rem; color: #888; text-transform: uppercase; letter-spacing: 1px;">Optimization</span>
-        <span style="color: #fff; font-weight: 700; font-size: 1.1rem;">-60% APK Size</span>
+    <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.1);">
+        <span style="display: block; font-size: 0.8rem; color: #ccc; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 5px;">Optimization</span>
+        <span style="color: #ffffff; font-weight: 800; font-size: 1.3rem;">-60% APK</span>
     </div>
     <div style="text-align: center;">
-        <span style="display: block; font-size: 0.65rem; color: #888; text-transform: uppercase; letter-spacing: 1px;">QA Metric</span>
-        <span style="color: #ff9b9b; font-weight: 700; font-size: 1.1rem;">0% Regression</span>
+        <span style="display: block; font-size: 0.8rem; color: #ccc; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 5px;">QA Stability</span>
+        <span style="color: #ff9b9b; font-weight: 800; font-size: 1.3rem;">0% Regression</span>
     </div>
 </div>
 
@@ -57,17 +57,17 @@ project_url: "https://www.ceritalah.app/" # Referral link
     {% endif %}
 </div> -->
 
-<div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 2.5rem; align-items: start; margin-bottom: 3rem;">   
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; align-items: center; margin-bottom: 4rem;">   
     <div>
-        <h2 style="margin-top: 0; border-bottom: 2px solid #9bf1ff; display: inline-block; padding-bottom: 5px;">The Vision</h2>
-        <p style="font-size: 1.1rem; line-height: 1.6; color: #eee;">
-            <strong>Ceritalah</strong> is a spatial heritage platform bridging local history with AR. As <strong>Technical Lead</strong>, I architected the cross-team workflow and optimized the delivery pipeline for complex outdoor environments.
+        <h2 style="margin-top: 0; font-size: 2.2rem; border-bottom: 3px solid #9bf1ff; display: inline-block; padding-bottom: 8px; margin-bottom: 1.5rem;">The Vision</h2>
+        <p style="font-size: 1.25rem; line-height: 1.7; color: #ffffff; margin-bottom: 2rem;">
+            <strong>Ceritalah</strong> is a spatial heritage platform bridging local history with AR. As <strong>Technical Lead</strong>, I architected the cross-team workflow and optimized the delivery pipeline for complex outdoor environments in Malaysia.
         </p>
-        <a href="{{ page.project_url }}" target="_blank" class="button small primary" style="margin-top: 10px;">Visit Project Site ↗</a>
+        <a href="{{ page.project_url }}" target="_blank" class="button primary" style="padding: 0.8rem 2rem; font-size: 1rem; border-radius: 50px;">Visit Project Site ↗</a>
     </div>
     {% if page.video_id %}
-    <div style="background: #111; padding: 8px; border-radius: 12px; border: 1px solid #222;">
-        <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px;">
+    <div style="background: rgba(0,0,0,0.3); padding: 12px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 15px 35px rgba(0,0,0,0.4);">
+        <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
             <iframe src="https://www.youtube.com/embed/{{ page.video_id }}" 
                     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
                     frameborder="0" allowfullscreen></iframe>
@@ -127,29 +127,27 @@ project_url: "https://www.ceritalah.app/" # Referral link
     </div>
 </div> -->
 
-<hr style="opacity: 0.1; margin-bottom: 3rem;">
-
-<h3>Project Ecosystem & Tooling</h3>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 3.5rem;">
-    <div style="background: rgba(255,255,255,0.03); padding: 1.2rem; border-radius: 8px;">
-        <h5 style="font-size: 0.7rem; color: #888; text-transform: uppercase; margin-bottom: 1rem;">Core Engine</h5>
-        <div style="display: flex; flex-wrap: wrap; gap: 5px;">
+<h3 style="font-size: 1.8rem; margin-bottom: 2rem;">Project Ecosystem & Tooling</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 4.5rem;">
+    <div style="background: rgba(255,255,255,0.05); padding: 1.8rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+        <h5 style="font-size: 0.9rem; color: #9bf1ff; text-transform: uppercase; margin-bottom: 1.2rem; letter-spacing: 1px;">Core Engine</h5>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
             <span class="tech-tag">Unity 2022.3</span>
             <span class="tech-tag">URP</span>
             <span class="tech-tag">ARFoundation</span>
         </div>
     </div>
-    <div style="background: rgba(255,255,255,0.03); padding: 1.2rem; border-radius: 8px;">
-        <h5 style="font-size: 0.7rem; color: #888; text-transform: uppercase; margin-bottom: 1rem;">Infrastructure</h5>
-        <div style="display: flex; flex-wrap: wrap; gap: 5px;">
+    <div style="background: rgba(255,255,255,0.05); padding: 1.8rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+        <h5 style="font-size: 0.9rem; color: #9bf1ff; text-transform: uppercase; margin-bottom: 1.2rem; letter-spacing: 1px;">Infrastructure</h5>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
             <span class="tech-tag">AWS S3</span>
             <span class="tech-tag">Addressables</span>
             <span class="tech-tag">Google VPS</span>
         </div>
     </div>
-    <div style="background: rgba(255,255,255,0.03); padding: 1.2rem; border-radius: 8px;">
-        <h5 style="font-size: 0.7rem; color: #888; text-transform: uppercase; margin-bottom: 1rem;">Production</h5>
-        <div style="display: flex; flex-wrap: wrap; gap: 5px;">
+    <div style="background: rgba(255,255,255,0.05); padding: 1.8rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+        <h5 style="font-size: 0.9rem; color: #9bf1ff; text-transform: uppercase; margin-bottom: 1.2rem; letter-spacing: 1px;">Production</h5>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
             <span class="tech-tag">GitHub CI/CD</span>
             <span class="tech-tag">Slack API</span>
             <span class="tech-tag">Jira</span>
@@ -157,67 +155,74 @@ project_url: "https://www.ceritalah.app/" # Referral link
     </div>
 </div>
 
-<h3 style="text-align: center; margin-bottom: 2rem;">Engineering Post-Mortem</h3>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
-    <div style="border: 1px solid #333; border-radius: 12px; overflow: hidden;">
-        <div style="background: #1a1a1a; padding: 1rem 1.5rem;">
-            <h4 style="margin: 0; color: #ff9b9b; font-size: 0.9rem; text-transform: uppercase;">The "Drift" Problem</h4>
+<h3 style="font-size: 1.8rem; text-align: center; margin-bottom: 2.5rem;">Engineering Post-Mortem</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 2.5rem; margin-bottom: 5rem;">
+    <div style="border: 1px solid rgba(255,255,255,0.15); border-radius: 16px; overflow: hidden; background: rgba(0,0,0,0.2);">
+        <div style="background: rgba(255, 155, 155, 0.15); padding: 1.2rem 1.8rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <h4 style="margin: 0; color: #ff9b9b; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">The "Drift" Problem</h4>
         </div>
-        <div style="padding: 1.5rem; background: #0f0f0f;">
-            <p style="font-size: 0.9rem; margin-bottom: 1rem;">Architected a <strong>Hybrid Localization system</strong> (GPS + VPS) to solve the 10m drift inherent in standard mobile GPS.</p>
-            <div style="background: rgba(155, 255, 155, 0.05); padding: 10px; border-left: 3px solid #9bff9b; color: #9bff9b; font-size: 0.8rem;">
-                <strong>SOLUTION:</strong> Sub-centimeter anchoring achieved via visual feature matching.
+        <div style="padding: 2rem;">
+            <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.5rem; color: #eee;">Architected a <strong>Hybrid Localization system</strong> (GPS + VPS) to solve the 10m drift inherent in standard mobile GPS.</p>
+            <div style="background: rgba(155, 255, 155, 0.1); padding: 15px; border-left: 4px solid #9bff9b; color: #9bff9b; font-size: 0.95rem; border-radius: 0 8px 8px 0;">
+                <strong>RESULT:</strong> Sub-centimeter anchoring achieved via visual feature matching.
             </div>
         </div>
     </div>
-    <div style="border: 1px solid #333; border-radius: 12px; overflow: hidden;">
-        <div style="background: #1a1a1a; padding: 1rem 1.5rem;">
-            <h4 style="margin: 0; color: #9bf1ff; font-size: 0.9rem; text-transform: uppercase;">Thermal Constraints</h4>
+    <div style="border: 1px solid rgba(255,255,255,0.15); border-radius: 16px; overflow: hidden; background: rgba(0,0,0,0.2);">
+        <div style="background: rgba(155, 241, 255, 0.15); padding: 1.2rem 1.8rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <h4 style="margin: 0; color: #9bf1ff; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Thermal Constraints</h4>
         </div>
-        <div style="padding: 1.5rem; background: #0f0f0f;">
-            <p style="font-size: 0.9rem; margin-bottom: 1rem;">Managed 38°C outdoor throttling in Malaysia by shifting tracking logic to background threads and custom culling.</p>
-            <div style="background: rgba(155, 241, 255, 0.05); padding: 10px; border-left: 3px solid #9bf1ff; color: #9bf1ff; font-size: 0.8rem;">
-                <strong>SOLUTION:</strong> Maintained 60FPS stability over 20min+ sessions.
+        <div style="padding: 2rem;">
+            <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.5rem; color: #eee;">Managed 38°C outdoor throttling by shifting tracking logic to background threads and custom culling.</p>
+            <div style="background: rgba(155, 241, 255, 0.1); padding: 15px; border-left: 4px solid #9bf1ff; color: #9bf1ff; font-size: 0.95rem; border-radius: 0 8px 8px 0;">
+                <strong>RESULT:</strong> Maintained 60FPS stability over 20min+ sessions.
             </div>
         </div>
     </div>
 </div>
 
-<div style="background: #0b1118; border: 1px solid #1e2d3d; border-radius: 12px; padding: 2rem;">
-    <h4 style="margin-top: 0; color: #9bf1ff;">Architect's Retrospective</h4>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 1.5rem;">
+<div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 16px; padding: 3rem;">
+    <h4 style="margin-top: 0; color: #9bf1ff; font-size: 1.6rem; margin-bottom: 2rem;">Architect's Retrospective</h4>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 3rem;">
         <div>
-            <h5 style="font-size: 0.65rem; color: #ff9b9b; text-transform: uppercase; letter-spacing: 1px;">Technical Debt</h5>
-            <ul style="font-size: 0.85rem; padding-left: 1rem; color: #ccc;">
+            <h5 style="font-size: 0.85rem; color: #ff9b9b; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1.2rem;">Technical Debt</h5>
+            <ul style="font-size: 1.05rem; padding-left: 1.2rem; color: #ddd; line-height: 1.8;">
                 <li>5G/3G handover logic</li>
                 <li>Device fragmentation (Non-LiDAR)</li>
             </ul>
         </div>
         <div>
-            <h5 style="font-size: 0.65rem; color: #9bff9b; text-transform: uppercase; letter-spacing: 1px;">Future Roadmap</h5>
-            <ul style="font-size: 0.85rem; padding-left: 1rem; color: #ccc;">
+            <h5 style="font-size: 0.85rem; color: #9bff9b; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1.2rem;">Future Roadmap</h5>
+            <ul style="font-size: 1.05rem; padding-left: 1.2rem; color: #ddd; line-height: 1.8;">
                 <li>Occlusion 2.0 (Depth API)</li>
                 <li>Real-time solar light estimation</li>
             </ul>
         </div>
         <div>
-            <h5 style="font-size: 0.65rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 1px;">The Verdict</h5>
-            <p style="font-size: 0.85rem; color: #ccc;">Mobile AR is heritage-ready; success depends on <strong>Environmental UX</strong> over raw polycounts.</p>
+            <h5 style="font-size: 0.85rem; color: #9bf1ff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1.2rem;">The Verdict</h5>
+            <p style="font-size: 1.05rem; color: #ddd; line-height: 1.8;">Mobile AR is heritage-ready; success depends on <strong>Environmental UX</strong> over raw polycounts.</p>
         </div>
     </div>
 </div>
 
 <style>
+    /* Global Overrides for Legibility */
     .tech-tag {
-        background: rgba(255,255,255,0.05);
+        background: rgba(255,255,255,0.1);
         color: #fff;
-        padding: 4px 10px;
-        border-radius: 4px;
-        font-size: 0.75rem;
-        border: 1px solid #333;
+        padding: 6px 14px;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        border: 1px solid rgba(255,255,255,0.2);
+        font-weight: 500;
     }
-    h3 { font-size: 1.5rem; letter-spacing: -0.5px; }
-    h4 { font-weight: 700; }
+    h3 { font-size: 2rem !important; }
+    strong { color: #9bf1ff; }
+    /* Responsive adjustment for small screens */
+    @media (max-width: 768px) {
+        .project-dashboard { grid-template-columns: 1fr 1fr; }
+        .project-dashboard div { border: none !important; margin-bottom: 10px; }
+    }
 </style>
 
 ---
