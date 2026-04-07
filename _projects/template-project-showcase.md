@@ -341,8 +341,8 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
         /* Zoom in slightly (115%) to push the remaining UI off-screen */
         top: 50%;
         left: 50%;
-        width: 115%; 
-        height: 115%;
+        width: 100%; 
+        height: 100%;
         transform: translate(-50%, -50%);
         pointer-events: none; /* Secondary layer of interaction blocking */
         border: none;
