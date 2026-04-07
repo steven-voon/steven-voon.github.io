@@ -9,9 +9,12 @@ company_url: "https://www.maitreehouse.com/"
 hardware: "Mobile"
 technologies: ["AR", "Unity"]
 project_url: "https://www.ceritalah.app/" 
+achievement_url_1: "https://www.ceritalah.app/" 
+achievement_url_2: "https://www.ceritalah.app/" 
+achievement_url_3: "https://www.ceritalah.app/" 
 
 # CASE A: YouTube
-video_id: "dGrWmW-sRdM"
+# video_id: "dGrWmW-sRdM"
 video_type: "youtube"
 
 # CASE B: Vimeo
@@ -68,13 +71,13 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
 
 <div class="achievement-breakout"> 
     <div class="breakout-label">Featured & Recognized</div>
-    <a href="/archive/#{{ page.genre }}" class="achievement-link">
+    <a href="{{ page.achievement_url_1 }}" target="_blank" class="achievement-link">
         <span class="achievement-icon">🖼️</span> Digital Heritage Exhibition 2025
     </a>
-    <a href="https://media-link.com" target="_blank" class="achievement-link">
+    <a href="{{ page.achievement_url_2 }}" target="_blank" class="achievement-link">
         <span class="achievement-icon">📰</span> Featured on [Media Name]
     </a>
-    <a href="/archive/#AR" class="achievement-link">
+    <a href="{{ page.achievement_url_3 }}" target="_blank" class="achievement-link">
         <span class="achievement-icon">🎤</span> XR Summit Malaysia Showcase
     </a>
 </div>
@@ -105,8 +108,14 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
                 {% if page.video_id %}
                 <div class="carousel-item video-slide">
                     <div class="video-wrapper">
+                    <div class="video-shield"></div>
                         {% if page.video_type == "youtube" %}
-                            <iframe src="https://www.youtube.com/embed/{{ page.video_id }}" frameborder="0" allowfullscreen></iframe>                     
+                            <iframe
+                                src="https://www.youtube.com/embed/{{ page.video_id }}?modestbranding=1&rel=0&showinfo=0&iv_load_policy=3"
+                                frameborder="0" 
+                                allow="autoplay; encrypted-media"
+                                allowfullscreen>
+                            </iframe>                     
                         {% elsif page.video_type == "vimeo" %}
                             <iframe src="https://player.vimeo.com/video/{{ page.video_id }}?h=0" frameborder="0" allowfullscreen></iframe>                       
                         {% endif %}
@@ -298,11 +307,38 @@ media_caption: "Interaction Design: User Flow and AR Interface Mockups"
     }
 
     .video-wrapper {
-        width: 100%; position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+        height: 0;
+        overflow: hidden;
+        border-radius: 8px;
+        background: #000;
     }
 
-    .video-wrapper iframe, .video-wrapper video {
-        position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; background: #000;
+    /* THE SHIELD: Add this new class */
+    .video-wrapper::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10; /* Sits on top of the iframe */
+        background: rgba(0,0,0,0); /* Invisible */
+        pointer-events: auto; /* Captures the swipe gesture */
+    }
+
+    .video-wrapper iframe, 
+    .video-wrapper video {
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+        background: #000;
+        z-index: 1; /* Sits below the shield */
     }
 
     .carousel-container { position: relative; width: 100%; border-radius: 12px; overflow: hidden; }
