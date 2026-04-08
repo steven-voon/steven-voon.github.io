@@ -5,10 +5,36 @@ image: "/assets/images/pic04.jpg"
 pillar: "mobile-app"
 genre: "productivity"
 company: "Creatinno Tech"
+company_url: "https://www.creatinnotech.com/"
 hardware: "Mobile"
 technologies: ["Flutter", "Unity", "FERN Stack"]
-# project_url: "https://www.ceritalah.com" # Referral link
-carousel_images: 
+project_url: "https://www.maitreehouse.com/news/people-with-intellectual-disability-falling-through-the-cracks-in-our-justice-systems" # 
+
+# Project Achievements
+# achievements:
+#   - title: "Digital Heritage Exhibition 2025"
+#     icon: "🖼️"
+#     url: "https://www.ceritalah.app/"
+#   - title: "Featured on Media"
+#     icon: "📰"
+#     url: "https://www.ceritalah.app/"
+#   - title: "XR Summit Malaysia Showcase"
+#     icon: "🎤"
+#     url: "https://www.ceritalah.app/"
+
+# PROJECT DETAILS
+project_role: "Technical Producer"
+project_team_size: "2"
+project_timeline: "6 month"
+# project_timeline_detail: "R&D • Proto • Live Ops"
+project_performance: "Support 300 Agents"
+
+# PROJECT GALLERY
+# VIDEO (COMMENT THIS OUT IF VIDEO IS NOT AVAILABLE)
+# video_id: "dGrWmW-sRdM"
+# video_type: "youtube"
+# IMAGES (COMMENT THIS OUT IF IMAGES ARE NOT AVAILABLE)
+project_images: 
   - "/assets/images/dulife-ss1.jpg"
   - "/assets/images/dulife-ss2.jpg"
   - "/assets/images/dulife-ss3.jpg"
@@ -17,58 +43,69 @@ carousel_images:
   - "/assets/images/dulife-ss6.jpg"
   - "/assets/images/dulife-ss7.jpg"
   - "/assets/images/dulife-ss8.jpg"
+media_caption: "Digitalization with Mobile App"
+
+# STRATEGIC INTENT
+project_strategic_intent:
+  title: "STRATEGIC INTENT"
+  project_summary:
+    heading: "PROJECT SUMMARY"
+    content: "DULife Pocket is a utility app that digitalizes various administrative tasks to simplify everyday management and documentation."
+  mission_impact:
+    heading: "MISSION & IMPACT"
+    content: "Work closely with administrative and sales department to define features scope and develop accordingly."
+
+# TECHNICAL LEADERSHIP
+project_technical_leadership:
+  title: "TECHNICAL LEADERSHIP"
+  overview: "Architect system to be resilient to high read/write operation and real time notification for rapid status updates. App also include gamification element for internal reward system"
+  key_points:
+    - title: "Weekly Syncs"
+      description: "Sprint goals & blockers."
+    - title: "QA Gatekeeper"
+      description: "Code & asset reviews."
+    - title: "CI/CD Workflow"
+      description: "Enforced 0% regression."
+
+# TECHNICAL ARCHITECTURE
+project_technical_architecture:
+  title: "TECHNICAL ARCHITECTURE"
+  sections:
+    - label: "Core Engine"
+      tags: ["Flutter", "Unity"]
+    - label: "Infrastructure"
+      tags: ["Nodejs", "ExpressJS", "Firebase Realtime Database"]
+    - label: "Production"
+      tags: ["GitHub CI/CD", "Trello"]
+
+# TECHNICAL CHALLENGES
+project_challenges:
+  title: "TECHNICAL DEEP-DIVE"
+  challenges:
+    - title: "Gamification Integration"
+      description: "Require integration between Flutter and Unity"
+      result: "Seamless transition between Flutter and Unity."
+      color: "#ff9b9b"
+    - title: "Performance"
+      description: "High update rate during event"
+      result: "No hiccup on traffic supporting 300 agents"
+      color: "#9bf1ff"
+    - title: "Strategic UX"
+      description: "Solved User Placement friction."
+      result: "Ghosting guide system."
+      color: "#ffcc66"
+
+# PROJECT RETROSPECTIVE
+project_retrospective:
+  title: "PROJECT RETROSPECTIVE"
+  technical_debt:
+    - "5G/3G handover"
+    - "Device fragmentation"
+  future_roadmap:
+    - "Occlusion 2.0"
+    - "Solar light estimation"
+  verdict: "Mobile AR success depends on Environmental UX."
+
 ---
 
-<div class="project-specs" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; background: rgba(155, 241, 255, 0.05); padding: 1.5rem; border-left: 4px solid #9bf1ff; margin-top: -2.5rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;">
-    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">ROLE</strong><br><span style="color: #9bf1ff; font-weight: 600;">Technical Lead</span></div>
-    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">PLATFORM</strong><br>Unity 2022.3 (URP)</div>
-    <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">CORE TECH</strong><br>VPS & Cloud Assets</div>
-    <!-- <div><strong style="font-size: 0.7rem; letter-spacing: 1px;">LIVE SITE</strong><br><a href="{{ page.project_url }}" target="_blank" class="button small primary">Visit Project ↗</a></div> -->
-</div>
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: start; margin-bottom: 3rem;">   
-    <div>
-        <h2 style="margin-top: 0;">The Vision</h2>
-        <p><strong>DULife Pocket</strong> is a utility app that digitalizes various administrative tasks to simplify everyday management and documentation.</p> 
-        <p>As <strong>Technical Lead cum Web Developer</strong>, collaborated with administrative and sales teams to define digitalization scope and develop corresponding web applications.</p>     
-    </div>
-    <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); position: relative; overflow: hidden;">         
-        <button onclick="document.getElementById('case-study-carousel').scrollBy({left: -document.getElementById('case-study-carousel').offsetWidth, behavior: 'smooth'})" 
-            style="position: absolute; left: 25px; top: 50%; transform: translateY(-50%); z-index: 5; background: transparent !important; border: none !important; outline: none !important; box-shadow: none !important; color: white; font-size: 2.2rem; cursor: pointer; text-shadow: 0px 0px 15px rgba(0,0,0,0.9); transition: all 0.3s ease; padding: 10px; min-width: 44px; display: flex; align-items: center; justify-content: center;"
-            onmouseover="this.style.opacity='0.6'; this.style.transform='translateY(-50%) scale(1.1)';" 
-            onmouseout="this.style.opacity='1'; this.style.transform='translateY(-50%) scale(1)';">
-            &#10094;
-        </button>
-        <button onclick="document.getElementById('case-study-carousel').scrollBy({left: document.getElementById('case-study-carousel').offsetWidth, behavior: 'smooth'})" 
-            style="position: absolute; right: 25px; top: 50%; transform: translateY(-50%); z-index: 5; background: transparent !important; border: none !important; outline: none !important; box-shadow: none !important; color: white; font-size: 2.2rem; cursor: pointer; text-shadow: 0px 0px 15px rgba(0,0,0,0.9); transition: all 0.3s ease; padding: 10px; min-width: 44px; display: flex; align-items: center; justify-content: center;"
-            onmouseover="this.style.opacity='0.6'; this.style.transform='translateY(-50%) scale(1.1)';" 
-            onmouseout="this.style.opacity='1'; this.style.transform='translateY(-50%) scale(1)';">
-            &#10095;
-        </button>
-        <div id="case-study-carousel" class="carousel-container" style="cursor: grab;">
-            {% for img in page.carousel_images %}
-            <div class="carousel-item">
-                <img src="{{ img }}" alt="Project slide" style="pointer-events: none; -webkit-user-drag: none;">
-            </div>
-            {% endfor %}
-        </div>
-        <style>
-            .dot { 
-                width: 6px; height: 6px; border-radius: 50%; 
-                background: rgba(155, 241, 255, 0.3); transition: all 0.3s ease; 
-            }
-            .dot.active { 
-                background: #9bf1ff !important; 
-                box-shadow: 0 0 8px #9bf1ff; transform: scale(1.3); 
-            }
-        </style>
-        <div class="carousel-dots" style="display: flex; justify-content: center; gap: 8px; margin-top: 10px;">
-            {% for img in page.carousel_images %}
-            <div class="dot {% if forloop.first %}active{% endif %}"></div>
-            {% endfor %}
-        </div>                 
-        <p style="font-size: 0.7rem; text-align: center; margin: 0.5rem 0 0 0; color: #9bf1ff; letter-spacing: 1px; text-transform: uppercase; opacity: 0.6;">
-            Swipe or use arrows to view
-        </p>
-    </div>
-</div>
+<!-- Main content goes here in markdown format -->
