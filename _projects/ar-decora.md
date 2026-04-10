@@ -34,11 +34,11 @@ project_performance: "60 FPS"
 video_id: "KfWjFpPtnBU"
 video_type: "youtube"
 # IMAGES (COMMENT THIS OUT IF IMAGES ARE NOT AVAILABLE)
-project_images: 
-  - "/assets/images/arangpau-ss1.jpg"
-  - "/assets/images/arangpau-ss2.jpg"
-  - "/assets/images/arangpau-ss3.jpg"
-  - "/assets/images/arangpau-ss4.jpg"
+# project_images: 
+#   - "/assets/images/arangpau-ss1.jpg"
+#   - "/assets/images/arangpau-ss2.jpg"
+#   - "/assets/images/arangpau-ss3.jpg"
+#   - "/assets/images/arangpau-ss4.jpg"
 media_caption: "Heritage Storytelling with Augmented Reality (AR)"
 
 # STRATEGIC INTENT

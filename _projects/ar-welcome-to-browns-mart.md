@@ -35,11 +35,11 @@ project_performance: "60 FPS"
 # video_type: "youtube"
 # IMAGES (COMMENT THIS OUT IF IMAGES ARE NOT AVAILABLE)
 project_images: 
-  - "/assets/images/brownsamrt-ss1.jpg"
-  - "/assets/images/brownsamrt-ss2.jpg"
-  - "/assets/images/brownsamrt-ss3.jpg"
-  - "/assets/images/brownsamrt-ss4.jpg"
-  - "/assets/images/brownsamrt-ss5.jpg"
+  - "/assets/images/brownsmart-ss1.jpg"
+  - "/assets/images/brownsmart-ss2.jpg"
+  - "/assets/images/brownsmart-ss3.jpg"
+  - "/assets/images/brownsmart-ss4.jpg"
+  - "/assets/images/brownsmart-ss5.jpg"
 media_caption: "Heritage Storytelling with Augmented Reality (AR)"
 
 # STRATEGIC INTENT
