@@ -8,7 +8,7 @@ company: "Avventura"
 company_url: "https://www.maitreehouse.com/"
 hardware: "Meta Quest 2"
 technologies: ["Meta SDk", "Unity"]
-project_url: "https://www.maitreehouse.com/news/people-with-intellectual-disability-falling-through-the-cracks-in-our-justice-systems" # 
+project_url: "https://www.maitreehouse.com/news/people-with-intellectual-disability-falling-through-the-cracks-in-our-justice-systems"
 
 # Project Achievements
 achievements:

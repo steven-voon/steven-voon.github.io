@@ -35,14 +35,10 @@ project_performance: "60 FPS"
 # video_type: "youtube"
 # IMAGES (COMMENT THIS OUT IF IMAGES ARE NOT AVAILABLE)
 project_images: 
-  - "/assets/images/dulife-ss1.jpg"
-  - "/assets/images/dulife-ss2.jpg"
-  - "/assets/images/dulife-ss3.jpg"
-  - "/assets/images/dulife-ss4.jpg"
-  - "/assets/images/dulife-ss5.jpg"
-  - "/assets/images/dulife-ss6.jpg"
-  - "/assets/images/dulife-ss7.jpg"
-  - "/assets/images/dulife-ss8.jpg"
+  - "/assets/images/ceritalah-ss1.png"
+  - "/assets/images/ceritalah-ss2.png"
+  - "/assets/images/ceritalah-ss3.png"
+  - "/assets/images/ceritalah-ss4.png"
 media_caption: "Heritage Storytelling with Augmented Reality (AR)"
 
 # STRATEGIC INTENT

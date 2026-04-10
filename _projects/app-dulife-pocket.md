@@ -8,7 +8,7 @@ company: "Creatinno Tech"
 company_url: "https://www.creatinnotech.com/"
 hardware: "Mobile"
 technologies: ["Flutter", "Unity", "FERN Stack"]
-project_url: "https://www.maitreehouse.com/news/people-with-intellectual-disability-falling-through-the-cracks-in-our-justice-systems" # 
+project_url: "https://www.maitreehouse.com/news/people-with-intellectual-disability-falling-through-the-cracks-in-our-justice-systems"
 
 #Project Achievements
 achievements:
