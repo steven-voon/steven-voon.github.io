@@ -10,17 +10,17 @@ hardware: "Mobile"
 technologies: ["Flutter", "Unity", "FERN Stack"]
 project_url: "https://www.maitreehouse.com/news/people-with-intellectual-disability-falling-through-the-cracks-in-our-justice-systems" # 
 
-# Project Achievements
-# achievements:
-#   - title: "Digital Heritage Exhibition 2025"
-#     icon: "🖼️"
-#     url: "https://www.ceritalah.app/"
-#   - title: "Featured on Media"
-#     icon: "📰"
-#     url: "https://www.ceritalah.app/"
-#   - title: "XR Summit Malaysia Showcase"
-#     icon: "🎤"
-#     url: "https://www.ceritalah.app/"
+#Project Achievements
+achievements:
+  - title: "Digital Heritage Exhibition 2025"
+    icon: "🖼️"
+    url: "https://www.ceritalah.app/"
+  - title: "Featured on Media"
+    icon: "📰"
+    url: "https://www.ceritalah.app/"
+  - title: "XR Summit Malaysia Showcase"
+    icon: "🎤"
+    url: "https://www.ceritalah.app/"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"
@@ -105,7 +105,6 @@ project_retrospective:
     - "Occlusion 2.0"
     - "Solar light estimation"
   verdict: "Mobile AR success depends on Environmental UX."
-
 ---
 
 <!-- Main content goes here in markdown format -->

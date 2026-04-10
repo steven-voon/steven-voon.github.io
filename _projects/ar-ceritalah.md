@@ -10,7 +10,7 @@ hardware: "Mobile"
 technologies: ["AR", "Unity"]
 project_url: "https://www.ceritalah.app/"
 
-Project Achievements
+#Project Achievements
 achievements:
   - title: "Featured on Media"
     icon: "🖼️"
@@ -105,7 +105,6 @@ project_retrospective:
     - "Occlusion 2.0: Integrating depth-sensing for crowd integration."
     - "Light Estimation: Matching AR shadows with real-time solar data."
   verdict: "Building for the Wild (outdoor AR) proved that Environmental UX is as critical as the code. High-noon sunlight in Malaysia causes aggressive thermal throttling; our next iteration will move tracking logic to background threads more aggressively."
-
 ---
 
 <!-- Main content goes here in markdown format -->

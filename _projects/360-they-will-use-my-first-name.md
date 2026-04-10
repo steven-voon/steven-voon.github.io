@@ -101,7 +101,6 @@ project_retrospective:
     - "Occlusion 2.0"
     - "Solar light estimation"
   verdict: "Mobile AR success depends on Environmental UX."
-
 ---
 
 <!-- Main content goes here in markdown format -->
