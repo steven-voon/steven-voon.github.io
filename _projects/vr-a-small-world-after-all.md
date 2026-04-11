@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project-default
 title: "A Small World After All"
 image: "/assets/images/pic04.jpg"
 pillar: "virtual-reality"
@@ -27,7 +27,7 @@ project_role: "Technical Producer"
 project_team_size: "2"
 project_timeline: "2 Years"
 project_timeline_detail: "R&D • Proto • Live"
-project_performance: "60 FPS"
+project_platform: "60 FPS"
 
 # PROJECT GALLERY
 # VIDEO (COMMENT THIS OUT IF VIDEO IS NOT AVAILABLE)

@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: project-default
 title: "Muzium Koperasi Malaysia"
 image: "/assets/images/pic04.jpg"
 pillar: "augmented-reality"
-genre: "heritage"
+genre: "Heritage and History"
 company: "Creatinno Tech"
 company_url: "https://www.maitreehouse.com/"
 hardware: "Mobile"
@@ -23,11 +23,11 @@ achievements:
     url: "https://www.ceritalah.app/"
 
 # PROJECT DETAILS
-project_role: "Technical Producer"
+project_role: " Technical Lead and XR Engineer"
 project_team_size: "2"
 project_timeline: "2 Years"
 project_timeline_detail: "R&D • Proto • Live"
-project_performance: "60 FPS"
+project_platform: "60 FPS"
 
 # PROJECT GALLERY
 # VIDEO (COMMENT THIS OUT IF VIDEO IS NOT AVAILABLE)
@@ -50,10 +50,10 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "Ceritalah is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia."
+    content: "Muzium Koperasi Malaysia is an interactive AR app showcasing historical moment of the organisation (ANGKASA) and showcase their batik collection."
   mission_impact:
     heading: "MISSION & IMPACT"
-    content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."
+    content: "Led the XR recreation of a historic annual meeting with an interactive batik experience."
 
 # TECHNICAL LEADERSHIP
 project_technical_leadership:

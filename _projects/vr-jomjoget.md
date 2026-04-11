@@ -1,18 +1,18 @@
 ---
-layout: post
+layout: project-default
 title: "Jom Joget"
 image: "/assets/images/pic04.jpg"
 pillar: "virtual-reality"
-genre: "heritage"
+genre: "Art, Dance Preservation"
 company: "Avventura"
-company_url: "https://www.maitreehouse.com/"
+compan  y_url: "https://www.maitreehouse.com/"
 hardware: "Meta Quest 2"
 technologies: ["Tiltbrush", "Unity", "Oculus SDK"]
 project_url: "https://www.avventura.co/copy-of-reimagining-popular-folktales"
 
 #Project Achievements
 achievements:
-  - title: "Featured on Media"
+    - title: "Featured on Media"
     icon: "🖼️"
     url: "https://www.ceritalah.app/"
   - title: "Featured on Media"
@@ -23,11 +23,11 @@ achievements:
     url: "https://www.ceritalah.app/"
 
 # PROJECT DETAILS
-project_role: "Technical Producer"
+project_role: "Unity XR Enginner"
 project_team_size: "2"
 project_timeline: "2 Years"
 project_timeline_detail: "R&D • Proto • Live"
-project_performance: "60 FPS"
+project_platform: "60 FPS"
 
 # PROJECT GALLERY
 # VIDEO (COMMENT THIS OUT IF VIDEO IS NOT AVAILABLE)
@@ -47,10 +47,10 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "Ceritalah is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia."
+    content: "Joget VR is a VR experience which blends historical storytelling with hands-on dance practice, offering a fun and educational way to discover Malay cultural heritage. "
   mission_impact:
     heading: "MISSION & IMPACT"
-    content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."
+    content: "Created an onboarding session allowing users to select male or female dancers, integrating provided MOCAP data with two 3D dancers.."
 
 # TECHNICAL LEADERSHIP
 project_technical_leadership:

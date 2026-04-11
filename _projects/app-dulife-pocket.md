@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project-default
 title: "Dulife Pocket"
 image: "/assets/images/pic04.jpg"
 pillar: "mobile-app"
@@ -27,7 +27,7 @@ project_role: "Technical Producer"
 project_team_size: "2"
 project_timeline: "6 month"
 # project_timeline_detail: "R&D • Proto • Live Ops"
-project_performance: "Support 300 Agents"
+project_platform: "Support 300 Agents"
 
 # PROJECT GALLERY
 # VIDEO (COMMENT THIS OUT IF VIDEO IS NOT AVAILABLE)
