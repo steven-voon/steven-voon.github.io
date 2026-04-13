@@ -453,11 +453,10 @@ body { overflow-x: hidden; }
     }
 
     /* Green + Glowing + Blinking (Active Dev Only) */
-    &.launched-active-development, 
-    &.launched {
+    &.launched-active-development {
         background-color: #9bff9b;
         box-shadow: 0 0 8px #9bff9b;
-        animation: status-pulse 1.8s infinite ease-in-out;
+        animation: status-pulse 1.5s infinite ease-in-out;
     }
 
     /* Static Colors (No Blinking) */
@@ -471,9 +470,9 @@ body { overflow-x: hidden; }
         opacity: 0.8;
     }
 
-    &.launched-maintained,
-    &.maintained {
+    &.launched-maintained {
         background-color: #9bf1ff;
         opacity: 0.8;
+        animation: status-pulse 1.5s infinite ease-in-out;
     }
 }

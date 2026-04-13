@@ -130,6 +130,7 @@ description: "A comprehensive index of XR architectures, R&D experiments, and te
     .status-dot.launched-maintained {
         background-color: #9bf1ff;
         box-shadow: 0 0 8px #9bf1ff;
+        animation: status-pulse 1.5s infinite ease-in-out;
     }
 </style>
 
