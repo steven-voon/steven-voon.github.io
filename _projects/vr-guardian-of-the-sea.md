@@ -2,7 +2,7 @@
 layout: project-default
 title: "Guardian of the Sea"
 image: "/assets/images/pic04.jpg"
-pillar: "virtual-reality"
+pillar: ["virtual-reality","others"]
 genre: "edutainment"
 company: ""
 company_url: "https://www.maitreehouse.com/"

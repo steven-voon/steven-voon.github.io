@@ -13,10 +13,10 @@ description: "A comprehensive index of XR architectures, R&D experiments, and te
         </header>
         <div class="archive-filters" style="margin-bottom: 2rem;">
             <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="projects">Pillars</button>
-            <button class="filter-btn" data-filter="workshop">Workshop</button>
-            <button class="filter-btn" data-filter="experimental">Experimental</button>
-            <button class="filter-btn" data-filter="lab">R&D Lab</button>
+            <button class="filter-btn" data-filter="virtual-reality">Virtual Reality</button>
+            <button class="filter-btn" data-filter="augmented-reality">Augmented Reality</button>
+            <button class="filter-btn" data-filter="others">App & Web & Games</button>
+            <button class="filter-btn" data-filter="lab">Experimental</button>
         </div>
         <div class="table-wrapper">
             <table class="alt archive-table" style="font-size: 0.85rem;">
@@ -32,7 +32,7 @@ description: "A comprehensive index of XR architectures, R&D experiments, and te
                 </thead>
                 <tbody>
                     {% for item in all_items %}
-                    <tr class="archive-row {{ item.collection }} {{ item.pillar | slugify }} {{ item.genre | slugify }} {{ item.category | slugify }}">
+                    <tr class="archive-row {% for p in item.pillar %} {{ p | slugify }}{% endfor %} {{ item.collection }}"">
                         <td style="padding: 0.6rem 0.5rem; color: #9bf1ff; font-weight: 600;">{{ item.date | date: "%Y" }}</td>
                         <td style="padding: 0.6rem 0.5rem; font-size: 1.1rem;"><strong>{{ item.title }}</strong></td>
                         <td style="padding: 0.6rem 0.5rem; opacity: 0.8;">{{ item.company | default: "Freelance" }}</td>
@@ -57,6 +57,20 @@ description: "A comprehensive index of XR architectures, R&D experiments, and te
         </div>
     </div>
 </section>
+
+<style>
+    /* This is the line that actually hides the projects */
+    .archive-row.hidden {
+        display: none !important;
+    }
+
+    /* Optional: Style for the active filter button */
+    .filter-btn.active {
+        background-color: #9bf1ff !important;
+        color: #1f1f1f !important;
+    }
+</style>
+
 
 <script>
 document.querySelectorAll('.filter-btn').forEach(button => {

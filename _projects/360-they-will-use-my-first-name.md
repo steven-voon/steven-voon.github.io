@@ -2,7 +2,7 @@
 layout: project-default
 title: "[They Will Use] My First Name"
 image: "/assets/images/pic04.jpg"
-pillar: "virtual-reality"
+pillar: ["virtual-reality"]
 genre: "heritage"
 company: "Avventura"
 company_url: "https://www.maitreehouse.com/"

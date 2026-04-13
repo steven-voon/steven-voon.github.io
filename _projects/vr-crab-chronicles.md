@@ -2,7 +2,7 @@
 layout: project-default
 title: "Crab Chronicles"
 image: "/assets/images/pic04.jpg"
-pillar: "virtual-reality"
+pillar: ["virtual-reality", "lab"]
 genre: "storytelling"
 company: "CahayaXR"
 company_url: "https://www.maitreehouse.com/"

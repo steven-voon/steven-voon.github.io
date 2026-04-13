@@ -2,7 +2,7 @@
 layout: project-default
 title: "Music NT VR Platform"
 image: "/assets/images/pic04.jpg"
-pillar: "virtual-reality"
+pillar: ["virtual-reality","lab"]
 genre: "marketing"
 company: "Maitree House"
 company_url: "https://www.maitreehouse.com/"

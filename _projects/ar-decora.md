@@ -2,7 +2,7 @@
 layout: project-default
 title: "DECORA"
 image: "/assets/images/pic04.jpg"
-pillar: "augmented-reality"
+pillar: ["augmented-reality", "lab", "others"]
 genre: "retail"
 company: "Creatinno Tech"
 company_url: "https://www.maitreehouse.com/"

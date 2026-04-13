@@ -2,7 +2,7 @@
 layout: project-default
 title: "Jom Joget"
 image: "/assets/images/pic04.jpg"
-pillar: "virtual-reality"
+pillar: ["virtual-reality"]
 genre: "Art, Dance Preservation"
 company: "Avventura"
 compan  y_url: "https://www.maitreehouse.com/"

@@ -2,7 +2,7 @@
 layout: project-default
 title: "CahayaXR: First Edition"
 image: "/assets/images/pic04.jpg"
-pillar: "technical-leadership"
+pillar: ["lab", "others"]
 genre: "capacity-building"
 comapny: "CahayaXR"
 company_url: "https://www.maitreehouse.com/"

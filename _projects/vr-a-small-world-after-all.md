@@ -2,7 +2,7 @@
 layout: project-default
 title: "A Small World After All"
 image: "/assets/images/pic04.jpg"
-pillar: "virtual-reality"
+pillar: ["virtual-reality"]
 genre: "storytelling"
 company: "Maitree House"
 company_url: "https://www.maitreehouse.com/"

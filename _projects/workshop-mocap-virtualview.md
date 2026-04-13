@@ -2,7 +2,7 @@
 layout: project-default
 title: "Virtual View (Inclusive DanceXR)"
 image: "/assets/images/pic04.jpg"
-pillar: "technical-leadership"
+pillar: ["lab"]
 genre: "capacity-building"
 company: "Maitree House"
 company_url: "https://www.maitreehouse.com/"

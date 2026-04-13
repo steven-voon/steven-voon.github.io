@@ -2,7 +2,7 @@
 layout: project-default
 title: "Muzium Koperasi Malaysia"
 image: "/assets/images/pic04.jpg"
-pillar: "augmented-reality"
+pillar: ["augmented-reality","others"]
 genre: "Heritage and History"
 company: "Creatinno Tech"
 company_url: "https://www.maitreehouse.com/"

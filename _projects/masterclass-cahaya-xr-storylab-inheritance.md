@@ -2,7 +2,7 @@
 layout: project-default
 title: "CahayaXR Storylab:Inheritance Masterclass"
 image: "/assets/images/pic04.jpg"
-pillar: "technical-leadership"
+pillar: ["lab"]
 genre: "capacity-building"
 company: "Maitree House"
 company_url: "https://www.maitreehouse.com/"

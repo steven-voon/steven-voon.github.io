@@ -2,7 +2,7 @@
 layout: project-default
 title: "VR Organ Bath Lab Experiement"
 image: "/assets/images/pic04.jpg"
-pillar: "virtual-reality"
+pillar: ["virtual-reality", "others"]
 genre: "education"
 company: "Creatinno Tech"
 company_url: "https://www.maitreehouse.com/"

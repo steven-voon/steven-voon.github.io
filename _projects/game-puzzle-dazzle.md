@@ -2,7 +2,7 @@
 layout: project-default
 title: "Puzzle Dazzle"
 image: "/assets/images/pic04.jpg"
-pillar: "game"
+pillar: ["others"]
 genre: "edutainment"
 company: "Puzzle Dazzle"
 company_url: "https://www.maitreehouse.com/"

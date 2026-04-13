@@ -2,7 +2,7 @@
 layout: project-default
 title: "Welcome to Brown's Mart"
 image: "/assets/images/pic04.jpg"
-pillar: "augmented-reality"
+pillar: ["augmented-reality","others"]
 genre: "heritage"
 company: "Maitree House"
 company_url: "https://www.maitreehouse.com/"

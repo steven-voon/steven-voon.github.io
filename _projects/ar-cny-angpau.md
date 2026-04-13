@@ -2,7 +2,7 @@
 layout: project-default
 title: "AR Promotion Angpau"
 image: "/assets/images/pic04.jpg"
-pillar: "augmented-reality"
+pillar: ["augmented-reality"]
 genre: "marketing"
 company: "Creatinno Tech"
 company_url: "https://www.maitreehouse.com/"

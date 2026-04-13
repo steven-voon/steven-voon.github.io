@@ -2,7 +2,7 @@
 layout: project-default
 title: "BioticX"
 image: "/assets/images/pic04.jpg"
-pillar: "virtual-reality"
+pillar: ["virtual-reality", "lab"]
 genre: "storytelling"
 company: "Maitree House"
 company_url: "https://www.maitreehouse.com/"

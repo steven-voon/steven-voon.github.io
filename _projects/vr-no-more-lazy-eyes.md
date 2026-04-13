@@ -2,7 +2,7 @@
 layout: project-default
 title: "No More Lazy Eyes (VR Amblyopia Treatment POC)"
 image: "/assets/images/pic04.jpg"
-pillar: "virtual-reality"
+pillar: ["virtual-reality","lab", "others"]
 genre: "healthcare"
 company: "Creatinno Tech"
 company_url: "https://www.maitreehouse.com/"

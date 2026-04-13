@@ -2,7 +2,7 @@
 layout: project-default
 title: "DanceXR Workshop"
 image: "/assets/images/pic04.jpg"
-pillar: "augmented-reality"
+pillar: ["lab"]
 genre: "heritage"
 company: "Maitree House"
 company_url: "https://www.maitreehouse.com/"

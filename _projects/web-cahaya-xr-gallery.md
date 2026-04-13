@@ -2,7 +2,7 @@
 layout: project-default
 title: "CahayaXR Gallery"
 image: "/assets/images/pic04.jpg"
-pillar: "technical-leadership"
+pillar: ["lab","others"]
 genre: "capacity-building"
 company: "CahayaXR"
 company_url: "https://www.maitreehouse.com/"

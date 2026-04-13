@@ -2,7 +2,7 @@
 layout: project-default
 title: "MARGIC"
 image: "/assets/images/pic04.jpg"
-pillar: "augmented-reality"
+pillar: ["augmented-reality", "others"]
 genre: "marketing"
 company: "Creatinno Tech"
 company_url: "https://www.maitreehouse.com/"

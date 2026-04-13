@@ -2,7 +2,7 @@
 layout: project-default
 title: "Dulife Pocket"
 image: "/assets/images/pic04.jpg"
-pillar: "mobile-app"
+pillar: ["others"]
 genre: "productivity"
 company: "Creatinno Tech"
 company_url: "https://www.creatinnotech.com/"

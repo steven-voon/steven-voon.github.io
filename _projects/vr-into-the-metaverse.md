@@ -2,7 +2,7 @@
 layout: project-default
 title: "Into the Metaverse"
 image: "/assets/images/pic04.jpg"
-pillar: "technical-leadership"
+pillar: ["virtual-reality", "lab"]
 genre: "capacity-building"
 company: "CahayaXR"
 company_url: "https://www.maitreehouse.com/"
