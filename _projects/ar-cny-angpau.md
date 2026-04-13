@@ -1,6 +1,7 @@
 ---
 layout: project-default
 title: "AR Promotion Angpau"
+status: "launched-maintained" # Options: launched-active-development, launched-maintained, completed, in-progress
 image: "/assets/images/pic04.jpg"
 pillar: ["augmented-reality"]
 genre: "marketing"

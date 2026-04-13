@@ -1,6 +1,7 @@
 ---
 layout: project-default
 title: "Jom Joget"
+status: "completed" # Options: launched-active-development, launched-maintained, completed, in-progress
 image: "/assets/images/pic04.jpg"
 pillar: ["virtual-reality"]
 genre: "Art, Dance Preservation"

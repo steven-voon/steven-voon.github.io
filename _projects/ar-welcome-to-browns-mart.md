@@ -1,6 +1,7 @@
 ---
 layout: project-default
 title: "Welcome to Brown's Mart"
+status: "launched-maintained" # Options: launched-active-development, launched-maintained, completed, in-progress
 image: "/assets/images/pic04.jpg"
 pillar: ["augmented-reality","others"]
 genre: "heritage"

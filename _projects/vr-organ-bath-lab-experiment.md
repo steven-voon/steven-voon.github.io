@@ -1,6 +1,7 @@
 ---
 layout: project-default
 title: "VR Organ Bath Lab Experiement"
+status: "launched-maintained" # Options: launched-active-development, launched-maintained, completed, in-progress
 image: "/assets/images/pic04.jpg"
 pillar: ["virtual-reality", "others"]
 genre: "education"

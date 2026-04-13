@@ -1,6 +1,7 @@
 ---
 layout: project-default
 title: "A Late Boomer"
+status: "completed" # Options: launched-active-development, launched-maintained, completed, in-progress
 image: "/assets/images/pic04.jpg"
 pillar: ["virtual-reality", "lab"]
 genre: "storytelling"

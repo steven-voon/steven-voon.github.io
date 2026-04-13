@@ -1,6 +1,7 @@
 ---
 layout: project-default
 title: "No More Lazy Eyes (VR Amblyopia Treatment POC)"
+status: "launched-maintained" # Options: launched-active-development, launched-maintained, completed, in-progress
 image: "/assets/images/pic04.jpg"
 pillar: ["virtual-reality","lab", "others"]
 genre: "healthcare"

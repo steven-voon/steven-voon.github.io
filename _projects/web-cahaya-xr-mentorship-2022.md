@@ -1,6 +1,7 @@
 ---
 layout: project-default
 title: "CahayaXR: First Edition"
+status: "launched-maintained" # Options: launched-active-development, launched-maintained, completed, in-progress
 image: "/assets/images/pic04.jpg"
 pillar: ["lab", "others"]
 genre: "capacity-building"

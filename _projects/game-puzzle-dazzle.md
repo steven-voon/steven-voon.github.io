@@ -1,6 +1,7 @@
 ---
 layout: project-default
 title: "Puzzle Dazzle"
+status: "launched-maintained" # Options: launched-active-development, launched-maintained, completed, in-progress
 image: "/assets/images/pic04.jpg"
 pillar: ["others"]
 genre: "edutainment"

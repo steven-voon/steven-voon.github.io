@@ -1,6 +1,7 @@
 ---
 layout: project-default
 title: "DanceXR Workshop"
+status: "completed" # Options: launched-active-development, launched-maintained, completed, in-progress
 image: "/assets/images/pic04.jpg"
 pillar: ["lab"]
 genre: "heritage"

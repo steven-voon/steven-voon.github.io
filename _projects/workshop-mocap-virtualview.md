@@ -1,6 +1,7 @@
 ---
 layout: project-default
 title: "Virtual View (Inclusive DanceXR)"
+status: "completed" # Options: launched-active-development, launched-maintained, completed, in-progress
 image: "/assets/images/pic04.jpg"
 pillar: ["lab"]
 genre: "capacity-building"

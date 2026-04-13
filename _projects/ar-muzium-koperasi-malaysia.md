@@ -1,6 +1,7 @@
 ---
 layout: project-default
 title: "Muzium Koperasi Malaysia"
+status: "launched-active-development" # Options: launched-active-development, launched-maintained, completed, in-progress
 image: "/assets/images/pic04.jpg"
 pillar: ["augmented-reality","others"]
 genre: "Heritage and History"

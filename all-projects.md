@@ -35,7 +35,17 @@ description: "A comprehensive index of XR architectures, R&D experiments, and te
                     <tr class="archive-row {% if item.pillar %}{% for p in item.pillar %}{{ p | slugify }} {% endfor %}{% endif %}">
                         <td style="padding: 0.6rem 0.5rem; color: #9bf1ff; font-weight: 600;">{{ item.date | date: "%Y" }}</td>
                         <td style="padding: 0.6rem 0.5rem; font-size: 1.1rem;"><strong>{{ item.title }}</strong></td>
-                        <td style="padding: 0.6rem 0.5rem; opacity: 0.8;">{{ item.company | default: "Freelance" }}</td>
+                        <td style="padding: 0.6rem 0.5rem; opacity: 0.8;">{{ item.company | default: "Freelance" }}</td>                   
+                        <td style="padding: 0.6rem 0.5rem;">
+                            {% if item.status %}
+                                <div class="status-container">
+                                    <span class="status-dot {{ item.status | slugify }}"></span>
+                                    <span class="status-text" style="font-size: 0.7rem;">{{ item.status | replace: "-", " " }}</span>
+                                </div>
+                            {% else %}
+                                <span style="opacity: 0.2;">—</span>
+                            {% endif %}
+                        </td>
                         <td style="padding: 0.6rem 0.5rem; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px;">
                             {{ item.genre }}
                         </td>
@@ -67,6 +77,59 @@ description: "A comprehensive index of XR architectures, R&D experiments, and te
     .filter-btn.active {
         background-color: #9bf1ff !important;
         color: #1f1f1f !important;
+    }
+
+    .status-container {
+        display: flex;
+        align-items: center;
+        gap: 8px; /* space between dot and text */
+    }
+
+    .status-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        display: inline-block;
+        animation: status-pulse 1.5s infinite ease-in-out;
+    }
+
+    .status-text {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        opacity: 0.9;
+    }
+
+    /* Animation Logic */
+    @keyframes status-pulse {
+        0% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.3; transform: scale(0.9); }
+        100% { opacity: 1; transform: scale(1); }
+    }
+
+    /* Color Assignments */
+    /* Launched - Green */
+    .status-dot.launched-active-development {
+        background-color: #9bff9b;
+        box-shadow: 0 0 8px #9bff9b;
+    }
+
+    /* Completed - White/Grey */
+    .status-dot.completed {
+        background-color: #ffffff;
+        box-shadow: 0 0 8px #ffffff;
+    }
+
+    /* In Progress - Yellow */
+    .status-dot.in-progress {
+        background-color: #ffe664;
+        box-shadow: 0 0 8px #ffe664;
+    }
+
+    /* Maintained - Blue */
+    .status-dot.launched-maintained {
+        background-color: #9bf1ff;
+        box-shadow: 0 0 8px #9bf1ff;
     }
 </style>
 

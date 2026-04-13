@@ -1,6 +1,7 @@
 ---
 layout: project-default
 title: "Music NT VR Platform"
+status: "completed" # Options: launched-active-development, launched-maintained, completed, in-progress
 image: "/assets/images/pic04.jpg"
 pillar: ["virtual-reality","lab"]
 genre: "marketing"
