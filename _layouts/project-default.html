@@ -71,6 +71,19 @@
 			</div>
 			<div class="dash-sep"></div>
 			{% endif %}
+
+			{% if page.status %}
+            <div class="dash-item">
+                <span class="dash-label">Status</span>
+                <div style="display: flex; align-items: center; gap: 8px; margin-top: 5px;">
+                    <span class="status-dot {{ page.status | slugify }}"></span>
+                    <span class="dash-value" style="text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px;">
+                        {{ page.status | replace: "-", " " }}
+                    </span>
+                </div>
+            </div>
+            <div class="dash-sep"></div>
+            {% endif %}
 			
 			{% if page.project_url %}
 			<div class="dash-item" style="min-width: 180px;">
