@@ -12,7 +12,7 @@ project_url: "https://www.avventura.co/copy-of-reimagining-popular-folktales"
 
 #Project Achievements
 achievements:
-    - title: "Featured on Media"
+  - title: "Featured on Media"
     icon: "🖼️"
     url: "https://www.ceritalah.app/"
   - title: "Featured on Media"
