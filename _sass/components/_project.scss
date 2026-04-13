@@ -438,38 +438,38 @@ body { overflow-x: hidden; }
 }
 
 .status-dot {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        display: inline-block;
-    }
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	display: inline-block;
+}
 
-    /* Animation Keyframes */
-    @keyframes status-pulse {
-        0% { opacity: 1; transform: scale(1); }
-        50% { opacity: 0.3; transform: scale(0.9); }
-        100% { opacity: 1; transform: scale(1); }
-    }
+/* Animation Keyframes */
+@keyframes status-pulse {
+	0% { opacity: 1; transform: scale(1); }
+	50% { opacity: 0.3; transform: scale(0.9); }
+	100% { opacity: 1; transform: scale(1); }
+}
 
-    /* Green + Glowing + Blinking (Launched Only) */
-    .status-dot.launched-active-development {
-        background-color: #9bff9b;
-        box-shadow: 0 0 8px #9bff9b;
-        animation: status-pulse 1.8s infinite ease-in-out;
-    }
+/* Green + Glowing + Blinking (Launched Only) */
+.status-dot.launched-active-development {
+	background-color: #9bff9b;
+	box-shadow: 0 0 8px #9bff9b;
+	animation: status-pulse 1.8s infinite ease-in-out;
+}
 
-    /* Static Colors (No Blinking) */
-    .status-dot.completed {
-        background-color: #ffffff;
-        opacity: 0.8;
-    }
+/* Static Colors (No Blinking) */
+.status-dot.completed {
+	background-color: #ffffff;
+	opacity: 0.8;
+}
 
-    .status-dot.in-progress {
-        background-color: #ffe664;
-        opacity: 0.8;
-    }
+.status-dot.in-progress {
+	background-color: #ffe664;
+	opacity: 0.8;
+}
 
-    .status-dot.launched-maintained {
-        background-color: #9bf1ff;
-        opacity: 0.8;
-    }
+.status-dot.launched-maintained {
+	background-color: #9bf1ff;
+	opacity: 0.8;
+}
