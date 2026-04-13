@@ -452,7 +452,7 @@ body { overflow-x: hidden; }
     }
 
     /* Green + Glowing + Blinking (Launched Only) */
-    .status-dot.launched {
+    .status-dot.launched-active-development {
         background-color: #9bff9b;
         box-shadow: 0 0 8px #9bff9b;
         animation: status-pulse 1.8s infinite ease-in-out;
@@ -469,7 +469,7 @@ body { overflow-x: hidden; }
         opacity: 0.8;
     }
 
-    .status-dot.maintained {
+    .status-dot.launched-maintained {
         background-color: #9bf1ff;
         opacity: 0.8;
     }
