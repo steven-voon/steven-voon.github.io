@@ -90,7 +90,6 @@ description: "A comprehensive index of XR architectures, R&D experiments, and te
         height: 8px;
         border-radius: 50%;
         display: inline-block;
-        animation: status-pulse 1.5s infinite ease-in-out;
     }
 
     .status-text {
@@ -112,6 +111,7 @@ description: "A comprehensive index of XR architectures, R&D experiments, and te
     .status-dot.launched-active-development {
         background-color: #9bff9b;
         box-shadow: 0 0 8px #9bff9b;
+        animation: status-pulse 1.5s infinite ease-in-out;
     }
 
     /* Completed - White/Grey */
