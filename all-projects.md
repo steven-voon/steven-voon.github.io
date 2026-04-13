@@ -32,7 +32,7 @@ description: "A comprehensive index of XR architectures, R&D experiments, and te
                 </thead>
                 <tbody>
                     {% for item in all_items %}
-                    <tr class="archive-row {% for p in item.pillar %} {{ p | slugify }}{% endfor %} {{ item.collection }}"">
+                    <tr class="archive-row {% if item.pillar %}{% for p in item.pillar %}{{ p | slugify }} {% endfor %}{% endif %}">
                         <td style="padding: 0.6rem 0.5rem; color: #9bf1ff; font-weight: 600;">{{ item.date | date: "%Y" }}</td>
                         <td style="padding: 0.6rem 0.5rem; font-size: 1.1rem;"><strong>{{ item.title }}</strong></td>
                         <td style="padding: 0.6rem 0.5rem; opacity: 0.8;">{{ item.company | default: "Freelance" }}</td>
@@ -48,8 +48,7 @@ description: "A comprehensive index of XR architectures, R&D experiments, and te
                         </td>
                         <td style="padding: 0.6rem 0.5rem; text-align: center;">
                             <a href="{{ item.url | relative_url }}" class="button small" style="height: 2.1rem; line-height: 2.1rem; padding: 0 1.2rem; font-size: 0.75rem;">Learn More</a>
-                        </td>
-                        
+                        </td>                    
                     </tr>
                     {% endfor %}
                 </tbody>
