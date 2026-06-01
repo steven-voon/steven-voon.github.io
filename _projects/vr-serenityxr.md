@@ -6,22 +6,22 @@ image: "/assets/images/pic04.jpg"
 pillar: ["virtual-reality"]
 genre: "heritage"
 company: "Avventura"
-company_url: "https://www.maitreehouse.com/"
+company_url: "https://www.avventura.co/"
 hardware: "Meta Quest 2"
-technologies: ["Tiltbrush", "Unity", "Oculus SDK"]
+technologies: ["Unity", "Meta SDK"]
 project_url: "https://www.avventura.co/serenityxr"
 
 #Project Achievements
-achievements:
-  - title: "Featured on Media"
-    icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
-    icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
-    icon: "🎤"
-    url: "https://www.ceritalah.app/"
+# achievements:
+#   - title: "Featured on Media"
+#     icon: "🖼️"
+#     url: "https://www.ceritalah.app/"
+#   - title: "Featured on Media"
+#     icon: "📰"
+#     url: "https://www.ceritalah.app/"
+#   - title: "XR Summit Malaysia Showcase"
+#     icon: "🎤"
+#     url: "https://www.ceritalah.app/"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"
@@ -47,7 +47,7 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "Ceritalah is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia."
+    content: "Serenity XR is a VR experience that immerses users in tranquil virtual environments, offering guided meditation exercises to help relax and recharge the mind and body."
   mission_impact:
     heading: "MISSION & IMPACT"
     content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."

@@ -9,19 +9,19 @@ company: "Maitree House"
 company_url: "https://www.maitreehouse.com/"
 hardware: "Mobile"
 technologies: ["Unity", "ARCore", "ARKit", "C#", "Blender"]
-project_url: "https://brownsmart.com.au/tour/"
+project_url: "https://www.maitreehouse.com/work/browns-mart-welcome-tour"
 
 #Project Achievements
 achievements:
-  - title: "Featured on Media"
+  - title: "Promoted by Discover Darwin Australia"
     icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
+    url: "https://www.linkedin.com/posts/welcome-tour-browns-mart-share-6981114320508108801-G3fi/"
+  - title: "Live on Google Play Store"
     icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
+    url: "https://play.google.com/store/apps/details?id=com.brownsmart.welcometour"
+  - title: "Live on Apple App Store"
     icon: "🎤"
-    url: "https://www.ceritalah.app/"
+    url: "https://apps.apple.com/us/app/browns-mart-welcome-tour/id1632648593"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"
@@ -48,7 +48,7 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "Ceritalah is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia."
+    content: "Brown’s Mart Welcome Tour is an AR app that lets visitors explore the venue’s history through interactive displays, archival images, and community stories."
   mission_impact:
     heading: "MISSION & IMPACT"
     content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."

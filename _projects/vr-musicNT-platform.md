@@ -13,15 +13,15 @@ project_url: "https://www.linkedin.com/posts/mark-smith-286b49a_musicnt-in-partn
 
 #Project Achievements
 achievements:
-  - title: "Featured on Media"
+  - title: "Supported by Music NT"
     icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
+    url: "https://www.linkedin.com/posts/mark-smith-286b49a_musicnt-in-partnership-with-peta-khan-from-activity-7287263661021188096-NUbm/"
+  - title: "Showcased @ KLCC on Australia Day 2025"
     icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
-    icon: "🎤"
-    url: "https://www.ceritalah.app/"
+    url: "https://www.instagram.com/reel/DGNY8I6NpHH/"
+  # - title: "XR Summit Malaysia Showcase"
+  #   icon: "🎤"
+  #   url: "https://www.ceritalah.app/"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"
@@ -51,7 +51,7 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "Ceritalah is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia."
+    content: "Music NT Artist Platform is a VR initiative that showcases Northern Territory artists in immersive virtual worlds, enabling global audience reach without the need for travel."
   mission_impact:
     heading: "MISSION & IMPACT"
     content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."

@@ -13,15 +13,15 @@ project_url: "https://sidequestvr.com/app/53740/no-more-lazy-eyes"
 
 #Project Achievements
 achievements:
-  - title: "Featured on Media"
+  - title: "Live on SideQuest"
     icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
-    icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
-    icon: "🎤"
-    url: "https://www.ceritalah.app/"
+    url: "https://sidequestvr.com/app/53740/no-more-lazy-eyes"
+  # - title: "Featured on Media"
+  #   icon: "📰"
+  #   url: "https://www.ceritalah.app/"
+  # - title: "XR Summit Malaysia Showcase"
+  #   icon: "🎤"
+  #   url: "https://www.ceritalah.app/"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"
@@ -49,7 +49,7 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "Ceritalah is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia."
+    content: "No More Lazy Eyes is a gamified XR proof-of-concept that uses a custom dichoptic rendering system to facilitate binocular vision therapy through interactive gameplay."
   mission_impact:
     heading: "MISSION & IMPACT"
     content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."

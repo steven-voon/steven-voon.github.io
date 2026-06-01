@@ -6,22 +6,22 @@ image: "/assets/images/pic04.jpg"
 pillar: ["lab","others"]
 genre: "capacity-building"
 company: "CahayaXR"
-company_url: "https://www.maitreehouse.com/"
+company_url: "https://www.cahayaxr.com/"
 hardware: "Meta Quest 2"
-technologies: ["Tiltbrush", "Unity", "Oculus SDK"]
+technologies: ["Unity", "Meta SDK", "WebGL", "Tiltbrush"]
 project_url: "https://www.maitreehouse.com/work/george-town-festival-2022"
 
 #Project Achievements
 achievements:
-  - title: "Featured on Media"
+  - title: "Live on Web"
     icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
-    icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
-    icon: "🎤"
-    url: "https://www.ceritalah.app/"
+    url: "https://www.cahayaxrgallery.com/"
+  # - title: "Featured on Media"
+  #   icon: "📰"
+  #   url: "https://www.ceritalah.app/"
+  # - title: "XR Summit Malaysia Showcase"
+  #   icon: "🎤"
+  #   url: "https://www.ceritalah.app/"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"
@@ -35,7 +35,7 @@ project_platform: "60 FPS"
 # video_id: "dGrWmW-sRdM"
 # video_type: "youtube"
 # IMAGES (COMMENT THIS OUT IF IMAGES ARE NOT AVAILABLE)
-project_images: 
+project_images:
   - "/assets/images/cahayaxrgallery-ss1.png"
   - "/assets/images/cahayaxrgallery-ss2.png"
   - "/assets/images/cahayaxrgallery-ss3.png"
@@ -50,7 +50,7 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "Ceritalah is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia."
+    content: "CahayaXR Gallery is a digital metaverse gallery that preserves cultural heritage and lets visitors explore community stories in VR or on desktop."
   mission_impact:
     heading: "MISSION & IMPACT"
     content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."

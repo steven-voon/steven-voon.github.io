@@ -13,15 +13,15 @@ project_url: "https://www.instagram.com/p/C4aIW9uLPxd/"
 
 #Project Achievements
 achievements:
-  - title: "Featured on Media"
+  - title: "Featured in CIM Open Labs 2024"
     icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
+    url: "https://www.instagram.com/p/C6YAcKpyCBq/?img_index=6"
+  - title: "Mentioned in The Sun Newspaper"
     icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
+    url: "https://thesun.my/news/malaysia-news/sensarts-festival-to-create-awareness-on-biodiversity-preservation-io11792497/"
+  - title: "Mentioned in Bernama Newspaper"
     icon: "🎤"
-    url: "https://www.ceritalah.app/"
+    url: "https://www.bernama.com/en/news.php?id=2247900"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"
@@ -58,7 +58,7 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "Ceritalah is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia."
+    content: "Guardian of the Sea is a VR diving simulation that uses digital art to raise awareness about marine biodiversity and ocean conservation."
   mission_impact:
     heading: "MISSION & IMPACT"
     content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."

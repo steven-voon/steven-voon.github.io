@@ -1,27 +1,27 @@
 ---
 layout: project-default
-title: "DanceXR Workshop"
+title: "XR Technical Production and Collaboration Workshop"
 status: "completed" # Options: launched-active-development, launched-maintained, completed, in-progress
 image: "/assets/images/pic04.jpg"
 pillar: ["lab"]
-genre: "heritage"
+genre: "capacity-building"
 company: "Maitree House"
 company_url: "https://www.maitreehouse.com/"
-hardware: "Rokoko"
-technologies: ["MOCAP", "Unity"]
-project_url: "https://www.avventura.co/xr-workshops"
+hardware: ""
+technologies: ["Unity"]
+project_url: "https://www.instagram.com/p/CxH3g35SHMF/"
 
 #Project Achievements
 achievements:
-  - title: "Featured on Media"
+  - title: "Featured on CahayaXR Social Media"
     icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
-    icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
-    icon: "🎤"
-    url: "https://www.ceritalah.app/"
+    url: "https://www.instagram.com/p/CxH3g35SHMF/"
+#   - title: "Podcasted by BFM89.9"
+#     icon: "📰"
+#     url: "https://www.bfm.my/content/podcast/cahaya-xr-first-edition"
+#   - title: "Reported by Tatler Asia"
+#     icon: "🎤"
+#     url: "https://www.tatlerasia.com/lifestyle/arts/george-town-festival-2022"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"
@@ -36,13 +36,27 @@ project_platform: "60 FPS"
 # video_type: "youtube"
 # IMAGES (COMMENT THIS OUT IF IMAGES ARE NOT AVAILABLE)
 project_images: 
-  - "/assets/images/dancexr-singapore-ss1.png"
-  - "/assets/images/dancexr-singapore-ss2.png"
-  - "/assets/images/dancexr-singapore-ss3.png"
-  - "/assets/images/dancexr-singapore-ss4.png"
-  - "/assets/images/dancexr-singapore-ss5.png"
-  - "/assets/images/dancexr-singapore-ss6.png"
-  - "/assets/images/dancexr-singapore-ss7.png"
+  - "/assets/images/firstedition-ss1.png"
+  - "/assets/images/firstedition-ss2.png"
+  - "/assets/images/firstedition-ss3.png"
+  - "/assets/images/firstedition-ss4.png"
+  - "/assets/images/firstedition-ss5.png"
+  - "/assets/images/firstedition-ss6.png"
+  - "/assets/images/firstedition-ss7.png"
+  - "/assets/images/firstedition-ss8.png"
+  - "/assets/images/firstedition-ss9.png"
+  - "/assets/images/firstedition-ss10.png"
+  - "/assets/images/firstedition-ss11.png"
+  - "/assets/images/firstedition-ss12.png"
+  - "/assets/images/firstedition-ss13.png"
+  - "/assets/images/firstedition-ss14.png"
+  - "/assets/images/firstedition-ss15.png"
+  - "/assets/images/firstedition-ss16.png"
+  - "/assets/images/firstedition-ss17.png"
+  - "/assets/images/firstedition-ss18.png"
+  - "/assets/images/firstedition-ss19.png"
+  - "/assets/images/firstedition-ss20.png"
+  - "/assets/images/firstedition-ss21.png"
 media_caption: "Heritage Storytelling with Augmented Reality (AR)"
 
 # STRATEGIC INTENT
@@ -50,7 +64,7 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "Ceritalah is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia."
+    content: "A sharing session for participant to learn the processes of XR creation from workflow outlines, timeline and budgeting frameworks crucial in realising an XR production."
   mission_impact:
     heading: "MISSION & IMPACT"
     content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."

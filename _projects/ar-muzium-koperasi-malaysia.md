@@ -6,22 +6,22 @@ image: "/assets/images/pic04.jpg"
 pillar: ["augmented-reality","others"]
 genre: "Heritage and History"
 company: "Creatinno Tech"
-company_url: "https://www.maitreehouse.com/"
+company_url: "https://www.creatinnotech.com/"
 hardware: "Mobile"
 technologies: ["Unity", "ARCore", "ARKit", "C#", "Blender"]
-project_url: "https://pelancar.online/muzium-koperasi-malaysia-angkasa-perkenal-pameran-bertema-khas-sempena-mapa/"
+project_url: "https://play.google.com/store/apps/details?id=com.angkasa.muziumkoperasimalaysia"
 
 #Project Achievements
 achievements:
-  - title: "Featured on Media"
+  - title: "Highlighted on News"
     icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
+    url: "https://pelancar.online/muzium-koperasi-malaysia-angkasa-perkenal-pameran-bertema-khas-sempena-mapa/"
+  - title: "Live on Google Play Store"
     icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
+    url: "https://play.google.com/store/apps/details?id=com.angkasa.muziumkoperasimalaysia"
+  - title: "Live on Apple App Store"
     icon: "🎤"
-    url: "https://www.ceritalah.app/"
+    url: "https://apps.apple.com/my/app/muzium-koperasi-malaysia/id6749582521"
 
 # PROJECT DETAILS
 project_role: " Technical Lead and XR Engineer"

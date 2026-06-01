@@ -1,27 +1,27 @@
 ---
 layout: project-default
-title: "VR Organ Bath Lab Experiement"
-status: "launched-maintained" # Options: launched-active-development, launched-maintained, completed, in-progress
+title: "DanceXR Lab"
+status: "completed" # Options: launched-active-development, launched-maintained, completed, in-progress
 image: "/assets/images/pic04.jpg"
-pillar: ["virtual-reality", "others"]
-genre: "education"
-company: "Creatinno Tech"
+pillar: ["lab"]
+genre: "heritage"
+company: "Maitree House"
 company_url: "https://www.maitreehouse.com/"
-hardware: "Meta Quest 2"
-technologies: ["Tiltbrush", "Unity", "Oculus SDK"]
-project_url: "https://papers.iafor.org/wp-content/uploads/papers/ace2023/ACE2023_76065.pdf?t=8"
+hardware: "Rokoko"
+technologies: ["MOCAP", "Unity"]
+project_url: "https://www.dancexr.sg/dancexrlab"
 
 #Project Achievements
-achievements:
-  - title: "Academic Publish"
-    icon: "🖼️"
-    url: "https://papers.iafor.org/wp-content/uploads/papers/ace2023/ACE2023_76065.pdf?t=8"
-  - title: "Live on Web (Only support VR headsets)"
-    icon: "📰"
-    url: "https://vrorganbathlab.nottingham.edu.my/"
-  # - title: "XR Summit Malaysia Showcase"
-  #   icon: "🎤"
-  #   url: "https://www.ceritalah.app/"
+# achievements:
+#   - title: "Featured on Media"
+#     icon: "🖼️"
+#     url: "https://www.ceritalah.app/"
+#   - title: "Featured on Media"
+#     icon: "📰"
+#     url: "https://www.ceritalah.app/"
+#   - title: "XR Summit Malaysia Showcase"
+#     icon: "🎤"
+#     url: "https://www.ceritalah.app/"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"
@@ -32,17 +32,17 @@ project_platform: "60 FPS"
 
 # PROJECT GALLERY
 # VIDEO (COMMENT THIS OUT IF VIDEO IS NOT AVAILABLE)
-# video_id: "KfWjFpPtnBU"
+# video_id: "dGrWmW-sRdM"
 # video_type: "youtube"
 # IMAGES (COMMENT THIS OUT IF IMAGES ARE NOT AVAILABLE)
 project_images: 
-  - "/assets/images/vrobl-ss1.png"
-  - "/assets/images/vrobl-ss2.png"
-  - "/assets/images/vrobl-ss3.png"
-  - "/assets/images/vrobl-ss4.png"
-  - "/assets/images/vrobl-ss5.png"
-  - "/assets/images/vrobl-ss6.png"
-  - "/assets/images/vrobl-ss7.png"
+  - "/assets/images/dancexr-singapore-ss1.png"
+  - "/assets/images/dancexr-singapore-ss2.png"
+  - "/assets/images/dancexr-singapore-ss3.png"
+  - "/assets/images/dancexr-singapore-ss4.png"
+  - "/assets/images/dancexr-singapore-ss5.png"
+  - "/assets/images/dancexr-singapore-ss6.png"
+  - "/assets/images/dancexr-singapore-ss7.png"
 media_caption: "Heritage Storytelling with Augmented Reality (AR)"
 
 # STRATEGIC INTENT
@@ -50,7 +50,7 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "VR Organ Bath Lab is a VR lab training module, digitalizing traditional lab experiments for direct integration into the university curriculum."
+    content: "DanceXR is a series of workshops by Avventura that equips artists and students with practical AR, VR, and MR skills to create immersive and innovative experiences."
   mission_impact:
     heading: "MISSION & IMPACT"
     content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."

@@ -6,22 +6,25 @@ image: "/assets/images/pic04.jpg"
 pillar: ["virtual-reality", "lab"]
 genre: "storytelling"
 company: "CahayaXR"
-company_url: "https://www.maitreehouse.com/"
+company_url: "https://www.cahayaxr.com/"
 hardware: "Meta Quest 2"
 technologies: ["Meta SDK", "Unity"]
-project_url: "https://www.instagram.com/p/C6YAcKpyCBq/?img_index=2"
+project_url: "https://www.cahayaxrgallery.com/"
 
 #Project Achievements
 achievements:
-  - title: "Featured on Media"
+  - title: "Artist Interview By The Star"
     icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
+    url: "https://www.thestar.com.my/lifestyle/culture/2024/11/13/malaysian-artist-duo-explores-symbolism-and-humanitys-symbiosis-with-nature"
+  - title: "First Public Showcase @ Jetty35"
     icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
+    url: "https://www.facebook.com/share/p/18sTihVK47/"
+  - title: "Featured in CIM Open Labs 2024"
     icon: "🎤"
-    url: "https://www.ceritalah.app/"
+    url: "https://www.instagram.com/p/C6YAcKpyCBq/?img_index=6"
+  - title: "Live on CahayaXR Gallery"
+    icon: "🖼️"
+    url: "https://www.cahayaxrgallery.com/"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"
@@ -49,7 +52,7 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "Ceritalah is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia."
+    content: "Crab Chronicles is an immersive VR experience that follows the ecological journey of a crab from rainforest to shoreline, highlighting crab species connected to Penang and their role in the local ecosystem."
   mission_impact:
     heading: "MISSION & IMPACT"
     content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."

@@ -12,16 +12,16 @@ technologies: ["Flutter", "Unity", "FERN Stack"]
 project_url: "https://www.maitreehouse.com/news/people-with-intellectual-disability-falling-through-the-cracks-in-our-justice-systems"
 
 #Project Achievements
-achievements:
-  - title: "Digital Heritage Exhibition 2025"
-    icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
-    icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
-    icon: "🎤"
-    url: "https://www.ceritalah.app/"
+# achievements:
+#   - title: "Digital Heritage Exhibition 2025"
+#     icon: "🖼️"
+#     url: "https://www.ceritalah.app/"
+#   - title: "Featured on Media"
+#     icon: "📰"
+#     url: "https://www.ceritalah.app/"
+#   - title: "XR Summit Malaysia Showcase"
+#     icon: "🎤"
+#     url: "https://www.ceritalah.app/"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"

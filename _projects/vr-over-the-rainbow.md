@@ -8,20 +8,20 @@ genre: "mental-health"
 company: "Avventura"
 company_url: "https://www.maitreehouse.com/"
 hardware: "Meta Quest 2"
-technologies: ["Tiltbrush", "Unity", "Oculus SDK"]
+technologies: ["Unity", "Meta SDK"]
 project_url: "https://www.avventura.co/over-the-rainbow"
 
 #Project Achievements
 achievements:
-  - title: "Featured on Media"
+  - title: "Public Showcase @ DanceXR 2024"
     icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
+    url: "https://www.dancexr.sg/copy-of-dancexr-showcase24"
+  - title: "Reported by The Edge Singapore"
     icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
-    icon: "🎤"
-    url: "https://www.ceritalah.app/"
+    url: "https://www.theedgesingapore.com/digitaledge/news/step-world-joy-through-vr-experience"
+  # - title: "XR Summit Malaysia Showcase"
+  #   icon: "🎤"
+  #   url: "https://www.ceritalah.app/"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"
@@ -50,7 +50,7 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "Ceritalah is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia."
+    content: "Over the Rainbow is a multi-sensory VR experience that immerses participants in a vibrant virtual world with uplifting visuals, calming music, and playful interactions."
   mission_impact:
     heading: "MISSION & IMPACT"
     content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."

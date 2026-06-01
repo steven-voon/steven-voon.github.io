@@ -8,20 +8,20 @@ genre: "storytelling"
 company: "Maitree House"
 company_url: "https://www.maitreehouse.com/"
 hardware: "Meta Quest 2"
-technologies: ["Meta SDK", "Rokoko Suit", "Unity"]
+technologies: ["Unity", "Rokoko Suit", "Meta SDK"]
 project_url: "https://www.annalouisepaul.com/blog/2022/10/18/a-late-bloomer"
 
 #Project Achievements
 achievements:
-  - title: "Featured on Media"
+  - title: "Supported by Australian High Commission in Malaysia"
     icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
+    url: "https://www.facebook.com/AusHCMalaysia/posts/we-are-excited-to-support-the-initial-development-of-a-late-bloomer-an-innovativ/429380992708226/" 
+  - title: "Featured by Australia Now"
     icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
-    icon: "🎤"
-    url: "https://www.ceritalah.app/"
+    url: "https://malaysia.celebrateaustralianow.com/event/a-late-bloomer-annalouise-paul-dance-theatre/"
+  # - title: "XR Summit Malaysia Showcase"
+  #   icon: "🎤"
+  #   url: "https://www.ceritalah.app/"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"
@@ -53,7 +53,7 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "Ceritalah is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia."
+    content: "A Late Bloomer is a hybrid dance and VR project exploring memory, heritage, and identity, to reflect on how cultural stories endure or fade."
   mission_impact:
     heading: "MISSION & IMPACT"
     content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."

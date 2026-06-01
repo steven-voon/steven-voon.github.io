@@ -6,22 +6,22 @@ image: "/assets/images/pic04.jpg"
 pillar: ["augmented-reality", "lab", "others"]
 genre: "retail"
 company: "Creatinno Tech"
-company_url: "https://www.maitreehouse.com/"
+company_url: "https://www.creatinnotech.com/"
 hardware: "Mobile"
 technologies: ["AR", "Unity"]
 project_url: "https://play.google.com/store/apps/details?id=com.creatinno.decora"
 
 #Project Achievements
 achievements:
-  - title: "Featured on Media"
-    icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
+  - title: "Pitched at Maxis Access Day 2019"
     icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
-    icon: "🎤"
-    url: "https://www.ceritalah.app/"
+    url: "https://www.maxis.com.my/en/about-maxis/newsroom/2019/december/100-startups-pitch-ideas-at-maxis-market-access-day-for-a-potentially-life-changing-future/"
+  - title: "Live on Google Play Store"
+    icon: "🖼️"
+    url: "https://play.google.com/store/apps/details?id=com.creatinno.decora"
+  # - title: "XR Summit Malaysia Showcase"
+  #   icon: "🎤"
+  #   url: "https://www.ceritalah.app/"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"
@@ -47,7 +47,7 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "Ceritalah is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia."
+    content: "DECORA is an AR application that allows users to preview furniture in their own space virtually before making a purchase."
   mission_impact:
     heading: "MISSION & IMPACT"
     content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."

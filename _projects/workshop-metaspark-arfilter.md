@@ -1,27 +1,27 @@
 ---
 layout: project-default
-title: "VR Organ Bath Lab Experiement"
-status: "launched-maintained" # Options: launched-active-development, launched-maintained, completed, in-progress
+title: "Face of Future (SparkAR Workshop)"
+status: "completed" # Options: launched-active-development, launched-maintained, completed, in-progress
 image: "/assets/images/pic04.jpg"
-pillar: ["virtual-reality", "others"]
-genre: "education"
-company: "Creatinno Tech"
+pillar: ["lab"]
+genre: "capacity-building"
+company: "Maitree House"
 company_url: "https://www.maitreehouse.com/"
-hardware: "Meta Quest 2"
-technologies: ["Tiltbrush", "Unity", "Oculus SDK"]
-project_url: "https://papers.iafor.org/wp-content/uploads/papers/ace2023/ACE2023_76065.pdf?t=8"
+hardware: ""
+technologies: ["SparkAR"]
+project_url: "https://www.maitreehouse.com/news/ar-face-filter-workshop"
 
 #Project Achievements
 achievements:
-  - title: "Academic Publish"
+  - title: "Part of the Immersio 2022 @ Telekom Museum"
     icon: "🖼️"
-    url: "https://papers.iafor.org/wp-content/uploads/papers/ace2023/ACE2023_76065.pdf?t=8"
-  - title: "Live on Web (Only support VR headsets)"
-    icon: "📰"
-    url: "https://vrorganbathlab.nottingham.edu.my/"
-  # - title: "XR Summit Malaysia Showcase"
-  #   icon: "🎤"
-  #   url: "https://www.ceritalah.app/"
+    url: "https://www.instagram.com/p/Ck-7_WPy_Gh/"
+#   - title: "Podcasted by BFM89.9"
+#     icon: "📰"
+#     url: "https://www.bfm.my/content/podcast/cahaya-xr-first-edition"
+#   - title: "Reported by Tatler Asia"
+#     icon: "🎤"
+#     url: "https://www.tatlerasia.com/lifestyle/arts/george-town-festival-2022"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"
@@ -32,17 +32,31 @@ project_platform: "60 FPS"
 
 # PROJECT GALLERY
 # VIDEO (COMMENT THIS OUT IF VIDEO IS NOT AVAILABLE)
-# video_id: "KfWjFpPtnBU"
+# video_id: "dGrWmW-sRdM"
 # video_type: "youtube"
 # IMAGES (COMMENT THIS OUT IF IMAGES ARE NOT AVAILABLE)
 project_images: 
-  - "/assets/images/vrobl-ss1.png"
-  - "/assets/images/vrobl-ss2.png"
-  - "/assets/images/vrobl-ss3.png"
-  - "/assets/images/vrobl-ss4.png"
-  - "/assets/images/vrobl-ss5.png"
-  - "/assets/images/vrobl-ss6.png"
-  - "/assets/images/vrobl-ss7.png"
+  - "/assets/images/firstedition-ss1.png"
+  - "/assets/images/firstedition-ss2.png"
+  - "/assets/images/firstedition-ss3.png"
+  - "/assets/images/firstedition-ss4.png"
+  - "/assets/images/firstedition-ss5.png"
+  - "/assets/images/firstedition-ss6.png"
+  - "/assets/images/firstedition-ss7.png"
+  - "/assets/images/firstedition-ss8.png"
+  - "/assets/images/firstedition-ss9.png"
+  - "/assets/images/firstedition-ss10.png"
+  - "/assets/images/firstedition-ss11.png"
+  - "/assets/images/firstedition-ss12.png"
+  - "/assets/images/firstedition-ss13.png"
+  - "/assets/images/firstedition-ss14.png"
+  - "/assets/images/firstedition-ss15.png"
+  - "/assets/images/firstedition-ss16.png"
+  - "/assets/images/firstedition-ss17.png"
+  - "/assets/images/firstedition-ss18.png"
+  - "/assets/images/firstedition-ss19.png"
+  - "/assets/images/firstedition-ss20.png"
+  - "/assets/images/firstedition-ss21.png"
 media_caption: "Heritage Storytelling with Augmented Reality (AR)"
 
 # STRATEGIC INTENT
@@ -50,7 +64,7 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "VR Organ Bath Lab is a VR lab training module, digitalizing traditional lab experiments for direct integration into the university curriculum."
+    content: "A hands-on session for participants to create their own experimental Spark AR face filter to use on Instagram."
   mission_impact:
     heading: "MISSION & IMPACT"
     content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."

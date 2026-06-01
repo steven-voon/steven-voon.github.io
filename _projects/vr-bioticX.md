@@ -12,16 +12,16 @@ technologies: ["Meta SDK", "Unity"]
 project_url: "https://www.maitreehouse.com/work/bioticx"
 
 #Project Achievements
-achievements:
-  - title: "Featured on Media"
-    icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
-    icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
-    icon: "🎤"
-    url: "https://www.ceritalah.app/"
+# achievements:
+#   - title: "Featured on Media"
+#     icon: "🖼️"
+#     url: "https://www.ceritalah.app/"
+#   - title: "Featured on Media"
+#     icon: "📰"
+#     url: "https://www.ceritalah.app/"
+#   - title: "XR Summit Malaysia Showcase"
+#     icon: "🎤"
+#     url: "https://www.ceritalah.app/"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"
@@ -51,7 +51,7 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "Ceritalah is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia."
+    content: "BioticX is a VR theatre experience that explores environmental challenges and collective action through immersive parallel virtual realities."
   mission_impact:
     heading: "MISSION & IMPACT"
     content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."

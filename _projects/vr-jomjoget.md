@@ -13,15 +13,18 @@ project_url: "https://www.avventura.co/copy-of-reimagining-popular-folktales"
 
 #Project Achievements
 achievements:
-  - title: "Featured on Media"
+  - title: "Public Showcase @ DanceXR 2025"
     icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
+    url: "https://www.dancexr.sg/dancexr-showcase-2025"
+  - title: "Public Showcase @ Libraries"
     icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
+    url: "https://www.instagram.com/p/DHmvFh_vtb-/"
+  - title: "Part of ArtsEverywhere@CDC"
     icon: "🎤"
-    url: "https://www.ceritalah.app/"
+    url: "https://sakthifinearts.com/read/harmony-in-diversity-artseverywherecdc"
+  - title: "Live on DeoVR"
+    icon: "🎤"
+    url: "https://deovr.com/1dklr1"
 
 # PROJECT DETAILS
 project_role: "Unity XR Enginner"

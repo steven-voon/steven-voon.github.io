@@ -13,15 +13,15 @@ project_url: "https://www.cahayaxr.com/cahayaxrstorylabs2026"
 
 #Project Achievements
 achievements:
-  - title: "Featured on Media"
+  - title: "Attended by over 30 Participants"
     icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
-    icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
-    icon: "🎤"
-    url: "https://www.ceritalah.app/"
+    url: ""
+  # - title: "Featured on Media"
+  #   icon: "📰"
+  #   url: "https://www.ceritalah.app/"
+  # - title: "XR Summit Malaysia Showcase"
+  #   icon: "🎤"
+  #   url: "https://www.ceritalah.app/"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"
@@ -48,7 +48,7 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "Ceritalah is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia."
+    content: "CahayaXR Storylab : Inheritance is an initiative designed to develop Malaysia's next generation of immersive storytellers. "
   mission_impact:
     heading: "MISSION & IMPACT"
     content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."

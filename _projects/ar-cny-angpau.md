@@ -13,15 +13,15 @@ project_url: "https://play.google.com/store/apps/details?id=com.creatinno.margic
 
 #Project Achievements
 achievements:
-  - title: "Featured on Media"
+  - title: "Live on Google Play Store"
     icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
+    url: "https://play.google.com/store/apps/details?id=com.creatinno.margic"
+  - title: "Live on Apple App Store"
     icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
-    icon: "🎤"
-    url: "https://www.ceritalah.app/"
+    url: "https://apps.apple.com/my/app/margic/id6761293478"
+  # - title: "XR Summit Malaysia Showcase"
+  #   icon: "🎤"
+  #   url: "https://www.ceritalah.app/"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"
@@ -47,7 +47,7 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "Ceritalah is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia."
+    content: "A marketing event using AR-enabled red envelopes as markers, combining interactive engagement with promotional codes to boost brand visibility and audience participation."
   mission_impact:
     heading: "MISSION & IMPACT"
     content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."

@@ -8,20 +8,20 @@ genre: "heritage"
 company: "Avventura"
 company_url: "https://www.maitreehouse.com/"
 hardware: "Meta Quest 2"
-technologies: ["Meta SDk", "Unity"]
+technologies: ["Unity"]
 project_url: "https://www.maitreehouse.com/news/people-with-intellectual-disability-falling-through-the-cracks-in-our-justice-systems"
 
 # Project Achievements
 achievements:
-  - title: "Digital Heritage Exhibition 2025"
-    icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
+  - title: "Supported by VALID"
     icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
+    url: "https://valid.org.au/event/they-will-use-my-first-name/"
+  - title: "Online Film Launching"
+    icon: "🖼️"
+    url: "https://www.youtube.com/watch?v=7duDlPFhu5w"
+  - title: "Live on Vimeo"
     icon: "🎤"
-    url: "https://www.ceritalah.app/"
+    url: "https://vimeo.com/657225285"
 
 # PROJECT DETAILS
 project_role: "Technical Lead"
@@ -47,7 +47,7 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "Ceritalah is a digital heritage platform leveraging Augmented Reality to transform physical landmarks into storytelling hubs."
+    content: "[They Will Use] My First Name is an immersive VR documentary addressing the urgent need for advocacy and support for people with intellectual disabilities in the criminal justice system."
   mission_impact:
     heading: "MISSION & IMPACT"
     content: "Architected a modular delivery pipeline ensuring high-fidelity AR stability under outdoor environmental constraints."

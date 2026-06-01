@@ -8,20 +8,23 @@ genre: "heritage"
 company: "Maitree House"
 company_url: "https://www.maitreehouse.com/"
 hardware: "Mobile"
-technologies: ["AR", "Unity"]
+technologies: ["Unity", "AR"]
 project_url: "https://www.ceritalah.app/"
 
 #Project Achievements
 achievements:
-  - title: "Featured on Media"
+  - title: "Featured on Free Malaysia Today (FMT)"
     icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
+    url: "https://www.freemalaysiatoday.com/category/leisure/2026/02/21/ceritalah-is-bringing-penangs-history-back-to-the-streets"
+  - title: "Supported by ThinkCity Penang"
     icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
+    url: "https://thinkcity.com.my/grants-amp-activities/grants/cultural-economy-catalytic-grants-cecg-and-partnership/penang"
+  - title: "Live on Google Play Store"
     icon: "🎤"
-    url: "https://www.ceritalah.app/"
+    url: "https://play.google.com/store/apps/details?id=com.thinkcity.ceritalah"
+  - title: "Live on Apple App Store"
+    icon: "🎤"
+    url: "https://apps.apple.com/us/app/ceritalah/id6717588046"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"

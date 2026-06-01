@@ -9,19 +9,19 @@ company: "Maitree House"
 company_url: "https://www.maitreehouse.com/"
 hardware: "Meta Quest 2"
 technologies: ["Meta SDK", "Unity"]
-project_url: "https://www.yumchaarts.org/cloudlines"
+project_url: "https://www.maitreehouse.com/news/seeking-human-connection-in-the-metaverse"
 
 #Project Achievements
 achievements:
-  - title: "Featured on Media"
+  - title: "Supported by Regional Arts Australia"
     icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
+    url: "https://regionalarts.com.au/resources/yum-cha-arts-raf-case-study-2021"
+  - title: "Featured on Wombat Creative Australia"
     icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
-    icon: "🎤"
-    url: "https://www.ceritalah.app/"
+    url: "https://wombatcreative.com.au/regional-remote-arts-australia/"
+  # - title: "XR Summit Malaysia Showcase"
+  #   icon: "🎤"
+  #   url: "https://www.ceritalah.app/"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"
@@ -49,7 +49,7 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "Ceritalah is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia."
+    content: "Cloudlines is a mixed reality project connecting Australian and Malaysian artists, blending VR, live performance, and streaming to reimagine traditional spaces and explore the influence of the digital world."
   mission_impact:
     heading: "MISSION & IMPACT"
     content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."

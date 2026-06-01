@@ -13,15 +13,15 @@ project_url: "https://play.google.com/store/apps/details?id=com.creatinno.margic
 
 #Project Achievements
 achievements:
-  - title: "Featured on Media"
+  - title: "Live on Google Play Store"
     icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
+    url: "https://play.google.com/store/apps/details?id=com.creatinno.margic"
+  - title: "Live on Apple App Store"
     icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
-    icon: "🎤"
-    url: "https://www.ceritalah.app/"
+    url: "https://apps.apple.com/my/app/margic/id6761293478"
+  # - title: "XR Summit Malaysia Showcase"
+  #   icon: "🎤"
+  #   url: "https://www.ceritalah.app/"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"

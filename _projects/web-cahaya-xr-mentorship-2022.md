@@ -6,22 +6,31 @@ image: "/assets/images/pic04.jpg"
 pillar: ["lab", "others"]
 genre: "capacity-building"
 comapny: "CahayaXR"
-company_url: "https://www.maitreehouse.com/"
+company_url: "https://www.cahayaxr.com/"
 hardware: "Meta Quest 2"
-technologies: ["Meta SDK", "Unity", WebGL]
-project_url: "https://www.cahayaxrgallery.com/"
+technologies: ["Unity", "Meta SDK", "WebGL", "Tiltbrush"]
+project_url: "https://www.maitreehouse.com/news/george-town-festival-2022"
 
 #Project Achievements
 achievements:
-  - title: "Featured on Media"
+  - title: "Reported by Penang Art District"
     icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
+    url: "https://penangartdistrict.com/preserving-memories-and-stories-in-the-metaverse-a-review-of-cahaya-xr/"
+  - title: "Podcasted by BFM89.9"
     icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
+    url: "https://www.bfm.my/content/podcast/cahaya-xr-first-edition"
+  - title: "Reported by Tatler Asia"
     icon: "🎤"
-    url: "https://www.ceritalah.app/"
+    url: "https://www.tatlerasia.com/lifestyle/arts/george-town-festival-2022"
+  - title: "Live on CahayaXR Gallery"
+    icon: "🖼️"
+    url: "https://www.cahayaxrgallery.com/"
+  - title: "Public Showcase @ The Whiteaways Arcade"
+    icon: "🖼️"
+    url: "https://www.instagram.com/p/CgF_zcQpiZu"
+  - title: "Featured on CahayaXR Social Media"
+    icon: "🖼️"
+    url: "https://www.instagram.com/p/CgvVLjNBNsm/"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"
@@ -64,7 +73,7 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "Ceritalah is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia."
+    content: "The Cahaya XR: First Edition is a VR exhibition that blends local storytelling with immersive technology, reimagining Penang’s traditional stories while exploring new ways for communities to share their narratives."
   mission_impact:
     heading: "MISSION & IMPACT"
     content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."

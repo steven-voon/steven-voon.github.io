@@ -9,19 +9,19 @@ company: "Maitree House"
 company_url: "https://www.maitreehouse.com/"
 hardware: "Rokoko"
 technologies: ["Rokoko Studio", "Unity"]
-project_url: "https://www.instagram.com/p/C7ThFrgJ_pg/"
+project_url: "https://www.lizleacreates.com/virtualview"
 
 #Project Achievements
-achievements:
-  - title: "Featured on Media"
-    icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
-    icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
-    icon: "🎤"
-    url: "https://www.ceritalah.app/"
+# achievements:
+#   - title: "Featured on Media"
+#     icon: "🖼️"
+#     url: "https://www.ceritalah.app/"
+#   - title: "Featured on Media"
+#     icon: "📰"
+#     url: "https://www.ceritalah.app/"
+#   - title: "XR Summit Malaysia Showcase"
+#     icon: "🎤"
+#     url: "https://www.ceritalah.app/"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"
@@ -45,7 +45,7 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "Ceritalah is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia."
+    content: "Dance workshop dedicated to create an inclusive environment where participants can come together- connect, learn, and celebrate their love for movement and technology."
   mission_impact:
     heading: "MISSION & IMPACT"
     content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."

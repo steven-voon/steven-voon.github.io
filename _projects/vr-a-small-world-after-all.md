@@ -5,23 +5,23 @@ status: "completed" # Options: launched-active-development, launched-maintained,
 image: "/assets/images/pic04.jpg"
 pillar: ["virtual-reality"]
 genre: "storytelling"
-company: "Maitree House"
-company_url: "https://www.maitreehouse.com/"
+company: "CahayaXR"
+company_url: "https://www.cahayaxr.com/"
 hardware: "Meta Quest 2"
-technologies: ["Meta SDK", "Unity"]
+technologies: ["Unity", "Meta SDK"]
 project_url: "https://www.cahayaxr.com/exhibitions"
 
 #Project Achievements
 achievements:
-  - title: "Featured on Media"
+  - title: "Part of the George Town Festival 2023 and Macam-Macam Berapit"
     icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
-    icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
-    icon: "🎤"
-    url: "https://www.ceritalah.app/"
+    url: "https://www.instagram.com/reel/Cu3PMCEtSoT/?hl=af"
+  # - title: "Featured on Media"
+  #   icon: "📰"
+  #   url: "https://www.ceritalah.app/"
+  # - title: "XR Summit Malaysia Showcase"
+  #   icon: "🎤"
+  #   url: "https://www.ceritalah.app/"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"
@@ -55,7 +55,7 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "Ceritalah is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia."
+    content: "A Small World After All is a VR experience that takes audiences on a dreamlike journey through a world shaped by young people, exploring their hopes, fears, and imagination."
   mission_impact:
     heading: "MISSION & IMPACT"
     content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."

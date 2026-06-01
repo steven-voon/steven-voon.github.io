@@ -9,19 +9,19 @@ company: "CahayaXR"
 company_url: "https://www.maitreehouse.com/"
 hardware: "Meta Quest 2"
 technologies: ["Tiltbrush", "Unity", "Oculus SDK"]
-project_url: "https://www.cahayaxr.com/exhibitions"
+project_url: "https://vimeo.com/639420158"
 
 #Project Achievements
 achievements:
-  - title: "Featured on Media"
+  - title: "Public Showcase @ Forward School"
     icon: "🖼️"
-    url: "https://www.ceritalah.app/"
-  - title: "Featured on Media"
-    icon: "📰"
-    url: "https://www.ceritalah.app/"
-  - title: "XR Summit Malaysia Showcase"
-    icon: "🎤"
-    url: "https://www.ceritalah.app/"
+    url: "https://www.facebook.com/events/forward-school/into-the-metaverse-an-arvr-exhibition/1003347117192069/"
+  # - title: "Featured on Media"
+  #   icon: "📰"
+  #   url: "https://www.ceritalah.app/"
+  # - title: "XR Summit Malaysia Showcase"
+  #   icon: "🎤"
+  #   url: "https://www.ceritalah.app/"
 
 # PROJECT DETAILS
 project_role: "Technical Producer"
@@ -55,7 +55,7 @@ project_strategic_intent:
   title: "STRATEGIC INTENT"
   project_summary:
     heading: "PROJECT SUMMARY"
-    content: "Ceritalah is a digital heritage platform using AR to bring local history and stories to life, connecting travelers with communities and cultural experiences across Malaysia."
+    content: "Into the Metaverse is an XR art showcase featuring immersive VR works by Penang street artists Taz and Fakh, presented within a custom digital world developed during a two-week residency."
   mission_impact:
     heading: "MISSION & IMPACT"
     content: "Led technical execution, coordinated workflows across teams, and ensured seamless integration of heritage storytelling with immersive technology."
